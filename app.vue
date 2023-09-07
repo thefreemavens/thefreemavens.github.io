@@ -3,6 +3,7 @@
 
 <template>
   <AppHeader />
+  <AppMenu />
   <PageContainer>
     <NuxtPage />
   </PageContainer>
