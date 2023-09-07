@@ -1,5 +1,5 @@
 <template>
-  <main class="container mx-auto mb-20">
+  <main class="container mx-auto">
     <div class="mx-2">
       <!-- <hr class="my-10 mx-2 border-black"> -->
       <!-- <hr class="my-10 mx-2 border-black"> -->

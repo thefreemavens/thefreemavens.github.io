@@ -15,7 +15,8 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      Inter: [400, 700, 900]
+      Inter: [400, 700, 900],
+      'Fragment Mono': 400
     }
   },
 })

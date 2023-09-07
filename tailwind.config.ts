@@ -52,7 +52,7 @@ export default <Partial<Config>>{
       'body': ['Inter'],
       'sans': [ 'Inter'],
       // 'serif': ['ui-serif', 'Georgia'],
-      // 'mono': ['ui-monospace', 'SFMono-Regular'],
+      'mono': ['Fragment Mono', 'SFMono-Regular'],
       // 'display': ['Major Mono Display'],
     }
   },
