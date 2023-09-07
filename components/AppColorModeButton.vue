@@ -16,12 +16,14 @@ const isDark = computed({
 
 <template>
   <ClientOnly>
-    <button
-      :class="{ 'rotate-[180deg]': isDark, 'rotate-0': !isDark }"
-      class="transition-transform duration-200 ease-out"
-      @click="isDark = !isDark"
-    >
-      <AppIcon name="CustomColorMode" class="text-black dark:text-white w-5 h-5" />
-    </button>
+    <div class="relative flex">
+      <button
+        :class="{ 'rotate-[180deg]': isDark, 'rotate-0': !isDark }"
+        class="transition-transform duration-200 ease-out"
+        @click="isDark = !isDark"
+      >
+        <AppIcon name="CustomColorMode" class="text-black dark:text-white w-4 h-4" />
+      </button>
+    </div>
   </ClientOnly>
 </template>
