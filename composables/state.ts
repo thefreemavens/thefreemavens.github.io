@@ -1,10 +1,6 @@
 // UseState
 // Docs: https://nuxt.com/docs/getting-started/state-management#shared-state
 
-// export const useMenu = () => useState<boolean>('menu', () => false)
-// export const useLenisScroll = () => useState<boolean>('lenisScroll', () => false)
-// export const useLenisVelocity = () => useState<boolean>('lenisVelocity', () => false)
-
 export const usePrinciples = () => useState<any>('principles', () => [
   { id: 1,
     title: 'Mentalism',

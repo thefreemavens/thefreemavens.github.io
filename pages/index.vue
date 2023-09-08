@@ -65,18 +65,6 @@
           </h3>
         </li>
 
-        <!-- <div class="flex justify-center items-center aspect-square rounded-[0%] bg-yellow dark:bg-red">
-          <h3 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl absolute text-red dark:text-yellow">
-            Mentalism
-          </h3>
-        </div> -->
-
-        <!-- <div class="flex justify-center items-center aspect-square rounded-[0%] bg-red dark:bg-yellow">
-          <h3 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl absolute text-yellow dark:text-red">
-            Correspondance
-          </h3>
-        </div> -->
-
       </ul>
     </section>
 
@@ -98,7 +86,7 @@
     </section>
 
     <!-- TLDR -->
-    <section class="mx-2">
+    <!-- <section class="mx-2">
       <h1
         class="
           transition-transform duration-[1600ms] ease-out
@@ -110,9 +98,9 @@
           flex flex-col
       ">
       They are watching you because they are afraid of you.
-      <span class="mt-[8%] text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl">---></span>
+      <span class="mt-[8%] text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl">-></span>
       </h1>
-    </section>
+    </section> -->
 
     <!-- Dev Notes -->
     <section class="mx-4 grid grid-cols-2 lg:grid-cols-4 mb-8 gap-6">

@@ -7,6 +7,7 @@
   <PageContainer>
     <NuxtPage />
   </PageContainer>
+  <AppFooter/>
 </template>
 
 <style lang="postcss">

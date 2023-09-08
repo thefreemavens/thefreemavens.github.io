@@ -25,7 +25,7 @@
               v-for="(menuItem, index) in menuItems1" :key="index"
               class="my-0 py-2"
             >
-              <NuxtLink :to="menuItem.url" @click="closeModal()" class="group --font-mono --uppercase flex items-center py-1 transition-colors duration-100 ease-in-out text-sm hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black">
+              <NuxtLink :to="menuItem.url" @click="closeMenu()" class="group --font-mono --uppercase flex items-center py-1 transition-colors duration-100 ease-in-out text-sm hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black">
                 <span class="flex-1">{{ menuItem.title }}</span>
                 <span class="mx-2 opacity-0 group-hover:opacity-100">--></span>
               </NuxtLink>
@@ -40,7 +40,7 @@
               v-for="(menuItem, index) in menuItems2" :key="index"
               class="my-0 py-2"
             >
-              <NuxtLink :to="menuItem.url" @click="closeModal()" class="group --font-mono --uppercase flex items-center py-1 transition-colors duration-100 ease-in-out text-sm hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black">
+              <NuxtLink :to="menuItem.url" @click="closeMenu()" class="group --font-mono --uppercase flex items-center py-1 transition-colors duration-100 ease-in-out text-sm hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black">
                 <span class="flex-1">{{ menuItem.title }}</span>
                 <span class="mx-2 opacity-0 group-hover:opacity-100">--></span>
               </NuxtLink>
@@ -55,7 +55,7 @@
               v-for="(menuItem, index) in menuItems3" :key="index"
               class="my-0 py-2"
             >
-              <NuxtLink :to="menuItem.url" @click="closeModal()" class="group --font-mono --uppercase flex items-center py-1 transition-colors duration-100 ease-in-out text-sm hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black">
+              <NuxtLink :to="menuItem.url" @click="closeMenu()" class="group --font-mono --uppercase flex items-center py-1 transition-colors duration-100 ease-in-out text-sm hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black">
                 <span class="flex-1">{{ menuItem.title }}</span>
                 <span class="mx-2 opacity-0 group-hover:opacity-100">--></span>
               </NuxtLink>
@@ -71,7 +71,7 @@
               v-for="(menuItem, index) in menuItems4" :key="index"
               class="my-0 py-2"
             >
-              <NuxtLink :to="menuItem.url" @click="closeModal()" class="group --font-mono --uppercase flex items-center py-1 transition-colors duration-100 ease-in-out text-sm hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black">
+              <NuxtLink :to="menuItem.url" @click="closeMenu()" class="group --font-mono --uppercase flex items-center py-1 transition-colors duration-100 ease-in-out text-sm hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black">
                 <span class="flex-1">{{ menuItem.title }}</span>
                 <span class="mx-2 opacity-0 group-hover:opacity-100">--></span>
               </NuxtLink>
@@ -86,6 +86,10 @@
 
 <script setup lang="ts">
 const menu = useState('menu', () => false)
+
+function closeMenu() {
+  menu.value = !menu.value
+}
 
 // ------------------------------------------------>
 // Menu Items

@@ -22,7 +22,11 @@
       --[@supports(backdrop-filter:blur(0px))]:dark:bg-black/80
   ">
     <!-- <AppLogomark class="w-12 h-12 mx-4 my-2 --rotate-[-30deg]"/> -->
-    <h1 class="text-2xl font-black mx-4">TFM</h1>
+    <NuxtLink to="/">
+      <AppLogotype class="w-[52px] h-auto mx-4" />
+    </NuxtLink>
+
+    <!-- <h1 class="text-2xl font-black mx-4">TFM</h1> -->
     <div class="absolute right-4 flex items-center gap-4">
       <AppColorModeButton class="" />
       <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
