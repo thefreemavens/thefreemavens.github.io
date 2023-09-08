@@ -22,7 +22,7 @@
       --[@supports(backdrop-filter:blur(0px))]:dark:bg-black/80
   ">
     <!-- <AppLogomark class="w-12 h-12 mx-4 my-2 --rotate-[-30deg]"/> -->
-    <NuxtLink to="/">
+    <NuxtLink to="/" @click="menu = false">
       <AppLogotype class="w-[52px] h-auto mx-4" />
     </NuxtLink>
 
@@ -43,6 +43,5 @@
 
 <script setup lang="ts">
 const menu = useState('menu', () => false)
-
 
 </script>

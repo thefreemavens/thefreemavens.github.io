@@ -68,8 +68,67 @@
       </ul>
     </section>
 
+    <!-- Knowledge -->
+    <section class="mx-4 border-b pb-16 mb-12">
+      <h1
+        class="
+          transition-transform duration-[1600ms] ease-out
+          mx-2 py-10 mb-8 xl:pe-36
+          --border-b
+          font-bold
+          text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl
+          tracking-tighter
+          flex flex-col
+      ">
+        Knowledge
+      </h1>
+      <p>Link to Docs</p>
+      <p>Link to Lessons</p>
+      <p>Link to Challanges</p>
+      <!-- <span class="mt-[8%] font-bold text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl">-></span> -->
+    </section>
+
+    <!-- Products -->
+    <section class="mx-4 border-b pb-16 mb-12">
+      <h1
+        class="
+          transition-transform duration-[1600ms] ease-out
+          mx-2 py-10 mb-8 xl:pe-36
+          --border-b
+          font-bold
+          text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl
+          tracking-tighter
+          flex flex-col
+      ">
+        Products
+      </h1>
+      <p>Example product mockups</p>
+      <!-- <span class="mt-[8%] font-bold text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl">-></span> -->
+    </section>
+
+    <!-- TL;DR -->
+    <section class="mx-4 border-b pb-16 mb-12">
+      <h1
+        class="
+          transition-transform duration-[1600ms] ease-out
+          mx-2 py-10 mb-8 xl:pe-36
+          --border-b
+          font-bold
+          text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl
+          tracking-tighter
+          flex flex-col
+      ">
+        TL;DR
+      </h1>
+      <p>You've been kept in the dark for far too long. A very imprtant body of knowledge was hidden 
+        from you but this can be changed if you choose to and are curious enough. This Occult (hidden) Knwoledge 
+        has the potential to free your mind from all mental cages and dogmatic beliefs. In addition and collectively, this body of knowledge will
+        transform the current state of humanity from salvery to true freedom, if we choose to learn and act on it.</p>
+      <!-- <span class="mt-[8%] font-bold text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl">-></span> -->
+    </section>
+
     <!-- TLDR -->
-    <section class="mx-2">
+    <!-- <section class="mx-2">
       <h1
         class="
           transition-transform duration-[1600ms] ease-out
@@ -81,9 +140,9 @@
           flex flex-col
       ">
       Stop acting like a slave. <br> Be a Maven.
-      <span class="mt-[8%] text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl">---></span>
+      <span class="mt-[8%] text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl">-></span>
       </h1>
-    </section>
+    </section> -->
 
     <!-- TLDR -->
     <!-- <section class="mx-2">
@@ -121,6 +180,10 @@
       <p>The Matrix was a documentry</p>
       <p>Data that matters</p>
       <p>Work is for slaves. Creation is for free men</p>
+      <p>Learn Natural Law with interactive lessons and intuitive challanges</p>
+      <p>Suitable for all generation</p>
+      <p>Incorporate Products</p>
+      <p>Community for exchange goods and support mind-like fellow beings</p>
     </section>
   </main>
 </template>
