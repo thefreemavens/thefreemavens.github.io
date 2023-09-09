@@ -1,6 +1,7 @@
 <template>
   <main class="container mx-auto">
-    <section class="mx-2">
+    <!-- HERO -->
+    <section class="">
       <!-- <hr class="my-10 mx-2 border-black"> -->
       <!-- <hr class="my-10 mx-2 border-black"> -->
       <!-- HERO -->
@@ -8,24 +9,21 @@
       <!-- HERO: Title -->
       <h1
         class="
-          transition-transform duration-[1600ms] ease-out
-          mx-2 py-10 mb-8 xl:pe-36
-          border-y
+          my-6 md:my-10 xl:pe-36
+          border-b
           font-bold
-          text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl
+          text-5xl sm:text-6xl md:text-7xl lg:text-8xl
           tracking-tighter
+          leading-none
           flex flex-col
       ">
       Discover your true power and learn how to use it 
-      <span class="mt-[8%] text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl">---></span>
+      <span class="mt-[4%] mb-16 text-5xl sm:text-6xl md:text-7xl lg:text-8xl">---></span>
       </h1>
 
       <ul class="
-        mx-2 pb-8
         grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3
         gap-8
-        border-b
-        mb-8
       ">
 
 
@@ -68,88 +66,113 @@
       </ul>
     </section>
 
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-9 xl:gap-12">
+      <div class="features">
+        <h3>Knowledge</h3>
+        <div class="">
+          book
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
+      </div>
+
+      <div class="features">
+        <h3>Lessons</h3>
+        <div class="">
+          
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
+      </div>
+
+      <div class="features">
+        <h3>Challanges</h3>
+        <div class="">
+          
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
+      </div>
+
+      <div class="features">
+        <h3>Products</h3>
+        <div class="">
+          
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
+      </div>
+
+      <div class="features">
+        <h3>Tools</h3>
+        <div class="">
+          
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
+      </div>
+      
+    </section>
+
     <!-- Knowledge -->
-    <section class="mx-4 border-b pb-16 mb-12">
-      <h1
-        class="
-          transition-transform duration-[1600ms] ease-out
-          mx-2 py-10 mb-8 xl:pe-36
-          --border-b
-          font-bold
-          text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl
-          tracking-tighter
-          flex flex-col
-      ">
-        Knowledge
-      </h1>
+    <section class="">
+      <h2 class="">Knowledge</h2>
       <p>Link to Docs</p>
+    </section>
+
+    <!-- Lessons -->
+    <section class="">
+      <h2 class="">Lessons</h2>
       <p>Link to Lessons</p>
+    </section>
+
+    <!-- Challanges -->
+    <section class="">
+      <h2 class="">Challanges</h2>
       <p>Link to Challanges</p>
-      <!-- <span class="mt-[8%] font-bold text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl">-></span> -->
     </section>
 
     <!-- Products -->
-    <section class="mx-4 border-b pb-16 mb-12">
-      <h1
-        class="
-          transition-transform duration-[1600ms] ease-out
-          mx-2 py-10 mb-8 xl:pe-36
-          --border-b
-          font-bold
-          text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl
-          tracking-tighter
-          flex flex-col
-      ">
-        Products
-      </h1>
+    <section class="">
+      <h2 class="">Products</h2>
       <p>Example product mockups</p>
-      <!-- <span class="mt-[8%] font-bold text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl">-></span> -->
+    </section>
+
+    <!-- Tools -->
+    <section class="">
+      <h2 class="">Tools</h2>
+      <p>Link to Tools</p>
     </section>
 
     <!-- TL;DR -->
-    <section class="mx-4 border-b pb-16 mb-12">
-      <h1
-        class="
-          transition-transform duration-[1600ms] ease-out
-          mx-2 py-10 mb-8 xl:pe-36
-          --border-b
-          font-bold
-          text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl
-          tracking-tighter
-          flex flex-col
-      ">
+    <section class="">
+      <h2 class="">
         TL;DR
-      </h1>
-      <p>You've been kept in the dark for far too long. A very imprtant body of knowledge was hidden 
-        from you but this can be changed if you choose to and are curious enough. This Occult (hidden) Knwoledge 
-        has the potential to free your mind from all mental cages and dogmatic beliefs. In addition and collectively, this body of knowledge will
-        transform the current state of humanity from salvery to true freedom, if we choose to learn and act on it.</p>
-      <!-- <span class="mt-[8%] font-bold text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl">-></span> -->
+      </h2>
+      <h3 class="text-4xl mb-6 tracking-tight">
+        You've been kept in the dark for far too long.
+      </h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
+      <p class="mb-4 w-1/2">
+        A very imprtant body of knowledge was hidden from you but this can be changed if you choose to and are curious enough. 
+        This Occult (hidden) Knwoledge has the potential to free your mind from all mental cages and dogmatic beliefs.
+      </p>
+      <p class="mb-4 w-1/2">
+        In addition and collectively, this body of knowledge will transform the current state of humanity from salvery to true
+        freedom, if we choose to learn and act on it.
+      </p>
+      <!-- <span class="mt-[8%] font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl">-></span> -->
     </section>
 
     <!-- TLDR -->
     <!-- <section class="mx-2">
-      <h1
-        class="
-          transition-transform duration-[1600ms] ease-out
-          mx-2 py-10 mb-8 xl:pe-36
-          border-b
-          font-bold
-          text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl
-          tracking-tighter
-          flex flex-col
-      ">
+      <h2 class="">
+
       Stop acting like a slave. <br> Be a Maven.
-      <span class="mt-[8%] text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl">-></span>
-      </h1>
+      <span class="mt-[8%] text-5xl sm:text-6xl md:text-7xl lg:text-8xl">-></span>
+      </h2>
     </section> -->
 
     <!-- TLDR -->
     <!-- <section class="mx-2">
-      <h1
+      <h2
         class="
-          transition-transform duration-[1600ms] ease-out
-          mx-2 py-10 mb-8 xl:pe-36
+          py-10 mb-8
           border-b
           font-bold
           text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl
@@ -158,7 +181,7 @@
       ">
       They are watching you because they are afraid of you.
       <span class="mt-[8%] text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl">-></span>
-      </h1>
+      </h2>
     </section> -->
 
     <!-- Dev Notes -->
@@ -192,3 +215,37 @@
 const principles = usePrinciples()
 
 </script>
+
+<style scoped lang="postcss">
+section {
+  @apply mx-4 border-t pt-8 pb-16 lg:pt-12 lg:pb-20
+  bg-red/0
+}
+
+h2 {
+  @apply
+    py-0 mb-10
+    flex flex-col
+    text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl
+    font-bold
+    tracking-tighter
+}
+
+.features {
+  @apply
+    pb-4
+}
+.features div {
+  @apply
+  my-6
+    aspect-square
+    bg-red/0
+    bg-black/10
+}
+
+.features h3 {
+  @apply
+    mb-6
+    text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tighter
+}
+</style>
