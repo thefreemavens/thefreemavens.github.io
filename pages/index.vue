@@ -1,17 +1,188 @@
 <template>
   <main class="container mx-auto">
     <!-- HERO -->
-    <section class="">
+    <section class="relative grid grid-cols-6">
       <!-- HERO: Title -->
+      <div class="mt-0 mb-12 font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl">---></div>
       <h1
-        class="flex flex-col my-6 text-5xl font-bold tracking-tighter leading-none border-b md:my-10 xl:pe-36 sm:text-6xl md:text-7xl lg:text-8xl">
-      Discover your true power and learn how to use it 
-      <span class="mt-[4%] mb-16 text-5xl sm:text-6xl md:text-7xl lg:text-8xl">---></span>
+        class="mb-24 flex flex-col col-span-6 col-start-1 text-5xl font-bold tracking-tighter leading-none xl:pe-36 sm:text-6xl md:text-7xl lg:text-8xl">
+        Discover your true power and learn how to use it 
       </h1>
+        <!-- <AppIcon
+          name="Causality"
+          class="
+          mt-8 lg:mt-12
+          col-span-3 xl:col-span-2
+          col-start-4 xl:col-start-5
+          aspect-square
+          relative
+          w-full h-full
+          text-black dark:text-white
+        "/> -->
+    </section>
 
+    <!-- Features -->
+    <section class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 lg:gap-10 xl:gap-12">
+
+      <!-- Knowledge -->
+      <NuxtLink to="/">
+        <div class="relative pb-4 group group">
+          <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Knowledge</h3>
+          <div class="relative my-6 aspect-square bg-black/5 dark:bg-white/5">
+            <span class="absolute z-10 rounded-full w-1/2 h-1/2 top-[25%] left-[25%] bg-white mix-blend-difference"/>
+            <span class="flex w-full h-full bg-black rounded-none scale-75 dark:bg-white" />
+          </div>
+          <p class="text-base xl:text-lg">
+            Knowledge base you can use and apply in your life. Unlike information that is "good to know" and that you have no real-life use for. 
+            Know the immutable laws of the universe and you shall know thyself.
+          </p>
+          <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
+        </div>
+      </NuxtLink>
+
+      <!-- Lessons -->
+      <NuxtLink to="/">
+        <div class="pb-4 group">
+          <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Lessons</h3>
+          <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
+            <span class="absolute z-10 rounded-none w-1/2 h-1/2 top-[25%] left-[25%] bg-white mix-blend-difference"/>
+            <svg
+              viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+              class="scale-75 fill-black dark:fill-white"
+            >
+              <polygon points="512,0 512,512 0,512"/>
+            </svg>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
+          <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
+        </div>
+      </NuxtLink>
+
+      <!-- Challanges -->
+      <NuxtLink to="/">
+        <div class="pb-4 group">
+          <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Challanges</h3>
+          <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
+            <span class="absolute z-10 rounded-full w-1/2 h-1/2 top-[25%] left-[25%] bg-white mix-blend-difference"/>
+            <svg
+              viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+              class="scale-75 rotate-180 fill-black dark:fill-white"
+            >
+              <polygon points="512,0 512,512 0,512"/>
+            </svg>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
+          <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
+        </div>
+      </NuxtLink>
+
+      <!-- Products -->
+      <NuxtLink to="/">
+        <div class="pb-4 group">
+          <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Products</h3>
+          <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
+            <span class="grid grid-cols-2 origin-center scale-75">
+              <span class="rotate-90">
+                <svg
+                  viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                  class="fill-black dark:fill-white"
+                >
+                  <polygon points="512,0 512,512 0,512"/>
+                </svg>
+              </span>
+              <span class="rotate-90">
+                <svg
+                  viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                  class="fill-black dark:fill-white"
+                >
+                  <polygon points="512,0 512,512 0,512"/>
+                </svg>
+              </span>
+              <span class="rotate-90">
+                <svg
+                  viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                  class="fill-black dark:fill-white"
+                >
+                  <polygon points="512,0 512,512 0,512"/>
+                </svg>
+              </span>
+              <span class="rotate-90">
+                <svg
+                  viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                  class="fill-black dark:fill-white"
+                >
+                  <polygon points="512,0 512,512 0,512"/>
+                </svg>
+              </span>
+            </span>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
+          <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
+        </div>
+      </NuxtLink>
+
+      <!-- Tools -->
+      <NuxtLink to="/">
+        <div class="pb-4 group">
+          <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Tools</h3>
+          <div class="relative my-6 aspect-square bg-black/5 dark:bg-white/5" >
+            <span class="grid grid-cols-2 origin-center scale-75">
+              <span class="-rotate-90">
+                <svg
+                  viewBox="0 0 512 512" stroke-width="4" xmlns="http://www.w3.org/2000/svg"
+                  class="fill-black dark:fill-white stroke-black dark:stroke-white"
+                >
+                  <polygon points="512,0 512,512 0,512"/>
+                </svg>
+              </span>
+              <span class="rotate-90">
+                <svg
+                  viewBox="0 0 512 512" stroke-width="4" xmlns="http://www.w3.org/2000/svg"
+                  class="fill-black dark:fill-white stroke-black dark:stroke-white"
+                >
+                  <polygon points="512,0 512,512 0,512"/>
+                </svg>
+              </span>
+              <span class="-rotate-90">
+                <svg
+                  viewBox="0 0 512 512" stroke-width="4" xmlns="http://www.w3.org/2000/svg"
+                  class="fill-black dark:fill-white stroke-black dark:stroke-white"
+                >
+                  <polygon points="512,0 512,512 0,512"/>
+                </svg>
+              </span>
+              <span class="rotate-90">
+                <svg
+                  viewBox="0 0 512 512" stroke-width="4" xmlns="http://www.w3.org/2000/svg"
+                  class="fill-black dark:fill-white stroke-black dark:stroke-white"
+                >
+                  <polygon points="512,0 512,512 0,512"/>
+                </svg>
+              </span>
+            </span>
+          </div>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
+          <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
+        </div>
+      </NuxtLink>
+    </section>
+
+    <!-- Principles -->
+    <section>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+        <h2 class="">Picons</h2>
+        <h3 class="text-3xl col-span-2 mb-12 border-b-0 lg:border-b lg:pb-20">
+          <span class="md:mb-8 block">---></span>
+          Introducing <span class="font-bold">Picons</span> (<span class="italic">Principles + Icons</span>), a set of eight open-source and
+          free-to-use icons that visually represnt the eight 
+          immutable principes of Natural Law<sup class="inline-block text-sm relative -top-3 start-1">🡵</sup>.
+        </h3>
+      </div>
       <ul class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         <li
           v-for="(principle, index) in principles" :key="index"
+          ref="el"
           class="
             group
             --bg-black
@@ -43,163 +214,41 @@
     </section>
 
     <!-- Knowledge -->
-    <section class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-9 xl:gap-12">
-      <div class="relative pb-4 features">
-        <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Knowledge</h3>
-        <div class="relative my-6 aspect-square bg-black/5 dark:bg-white/5">
-          <span class="absolute z-10 rounded-full w-1/2 h-1/2 top-[25%] left-[25%] bg-white mix-blend-difference"/>
-          <span class="flex w-full h-full bg-black rounded-none scale-75 dark:bg-white" />
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
-      </div>
-
-      <!-- Lessons -->
-      <div class="pb-4 features">
-        <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Lessons</h3>
-        <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
-          <span class="absolute z-10 rounded-none w-1/2 h-1/2 top-[25%] left-[25%] bg-white mix-blend-difference"/>
-          <svg
-            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-            class="scale-75 fill-black dark:fill-white"
-          >
-            <polygon points="512,0 512,512 0,512"/>
-          </svg>
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
-      </div>
-
-      <!-- Challanges -->
-      <div class="pb-4 features">
-        <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Challanges</h3>
-        <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
-          <span class="absolute z-10 rounded-full w-1/2 h-1/2 top-[25%] left-[25%] bg-white mix-blend-difference"/>
-          <svg
-            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-            class="scale-75 rotate-180 fill-black dark:fill-white"
-          >
-            <polygon points="512,0 512,512 0,512"/>
-          </svg>
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
-      </div>
-
-      <!-- Products -->
-      <div class="pb-4 features">
-        <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Products</h3>
-        <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
-          <span class="grid grid-cols-2 origin-center scale-75">
-            <span class="rotate-90">
-              <svg
-                viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-                class="fill-black dark:fill-white"
-              >
-                <polygon points="512,0 512,512 0,512"/>
-              </svg>
-            </span>
-            <span class="rotate-90">
-              <svg
-                viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-                class="fill-black dark:fill-white"
-              >
-                <polygon points="512,0 512,512 0,512"/>
-              </svg>
-            </span>
-            <span class="rotate-90">
-              <svg
-                viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-                class="fill-black dark:fill-white"
-              >
-                <polygon points="512,0 512,512 0,512"/>
-              </svg>
-            </span>
-            <span class="rotate-90">
-              <svg
-                viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-                class="fill-black dark:fill-white"
-              >
-                <polygon points="512,0 512,512 0,512"/>
-              </svg>
-            </span>
-          </span>
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
-      </div>
-
-      <div class="pb-4 features">
-        <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Tools</h3>
-        <div class="relative my-6 aspect-square bg-black/5 dark:bg-white/5" >
-          <span class="grid grid-cols-2 origin-center scale-75">
-            <span class="-rotate-90">
-              <svg
-                viewBox="0 0 512 512" stroke-width="4" xmlns="http://www.w3.org/2000/svg"
-                class="fill-black dark:fill-white stroke-black dark:stroke-white"
-              >
-                <polygon points="512,0 512,512 0,512"/>
-              </svg>
-            </span>
-            <span class="rotate-90">
-              <svg
-                viewBox="0 0 512 512" stroke-width="4" xmlns="http://www.w3.org/2000/svg"
-                class="fill-black dark:fill-white stroke-black dark:stroke-white"
-              >
-                <polygon points="512,0 512,512 0,512"/>
-              </svg>
-            </span>
-            <span class="-rotate-90">
-              <svg
-                viewBox="0 0 512 512" stroke-width="4" xmlns="http://www.w3.org/2000/svg"
-                class="fill-black dark:fill-white stroke-black dark:stroke-white"
-              >
-                <polygon points="512,0 512,512 0,512"/>
-              </svg>
-            </span>
-            <span class="rotate-90">
-              <svg
-                viewBox="0 0 512 512" stroke-width="4" xmlns="http://www.w3.org/2000/svg"
-                class="fill-black dark:fill-white stroke-black dark:stroke-white"
-              >
-                <polygon points="512,0 512,512 0,512"/>
-              </svg>
-            </span>
-          </span>
-        </div>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
-      </div>
-      
-    </section>
-
-    <!-- Knowledge -->
     <section class="">
       <h2 class="">Knowledge</h2>
+      <p>Knowledge base you can use and apply it in your life.</p>
       <p>Link to Docs</p>
     </section>
 
     <!-- Lessons -->
     <section class="">
       <h2 class="">Lessons</h2>
+      <p>Interactive and well thought out organization for optimal and effective learning.</p>
       <p>Link to Lessons</p>
     </section>
 
     <!-- Challanges -->
     <section class="">
       <h2 class="">Challanges</h2>
+      <p>Challanges to track your progress and level of undersatnding.</p>
       <p>Link to Challanges</p>
     </section>
 
     <!-- Products -->
     <section class="">
       <h2 class="">Products</h2>
+      <p>Community based marketplace with products and services you can buy, sell, trade or offer.</p>
       <p>Example product mockups</p>
     </section>
 
     <!-- Tools -->
     <section class="">
       <h2 class="">Tools</h2>
+      <p>Tools, techniques and tips you can use to "Exit the Matrix", the right way.</p>
       <p>Link to Tools</p>
     </section>
 
-    <!-- TL;DR -->
+    <!-- TLDR -->
     <section class="">
       <h2 class="">
         TL;DR
@@ -207,7 +256,6 @@
       <h3 class="mb-6 text-4xl tracking-tight">
         You've been kept in the dark for far too long.
       </h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
       <p class="mb-4 w-1/2">
         A very imprtant body of knowledge was hidden from you but this can be changed if you choose to and are curious enough. 
         This Occult (hidden) Knwoledge has the potential to free your mind from all mental cages and dogmatic beliefs.
@@ -264,8 +312,25 @@
   </main>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const principles = usePrinciples()
+// // import { ref, onMounted, onUnmounted } from "vue"
+
+// const el = ref(null)
+
+// const observer = new IntersectionObserver((entries, observer) => {
+//   console.log(entries.value)
+// })
+
+// onMounted(() => {
+//   observer.observe(el.value)
+// })
+
+// Probably optional
+// onUnmounted(() => {
+//   observer.disconnect()
+// })
+
 
 </script>
 
