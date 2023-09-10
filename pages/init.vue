@@ -1,9 +1,9 @@
 <template>
   <main class="container mx-auto">
-    <section class="mx-4 border-t py-12">
-      <div class="max-w-md mx-auto">
-        <AppLogotype class="w-32 h-32 mb-6" />
-        <h3 class="text-3xl mb-8 font-bold tracking-tight">Application Form</h3>
+    <section class="py-12 mx-4 border-t">
+      <div class="mx-auto max-w-md">
+        <AppLogotype class="mb-6 w-32 h-32" />
+        <h3 class="mb-8 text-3xl font-bold tracking-tight">Application Form</h3>
         <p class="mb-8 text-base">
           Please tell us a bit about yourself so that we may review your request for an application.¹
         </p>

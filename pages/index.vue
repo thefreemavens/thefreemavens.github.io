@@ -2,37 +2,14 @@
   <main class="container mx-auto">
     <!-- HERO -->
     <section class="">
-      <!-- <hr class="my-10 mx-2 border-black"> -->
-      <!-- <hr class="my-10 mx-2 border-black"> -->
-      <!-- HERO -->
-
       <!-- HERO: Title -->
       <h1
-        class="
-          my-6 md:my-10 xl:pe-36
-          border-b
-          font-bold
-          text-5xl sm:text-6xl md:text-7xl lg:text-8xl
-          tracking-tighter
-          leading-none
-          flex flex-col
-      ">
+        class="flex flex-col my-6 text-5xl font-bold tracking-tighter leading-none border-b md:my-10 xl:pe-36 sm:text-6xl md:text-7xl lg:text-8xl">
       Discover your true power and learn how to use it 
       <span class="mt-[4%] mb-16 text-5xl sm:text-6xl md:text-7xl lg:text-8xl">---></span>
       </h1>
 
-      <ul class="
-        grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3
-        gap-8
-      ">
-
-
-        <!-- :class="principle.background" -->
-        <!-- <li
-          :class="principle.background"
-          v-for="(principle, index) in principles" :key="index"
-          class="flex justify-center items-center aspect-square rounded-[50%] hover:rounded-[8%] cursor-pointer mix-blend-multiply hover:mix-blend-normal transition-all duration-200 bg-opacity-0"
-        > -->
+      <ul class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         <li
           v-for="(principle, index) in principles" :key="index"
           class="
@@ -46,7 +23,6 @@
             --hover:bg-black --dark:hover:bg-white
             transition-all duration-300 ease-in-out
         ">
-          <!-- <AppIcon :name="principle.title" :class="principle.color" class="w-full h-full p-[19.1%] mix-blend-luminosity hover:mix-blend-normal" /> -->
           <AppIcon
             :name="principle.title"
             class="
@@ -58,52 +34,136 @@
           "/>
             <!-- :class="principle.color" -->
           <h3
-            class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out scale-90 text-5xl absolute text-black dark:text-white">
-            {{ principle.title}}<sup class="text-xl relative -top-6 start-0.5">{{ principle.id }}</sup>
+            class="absolute text-5xl text-black opacity-0 transition-opacity duration-300 ease-in-out scale-90 group-hover:opacity-100 dark:text-white">
+            {{ principle.title}}<sup class="relative -top-6 text-xl start-0.5">{{ principle.id }}</sup>
           </h3>
         </li>
 
       </ul>
     </section>
 
-    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-9 xl:gap-12">
-      <div class="features">
-        <h3>Knowledge</h3>
-        <div class="">
-          book
+    <!-- Knowledge -->
+    <section class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-9 xl:gap-12">
+      <div class="relative pb-4 features">
+        <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Knowledge</h3>
+        <div class="relative my-6 aspect-square bg-black/5 dark:bg-white/5">
+          <span class="absolute z-10 rounded-full w-1/2 h-1/2 top-[25%] left-[25%] bg-white mix-blend-difference"/>
+          <span class="flex w-full h-full bg-black rounded-none scale-75 dark:bg-white" />
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
       </div>
 
-      <div class="features">
-        <h3>Lessons</h3>
-        <div class="">
-          
+      <!-- Lessons -->
+      <div class="pb-4 features">
+        <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Lessons</h3>
+        <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
+          <span class="absolute z-10 rounded-none w-1/2 h-1/2 top-[25%] left-[25%] bg-white mix-blend-difference"/>
+          <svg
+            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+            class="scale-75 fill-black dark:fill-white"
+          >
+            <polygon points="512,0 512,512 0,512"/>
+          </svg>
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
       </div>
 
-      <div class="features">
-        <h3>Challanges</h3>
-        <div class="">
-          
+      <!-- Challanges -->
+      <div class="pb-4 features">
+        <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Challanges</h3>
+        <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
+          <span class="absolute z-10 rounded-full w-1/2 h-1/2 top-[25%] left-[25%] bg-white mix-blend-difference"/>
+          <svg
+            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+            class="scale-75 rotate-180 fill-black dark:fill-white"
+          >
+            <polygon points="512,0 512,512 0,512"/>
+          </svg>
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
       </div>
 
-      <div class="features">
-        <h3>Products</h3>
-        <div class="">
-          
+      <!-- Products -->
+      <div class="pb-4 features">
+        <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Products</h3>
+        <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
+          <span class="grid grid-cols-2 origin-center scale-75">
+            <span class="rotate-90">
+              <svg
+                viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                class="fill-black dark:fill-white"
+              >
+                <polygon points="512,0 512,512 0,512"/>
+              </svg>
+            </span>
+            <span class="rotate-90">
+              <svg
+                viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                class="fill-black dark:fill-white"
+              >
+                <polygon points="512,0 512,512 0,512"/>
+              </svg>
+            </span>
+            <span class="rotate-90">
+              <svg
+                viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                class="fill-black dark:fill-white"
+              >
+                <polygon points="512,0 512,512 0,512"/>
+              </svg>
+            </span>
+            <span class="rotate-90">
+              <svg
+                viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                class="fill-black dark:fill-white"
+              >
+                <polygon points="512,0 512,512 0,512"/>
+              </svg>
+            </span>
+          </span>
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
       </div>
 
-      <div class="features">
-        <h3>Tools</h3>
-        <div class="">
-          
+      <div class="pb-4 features">
+        <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Tools</h3>
+        <div class="relative my-6 aspect-square bg-black/5 dark:bg-white/5" >
+          <span class="grid grid-cols-2 origin-center scale-75">
+            <span class="-rotate-90">
+              <svg
+                viewBox="0 0 512 512" stroke-width="4" xmlns="http://www.w3.org/2000/svg"
+                class="fill-black dark:fill-white stroke-black dark:stroke-white"
+              >
+                <polygon points="512,0 512,512 0,512"/>
+              </svg>
+            </span>
+            <span class="rotate-90">
+              <svg
+                viewBox="0 0 512 512" stroke-width="4" xmlns="http://www.w3.org/2000/svg"
+                class="fill-black dark:fill-white stroke-black dark:stroke-white"
+              >
+                <polygon points="512,0 512,512 0,512"/>
+              </svg>
+            </span>
+            <span class="-rotate-90">
+              <svg
+                viewBox="0 0 512 512" stroke-width="4" xmlns="http://www.w3.org/2000/svg"
+                class="fill-black dark:fill-white stroke-black dark:stroke-white"
+              >
+                <polygon points="512,0 512,512 0,512"/>
+              </svg>
+            </span>
+            <span class="rotate-90">
+              <svg
+                viewBox="0 0 512 512" stroke-width="4" xmlns="http://www.w3.org/2000/svg"
+                class="fill-black dark:fill-white stroke-black dark:stroke-white"
+              >
+                <polygon points="512,0 512,512 0,512"/>
+              </svg>
+            </span>
+          </span>
         </div>
+
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
       </div>
       
@@ -144,7 +204,7 @@
       <h2 class="">
         TL;DR
       </h2>
-      <h3 class="text-4xl mb-6 tracking-tight">
+      <h3 class="mb-6 text-4xl tracking-tight">
         You've been kept in the dark for far too long.
       </h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
@@ -171,21 +231,14 @@
     <!-- TLDR -->
     <!-- <section class="mx-2">
       <h2
-        class="
-          py-10 mb-8
-          border-b
-          font-bold
-          text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl
-          tracking-tighter
-          flex flex-col
-      ">
+        class="flex flex-col py-10 mb-8 text-6xl font-bold tracking-tighter border-b sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl">
       They are watching you because they are afraid of you.
       <span class="mt-[8%] text-6xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl">-></span>
       </h2>
     </section> -->
 
     <!-- Dev Notes -->
-    <section class="mx-4 grid grid-cols-2 lg:grid-cols-4 mb-8 gap-6">
+    <section class="grid grid-cols-2 gap-6 mx-4 mb-8 lg:grid-cols-4">
       <p>TLTR;</p>
       <p>Become a founding member</p>
       <p>De-Occult The Occult</p>
@@ -231,21 +284,4 @@ h2 {
     tracking-tighter
 }
 
-.features {
-  @apply
-    pb-4
-}
-.features div {
-  @apply
-  my-6
-    aspect-square
-    bg-red/0
-    bg-black/10
-}
-
-.features h3 {
-  @apply
-    mb-6
-    text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tighter
-}
 </style>

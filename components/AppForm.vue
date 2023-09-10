@@ -2,8 +2,8 @@
   <!-- <div class="flex flex-col justify-center items-center"> -->
     <div>
 
-      <!-- <hr class="border-grey-100 dark:border-gray-900 my-8" /> -->
-      <!-- <hr class="border-gray-100 dark:border-gray-700 my-6" /> -->
+      <!-- <hr class="my-8 border-grey-100 dark:border-gray-900" /> -->
+      <!-- <hr class="my-6 border-gray-100 dark:border-gray-700" /> -->
 
     <form
       id="join"
