@@ -172,11 +172,11 @@
     <section>
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         <h2 class="">Picons</h2>
-        <h3 class="text-3xl col-span-2 mb-12 border-b-0 lg:border-b lg:pb-20">
+        <h3 class="text-3xl col-span-2 mb-12 border-b-0 lg:border-b lg:pb-20 leading-relaxed">
           <span class="md:mb-8 block">---></span>
           Introducing <span class="font-bold">Picons</span> (<span class="italic">Principles + Icons</span>), a set of eight open-source and
           free-to-use icons that visually represnt the eight 
-          immutable principes of Natural Law<sup class="inline-block text-sm relative -top-3 start-1">🡵</sup>.
+          immutable principles of Natural Law<sup class="inline-block text-sm relative -top-3 start-1">🡵</sup>.
         </h3>
       </div>
       <ul class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
