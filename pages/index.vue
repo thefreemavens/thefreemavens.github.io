@@ -1,7 +1,7 @@
 <template>
   <main class="container mx-auto">
     <!-- HERO -->
-    <section class="relative grid grid-cols-6">
+    <section class="relative grid grid-cols-6 mx-4 border-t pt-8 pb-16 lg:pt-12 lg:pb-20">
       <!-- HERO: Title -->
       <div class="mt-0 mb-12 font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl">---></div>
       <h1
@@ -22,8 +22,12 @@
     </section>
 
     <!-- Features -->
-    <section class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 lg:gap-10 xl:gap-12">
-
+    <section class="
+      mx-4
+      pt-8 pb-16 lg:pt-12 lg:pb-20
+      grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 lg:gap-10 xl:gap-12
+      border-t
+    ">
       <!-- Knowledge -->
       <NuxtLink to="/">
         <div class="relative pb-4 group group">
@@ -116,7 +120,8 @@
               </span>
             </span>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
+          <p>Community based marketplace with products and services you can buy, sell, trade or offer.</p>
+          <p>Example product mockups</p>
           <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
         </div>
       </NuxtLink>
@@ -168,17 +173,16 @@
       </NuxtLink>
     </section>
 
-    <!-- Principles -->
-    <section>
-      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-        <h2 class="">Picons</h2>
-        <h3 class="text-3xl col-span-2 mb-12 border-b-0 lg:border-b lg:pb-20 leading-relaxed">
-          <span class="md:mb-8 block">---></span>
-          Introducing <span class="font-bold">Picons</span> (<span class="italic">Principles + Icons</span>), a set of eight open-source and
-          free-to-use icons that visually represnt the eight 
-          immutable principles of Natural Law<sup class="inline-block text-sm relative -top-3 start-1">🡵</sup>.
-        </h3>
-      </div>
+    <!-- Picons + Principles -->
+    <AppSection layout="grid3">
+      <template #title>
+        Picons
+      </template>
+      <template #desc>
+        Introducing <span class="font-bold">Picons</span> (<span class="italic">Principles + Icons</span>), 
+        a set of eight thoughtout and crafted open-source and free-to-use icons that visually represnt the eight
+        immutable principles of Natural Law<sup class="inline-block text-sm relative -top-3 start-1">🡵</sup>
+      </template>
       <ul class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         <li
           v-for="(principle, index) in principles" :key="index"
@@ -209,30 +213,35 @@
             {{ principle.title}}<sup class="relative -top-6 text-xl start-0.5">{{ principle.id }}</sup>
           </h3>
         </li>
-
       </ul>
-    </section>
+    </AppSection>
 
     <!-- Knowledge -->
-    <section class="">
-      <h2 class="">Knowledge</h2>
-      <p>Knowledge base you can use and apply it in your life.</p>
-      <p>Link to Docs</p>
-    </section>
+    <AppSection>
+      <template #title>Knowledge</template>
+      <template #desc>
+        Knowledge base you can use and apply it in your life. Read Docs 
+        <sup class="inline-block text-sm relative -top-3 start-1">🡵</sup>
+      </template>
+    </AppSection>
 
     <!-- Lessons -->
-    <section class="">
-      <h2 class="">Lessons</h2>
-      <p>Interactive and well thought out organization for optimal and effective learning.</p>
-      <p>Link to Lessons</p>
-    </section>
+    <AppSection>
+      <template #title>Lessons</template>
+      <template #desc>
+        Interactive and well thought out organization for optimal and effective learning. View Lessons 
+        <sup class="inline-block text-sm relative -top-3 start-1">🡵</sup>
+      </template>
+    </AppSection>
 
     <!-- Challanges -->
-    <section class="">
-      <h2 class="">Challanges</h2>
-      <p>Challanges to track your progress and level of undersatnding.</p>
-      <p>Link to Challanges</p>
-    </section>
+    <AppSection>
+      <template #title>Challanges</template>
+      <template #desc>
+        Challanges to track your progress and level of undersatnding. View Challanges 
+        <sup class="inline-block text-sm relative -top-3 start-1">🡵</sup>
+      </template>
+    </AppSection>
 
     <!-- Products -->
     <section class="">
@@ -334,19 +343,5 @@ const principles = usePrinciples()
 
 </script>
 
-<style scoped lang="postcss">
-section {
-  @apply mx-4 border-t pt-8 pb-16 lg:pt-12 lg:pb-20
-  bg-red/0
-}
-
-h2 {
-  @apply
-    py-0 mb-10
-    flex flex-col
-    text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl
-    font-bold
-    tracking-tighter
-}
-
-</style>
+<!-- <style scoped lang="postcss">
+</style> -->
