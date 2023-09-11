@@ -20,17 +20,6 @@ export default <Partial<Config>>{
       indigo: '#2755FF',
       purple: '#8220FF',
       pink: '#FF18D7',
-      // red: '#FF1414',
-      // orange: '#FF9414',
-      // yellow: '#F3FF14',
-      // lime: '#69FF14',
-      // green: '#14FF6A',
-      // cyan: '#14FFBF',
-      // blue: '#14BFFF',
-      // indigo: '#143FFF',
-      // purple: '#6A14FF',
-      // pink: '#EA14FF',
-      // rose: '#FF1494',
       grey: {
         50: '#F3F3F7',
         100: '#E8E8F0',
@@ -51,8 +40,8 @@ export default <Partial<Config>>{
     fontFamily: {
       'body': ['Inter'],
       'sans': [ 'Inter'],
-      // 'serif': ['ui-serif', 'Georgia'],
       'mono': ['Fragment Mono', 'SFMono-Regular'],
+      // 'serif': ['ui-serif', 'Georgia'],
       // 'display': ['Major Mono Display'],
     }
   },

@@ -244,37 +244,39 @@
     </AppSection>
 
     <!-- Products -->
-    <section class="">
+    <!-- <section class="">
       <h2 class="">Products</h2>
       <p>Community based marketplace with products and services you can buy, sell, trade or offer.</p>
       <p>Example product mockups</p>
-    </section>
+    </section> -->
 
     <!-- Tools -->
-    <section class="">
+    <!-- <section class="">
       <h2 class="">Tools</h2>
       <p>Tools, techniques and tips you can use to "Exit the Matrix", the right way.</p>
       <p>Link to Tools</p>
-    </section>
+    </section> -->
 
     <!-- TLDR -->
-    <section class="">
-      <h2 class="">
-        TL;DR
-      </h2>
-      <h3 class="mb-6 text-4xl tracking-tight">
+    <AppSection>
+      <template #title>TL;DR</template>
+      <template #desc>
         You've been kept in the dark for far too long.
-      </h3>
-      <p class="mb-4 w-1/2">
-        A very imprtant body of knowledge was hidden from you but this can be changed if you choose to and are curious enough. 
-        This Occult (hidden) Knwoledge has the potential to free your mind from all mental cages and dogmatic beliefs.
-      </p>
-      <p class="mb-4 w-1/2">
-        In addition and collectively, this body of knowledge will transform the current state of humanity from salvery to true
-        freedom, if we choose to learn and act on it.
-      </p>
-      <!-- <span class="mt-[8%] font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl">-></span> -->
-    </section>
+        <sup class="inline-block text-sm relative -top-3 start-1">🡵</sup>
+      </template>
+      <div class="grid grid-cols-2 gap-8">
+        <div class="col-start-2">
+        <p class="mb-4">
+          A very imprtant body of knowledge was hidden from you but this can be changed if you choose to and are curious enough. 
+          This Occult (hidden) Knwoledge has the potential to free your mind from all mental cages and dogmatic beliefs.
+        </p>
+        <p class="mb-4">
+          In addition and collectively, this body of knowledge will transform the current state of humanity from salvery to true
+          freedom, if we choose to learn and act on it.
+        </p>
+        </div>
+      </div>
+    </AppSection>
 
     <!-- TLDR -->
     <!-- <section class="mx-2">

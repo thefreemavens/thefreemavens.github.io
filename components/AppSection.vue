@@ -26,10 +26,7 @@
         border-b-0
         lg:border-b
         lg:pb-20
-        leading-relaxed
-        sm:leading-relaxed
-        md:leading-relaxed
-        lg:leading-relaxed
+        lg:leading-normal
       ">
         <span class="mb-4 md:mb-8 block">---></span>
         <slot name="desc"></slot>
