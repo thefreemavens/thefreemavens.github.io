@@ -37,7 +37,7 @@
             <span class="flex w-full h-full bg-black rounded-none scale-75 dark:bg-white" />
           </div>
           <p class="text-base xl:text-lg">
-            Knowledge base you can use and apply in your life. Unlike information that is "good to know" and that you have no real-life use for. 
+            Knowledge base you can use and apply in your life. Unlike information that is "good to know" and has no real-life use. 
             Know the immutable laws of the universe and you shall know thyself.
           </p>
           <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
@@ -217,31 +217,31 @@
     </AppSection>
 
     <!-- Knowledge -->
-    <AppSection>
+    <!-- <AppSection>
       <template #title>Knowledge</template>
       <template #desc>
         Knowledge base you can use and apply it in your life. Read Docs 
         <sup class="inline-block text-sm relative -top-3 start-1">🡵</sup>
       </template>
-    </AppSection>
+    </AppSection> -->
 
     <!-- Lessons -->
-    <AppSection>
+    <!-- <AppSection>
       <template #title>Lessons</template>
       <template #desc>
         Interactive and well thought out organization for optimal and effective learning. View Lessons 
         <sup class="inline-block text-sm relative -top-3 start-1">🡵</sup>
       </template>
-    </AppSection>
+    </AppSection> -->
 
     <!-- Challanges -->
-    <AppSection>
+    <!-- <AppSection>
       <template #title>Challanges</template>
       <template #desc>
         Challanges to track your progress and level of undersatnding. View Challanges 
         <sup class="inline-block text-sm relative -top-3 start-1">🡵</sup>
       </template>
-    </AppSection>
+    </AppSection> -->
 
     <!-- Products -->
     <!-- <section class="">
@@ -258,13 +258,17 @@
     </section> -->
 
     <!-- TLDR -->
-    <AppSection>
+    <AppSection layout="grid3">
       <template #title>TL;DR</template>
       <template #desc>
-        You've been kept in the dark for far too long.
+        The Matrix really does have you. You want to escape it but don't know how. Until now, when you have found all the knowledge and tools necessary to not only escape the Matrix, but actually own it.
+        <!-- You've been kept in the dark for far too long. A very imprtant body of knowledge was hidden from you but this can be changed if you choose to and are curious enough. 
+          This Occult (hidden) Knwoledge has the potential to free your mind from all mental cages and dogmatic beliefs. In addition and collectively, this body of knowledge will transform the current state of humanity from salvery to true
+          freedom, if we choose to learn and act on it. -->
+        
         <sup class="inline-block text-sm relative -top-3 start-1">🡵</sup>
       </template>
-      <div class="grid grid-cols-2 gap-8">
+      <!-- <div class="grid grid-cols-2 gap-8">
         <div class="col-start-2">
         <p class="mb-4">
           A very imprtant body of knowledge was hidden from you but this can be changed if you choose to and are curious enough. 
@@ -275,7 +279,7 @@
           freedom, if we choose to learn and act on it.
         </p>
         </div>
-      </div>
+      </div> -->
     </AppSection>
 
     <!-- TLDR -->
