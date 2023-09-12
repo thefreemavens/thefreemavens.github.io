@@ -40,7 +40,7 @@ export default <Partial<Config>>{
     fontFamily: {
       'body': ['Inter'],
       'sans': [ 'Inter'],
-      'mono': ['Fragment Mono', 'SFMono-Regular'],
+      'mono': ['Victor Mono', 'SFMono-Regular'],
       // 'serif': ['ui-serif', 'Georgia'],
       // 'display': ['Major Mono Display'],
     }

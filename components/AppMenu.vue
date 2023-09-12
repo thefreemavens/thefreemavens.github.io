@@ -139,11 +139,11 @@ const menuItems2 = ref([
     slug: 'principles',
     url: '/principles'
   },
-  // {
-  //   title: '#NoConsent',
-  //   slug: 'natural-law',
-  //   url: '/natural-law'
-  // },
+  {
+    title: 'Marketplace',
+    slug: 'marketplace',
+    url: '/market'
+  },
   // {
   //   title: '#Initiation',
   //   slug: 'initiation',
