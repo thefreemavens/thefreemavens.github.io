@@ -6,15 +6,15 @@
         Marketspace
       </template>
       <template #desc>
-        A space for products and services that help promotes the body of knowledge of Natural Law, objective morality, absolute freedom and selfless love.
+        A space for us all to buy, sell, trade and offer products and services that help promotes the body of knowledge of Natural Law, objective morality, absolute freedom and selfless love.
         <!-- Your fruits of creativity and productivity shared with people that understand how true markets can and should be. -->
       </template>
     </AppSection>
 
-    <section class="mx-4 grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div v-for="(product, index) in products" :key="index" class="relative">
-        <h2 class="font-mono text-xs tracking-wider absolute top-1 right-2">{{ product.id }}</h2>
-        <img :src="baseUrl + product.url">
+    <section class="mx-4 grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div v-for="(product, index) in products" :key="index" class="relative overflow-hidden cursor-pointer">
+        <h2 class="font-mono text-xs tracking-wider absolute z-10 top-1 right-2">{{ product.id }}</h2>
+        <img :src="baseUrl + product.url" class="hover:scale-105 transition-all duration-200 ease-in-out">
       </div>
     </section>
   </main>
