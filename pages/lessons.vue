@@ -3,38 +3,27 @@
 
     <AppSection>
       <template #title>
-        Marketspace
+        Lessons
       </template>
       <template #desc>
-        A space for us all to buy, sell, trade and offer products and services that help promotes the body of knowledge of Natural Law, 
-        objective morality, absolute freedom and selfless love.
-        <!-- Your fruits of creativity and productivity shared with people that understand how true markets can and should be. -->
+        As a whole, the body of knowledge presented here has the potential to save humanity from our
+        current state of slavery. 
       </template>
     </AppSection>
 
     <section class="mx-4">
       <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 lg:gap:8 xl:gap-9">
-        <li v-for="(product, index) in products" :key="index" class="relative overflow-hidden cursor-pointer">
-          <h2 class="font-mono text-xs tracking-wider absolute z-10 top-1 right-2">{{ product.id }}</h2>
-          <img :src="baseUrl + product.url" class="hover:scale-105 transition-all duration-200 ease-in-out">
-          <!-- <span
-            class="hover:scale-105 transition-all duration-200 ease-in-out bg-cover"
-            :style="{backgroundImage: `url(${baseUrl + product.url})`}"
-            /> -->
-          </li>
-          <li class="lg:col-start-2 font-mono text-xs px-4 py-2 border">
-            NOTE: All products listed are mockups for products which may or may not go into production.
-          </li>
+
       </ul>
     </section>
   </main>
 </template>
 
 <script setup>
-const baseUrl = './img/market/'
-const products = ref([
+// const baseUrl = './img/market/'
+const lessons = ref([
   {
-    id: 'TRNL-P01B',
+    id: 'TRNL-L00',
     title: 'Black Notebbok',
     slug: 'notebook',  
     url: 'tfm-notebook-angle-left-black.png.webp'

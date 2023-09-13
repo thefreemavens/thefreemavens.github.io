@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     families: {
       Inter: [400, 700, 900],
       'Victor Mono': [500]
+      // 'Victor Mono:ital': [500]
     }
   },
 })

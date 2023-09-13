@@ -96,11 +96,11 @@ const menuItems1 = ref([
     slug: 'home',
     url: '/'
   },
-  // {
-  //   title: 'Freemavenry',
-  //   slug: 'freemavenry',
-  //   url: '/freemavenry'
-  // },
+  {
+    title: 'Lessons',
+    slug: 'lessons',
+    url: '/lessons'
+  },
   // {
   //   title: 'Natural Law',
   //   slug: 'natural-law',
@@ -206,4 +206,15 @@ const menuItems4 = ref([
   //   url: '/initiation'
   // }
 ])
+
+onMounted(() => {
+
+  // Press ESC key to exit modal
+  document.body.addEventListener('keyup', (e) => {
+    if (e.key === 'Escape' && menu.value == true) {
+      menu.value = false
+    }
+  })
+
+})
 </script>

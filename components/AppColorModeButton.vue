@@ -19,7 +19,7 @@ const isDark = computed({
     <div class="flex relative">
       <button
         :class="{ 'rotate-[180deg]': isDark, 'rotate-0': !isDark }"
-        class="transition-transform duration-200 ease-out"
+        class="transition-transform duration-200 ease-out p-4 --bg-red/20"
         @click="isDark = !isDark"
       >
         <AppIcon name="CustomColorMode" class="w-4 h-4 text-black dark:text-white" />

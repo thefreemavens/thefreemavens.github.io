@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-4 border-t pt-8 pb-16 lg:pt-12 lg:pb-20">
+  <section class="mx-4 border-t pt-8 pb-8 lg:pt-12 lg:pb-20">
     <div
       :class="[layout == 'grid3' ? 'lg:grid-cols-3' : 'lg:grid-cols-2']"
       class="
@@ -24,9 +24,9 @@
         text-xl md:text-2xl lg:text-3xl
         mb-12
         border-b-0
-        lg:border-b
-        lg:pb-20
-        lg:leading-normal
+        md:border-b
+        md:pb-20
+        leading-normal md:leading-normal lg:leading-normal
       ">
         <span class="mb-4 md:mb-8 block">---></span>
         <slot name="desc"></slot>

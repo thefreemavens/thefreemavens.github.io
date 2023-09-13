@@ -57,7 +57,8 @@
               <polygon points="512,0 512,512 0,512"/>
             </svg>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
+          <p class="text-base xl:text-lg">
+            Interactive and well thought out organization for optimal and effective learning. View Lessons</p>
           <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
         </div>
       </NuxtLink>
@@ -75,7 +76,9 @@
               <polygon points="512,0 512,512 0,512"/>
             </svg>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
+          <p class="text-base xl:text-lg">
+            Challanges to track your learning progress and level of undersatnding.
+          </p>
           <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
         </div>
       </NuxtLink>
@@ -120,8 +123,9 @@
               </span>
             </span>
           </div>
-          <p>Community based marketplace with products and services you can buy, sell, trade or offer.</p>
-          <p>Example product mockups</p>
+          <p class="text-base xl:text-lg">
+            Community based marketplace with products and services you can buy, sell, trade or offer.
+          </p>
           <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
         </div>
       </NuxtLink>
@@ -167,7 +171,9 @@
             </span>
           </div>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis officia maiores, quia, nemo beatae velit sit accusamus, quibusdam voluptas nostrum aliquid.</p>
+          <p class="text-base xl:text-lg">
+            Tools, techniques and tips you can use to "Exit the Matrix", the right way.
+          </p>
           <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
         </div>
       </NuxtLink>
