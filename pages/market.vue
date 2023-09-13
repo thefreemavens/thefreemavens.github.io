@@ -37,91 +37,91 @@ const products = ref([
     id: 'TRNL-P01B',
     title: 'Black Notebbok',
     slug: 'notebook',  
-    url: 'tfm-notebook-angle-left-black.png.webp'
+    url: 'tfm-notebook-angle-left-black.webp'
   },
   {
     id: 'TRNL-P01W',
     title: '',
     slug: '',  
-    url: 'tfm-notebook-angle-left-white.png.webp'
+    url: 'tfm-notebook-angle-left-white.webp'
   },
   {
     id: 'TRNL-P02B',
     title: '',
     slug: '',  
-    url: 'tfm-mousepad-angle-black.png.webp'
+    url: 'tfm-mousepad-angle-black.webp'
   },
   {
     id: 'TRNL-P02W',
     title: '',
     slug: '',  
-    url: 'tfm-mousepad-top-black.png.webp'
+    url: 'tfm-mousepad-top-white.webp'
   },
   // {
   //   title: '',
   //   slug: '',  
-  //   url: 'tfm-mousepad-angle-float-black.png.webp'
+  //   url: 'tfm-mousepad-angle-float-black.webp'
   // },
   {
     id: 'TRNL-P00B',
     title: '',
     slug: '',  
-    url: 'tfm-wristband-double-black-white.png.webp'
+    url: 'tfm-wristband-double-black-white.webp'
   },
   {
     id: 'TRNL-P00W',
     title: '',
     slug: '',  
-    url: 'tfm-wristband-trio-black-white-gray-float.png.webp'
+    url: 'tfm-wristband-trio-black-white-gray-float.webp'
   },
   {
     id: 'TRNL-P03B',
     title: 'Hoodie',
     slug: 'hoodie',
-    url: 'tfm-hoodie-black-nl-new-black.png.webp'
+    url: 'tfm-hoodie-black-nl-new-black.webp'
   },
   {
     id: 'TRNL-P03W',
     title: '',
     slug: '',  
-    url: 'tfm-hoodie-white-nl-new-black.png.webp'
+    url: 'tfm-hoodie-white-nl-new-black.webp'
   },
   {
     id: 'TRNL-P04B',
     title: '',
     slug: '',  
-    url: 'tfm-tshirt-black-new-black.png.webp'
+    url: 'tfm-tshirt-black-new-black.webp'
   },
   {
     id: 'TRNL-P04W',
     title: '',
     slug: '',  
-    url: 'tfm-tshirt-white-new-black.png.webp'
+    url: 'tfm-tshirt-white-new-black.webp'
   },
   // {
   //   title: '',
   //   slug: '',  
-  //   url: 'tfm-wristband-mucho.png.webp'
+  //   url: 'tfm-wristband-mucho.webp'
   // },
   // {
   //   title: '',
   //   slug: '',  
-  //   url: 'tfm-wristband-single-black-float.png.webp'
+  //   url: 'tfm-wristband-single-black-float.webp'
   // },
   // {
   //   title: '',
   //   slug: '',  
-  //   url: 'tfm-wristband-single-black.png.webp'
+  //   url: 'tfm-wristband-single-black.webp'
   // },
   // {
   //   title: '',
   //   slug: '',  
-  //   url: 'tfm-wristband-single-white-float.png.webp'
+  //   url: 'tfm-wristband-single-white-float.webp'
   // },
   // {
   //   title: '',
   //   slug: '',  
-  //   url: 'tfm-wristband-trio-black-white-white.png.webp'
+  //   url: 'tfm-wristband-trio-black-white-white.webp'
   // },
 ])
 </script>
