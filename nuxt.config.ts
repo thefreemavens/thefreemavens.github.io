@@ -9,6 +9,7 @@ export default defineNuxtConfig({
   ],
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
+    viewer: false
   },
   colorMode: {
     classSuffix: ''
