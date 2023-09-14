@@ -101,11 +101,16 @@ const menuItems1 = ref([
     slug: 'lessons',
     url: '/lessons'
   },
-  // {
-  //   title: 'Natural Law',
-  //   slug: 'natural-law',
-  //   url: '/natural-law'
-  // },
+  {
+    title: 'Challenges',
+    slug: 'challenges',
+    url: '/challenges'
+  },
+  {
+    title: 'Marketplace',
+    slug: 'marketplace',
+    url: '/market'
+  },
   // {
   //   title: '#NoConsent',
   //   slug: 'natural-law',
@@ -138,11 +143,6 @@ const menuItems2 = ref([
     title: 'The Principles',
     slug: 'principles',
     url: '/principles'
-  },
-  {
-    title: 'Marketplace',
-    slug: 'marketplace',
-    url: '/market'
   },
   // {
   //   title: '#Initiation',
