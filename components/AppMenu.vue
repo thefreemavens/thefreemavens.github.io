@@ -111,11 +111,11 @@ const menuItems1 = ref([
     slug: 'marketplace',
     url: '/market'
   },
-  // {
-  //   title: '#NoConsent',
-  //   slug: 'natural-law',
-  //   url: '/natural-law'
-  // },
+  {
+    title: 'PocketBase',
+    slug: 'pocketbase',
+    url: '/pb'
+  },
   // {
   //   title: '#Initiation',
   //   slug: 'initiation',
@@ -129,21 +129,21 @@ const menuItems2 = ref([
   //   slug: 'home',
   //   url: '/'
   // },
-  {
-    title: 'Freemavenry',
-    slug: 'freemavenry',
-    url: '/freemavenry'
-  },
-  {
-    title: 'Natural Law',
-    slug: 'natural-law',
-    url: '/natural-law'
-  },
-  {
-    title: 'The Principles',
-    slug: 'principles',
-    url: '/principles'
-  },
+  // {
+  //   title: 'Freemavenry',
+  //   slug: 'freemavenry',
+  //   url: '/freemavenry'
+  // },
+  // {
+  //   title: 'Natural Law',
+  //   slug: 'natural-law',
+  //   url: '/natural-law'
+  // },
+  // {
+  //   title: 'The Principles',
+  //   slug: 'principles',
+  //   url: '/principles'
+  // },
   // {
   //   title: '#Initiation',
   //   slug: 'initiation',
@@ -195,11 +195,11 @@ const menuItems4 = ref([
   //   slug: 'natural-law',
   //   url: '/natural-law'
   // },
-  {
-    title: '#NoConsent',
-    slug: 'natural-law',
-    url: '/natural-law'
-  },
+  // {
+  //   title: '#NoConsent',
+  //   slug: 'natural-law',
+  //   url: '/natural-law'
+  // },
   // {
   //   title: '#Initiation',
   //   slug: 'initiation',
