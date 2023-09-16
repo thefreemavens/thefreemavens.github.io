@@ -1,8 +1,29 @@
-# Nuxt 3 Minimal Starter
+# TFM
+
+The Free Mavens official website.
+
+## TODO:
+
+### Lessons
+- Needs review
+
+### Challanges
+- Needs review
+
+### Profile
+- Needs review
+
+### Form:
+- Needs review
+- Form verification
+- Form button loading state
+- Email responses
+
+## TFM is built with Nuxt 3
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+### Setup
 
 Make sure to install the dependencies:
 
@@ -17,7 +38,7 @@ pnpm install
 yarn install
 ```
 
-## Development Server
+### Development Server
 
 Start the development server on `http://localhost:3000`:
 
@@ -32,7 +53,7 @@ pnpm run dev
 yarn dev
 ```
 
-## Production
+### Production
 
 Build the application for production:
 

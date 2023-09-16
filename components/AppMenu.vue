@@ -35,7 +35,7 @@
 
         <section class="flex justify-start items-start w-full h-full">
           <ul class="block mt-4 w-full tracking-wide">
-            <li class="mb-2 text-xs font-bold uppercase sm:mb-4 lg:mb-6 text-grey-975 dark:text-white">Data</li>
+            <li class="mb-2 text-xs font-bold uppercase sm:mb-4 lg:mb-6 text-grey-975 dark:text-white">Main</li>
             <li
               v-for="(menuItem, index) in menuItems2" :key="index"
               class="py-2 my-0"
@@ -50,7 +50,7 @@
 
         <section class="flex justify-start items-start w-full h-full">
           <ul class="block mt-4 w-full tracking-wide">
-            <li class="mb-2 text-xs font-bold uppercase sm:mb-4 lg:mb-6 text-grey-975 dark:text-white">Join</li>
+            <li class="mb-2 text-xs font-bold uppercase sm:mb-4 lg:mb-6 text-grey-975 dark:text-white">Members</li>
             <li
               v-for="(menuItem, index) in menuItems3" :key="index"
               class="py-2 my-0"
@@ -66,7 +66,7 @@
 
         <section class="flex justify-start items-start w-full h-full">
           <ul class="block mt-4 w-full tracking-wide">
-            <li class="mb-2 text-xs font-bold uppercase sm:mb-4 lg:mb-6 text-grey-975 dark:text-white">Misc</li>
+            <li class="mb-2 text-xs font-bold uppercase sm:mb-4 lg:mb-6 text-grey-975 dark:text-white">Market</li>
             <li
               v-for="(menuItem, index) in menuItems4" :key="index"
               class="py-2 my-0"
@@ -95,6 +95,14 @@ const menuItems1 = ref([
     title: 'Home',
     slug: 'home',
     url: '/'
+  }
+])
+
+const menuItems2 = ref([
+{
+    title: 'Knowledge Base',
+    slug: 'knowledge-base',
+    url: '/kb'
   },
   {
     title: 'Lessons',
@@ -107,28 +115,10 @@ const menuItems1 = ref([
     url: '/challenges'
   },
   {
-    title: 'Marketplace',
-    slug: 'marketplace',
-    url: '/market'
+    title: 'Tools',
+    slug: 'tools',
+    url: '/tools'
   },
-  {
-    title: 'PocketBase',
-    slug: 'pocketbase',
-    url: '/pb'
-  },
-  // {
-  //   title: '#Initiation',
-  //   slug: 'initiation',
-  //   url: '/initiation'
-  // }
-])
-
-const menuItems2 = ref([
-  // {
-  //   title: 'Home',
-  //   slug: 'home',
-  //   url: '/'
-  // },
   // {
   //   title: 'Freemavenry',
   //   slug: 'freemavenry',
@@ -180,6 +170,11 @@ const menuItems3 = ref([
 ])
 
 const menuItems4 = ref([
+  {
+    title: 'Marketspace',
+    slug: 'marketspace',
+    url: '/marketspace'
+  }
   // {
   //   title: 'Home',
   //   slug: 'home',

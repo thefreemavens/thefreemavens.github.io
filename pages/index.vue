@@ -29,7 +29,7 @@
       border-t
     ">
       <!-- Knowledge -->
-      <NuxtLink to="/">
+      <NuxtLink to="/kb">
         <div class="relative pb-4 group group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Knowledge</h3>
           <div class="relative my-6 aspect-square bg-black/5 dark:bg-white/5">
@@ -45,7 +45,7 @@
       </NuxtLink>
 
       <!-- Lessons -->
-      <NuxtLink to="/">
+      <NuxtLink to="/lessons">
         <div class="pb-4 group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Lessons</h3>
           <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
@@ -64,7 +64,7 @@
       </NuxtLink>
 
       <!-- Challanges -->
-      <NuxtLink to="/">
+      <NuxtLink to="/challenges">
         <div class="pb-4 group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Challanges</h3>
           <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
@@ -84,7 +84,7 @@
       </NuxtLink>
 
       <!-- Products -->
-      <NuxtLink to="/">
+      <NuxtLink to="/marketspace">
         <div class="pb-4 group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Products</h3>
           <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
@@ -131,7 +131,7 @@
       </NuxtLink>
 
       <!-- Tools -->
-      <NuxtLink to="/">
+      <NuxtLink to="/tools">
         <div class="pb-4 group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Tools</h3>
           <div class="relative my-6 aspect-square bg-black/5 dark:bg-white/5" >
@@ -309,6 +309,7 @@
     <!-- Dev Notes -->
     <section class="grid grid-cols-2 gap-6 mx-4 mb-8 lg:grid-cols-4">
       <p>TLTR;</p>
+      <p>Reprogram yourself. The right way.</p>
       <p>Become a founding member</p>
       <p>De-Occult The Occult</p>
       <p>Not info, knowledge</p>

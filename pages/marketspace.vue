@@ -14,6 +14,9 @@
 
     <section class="mx-4">
       <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 lg:gap:8 xl:gap-9">
+        <li class="lg:col-start-2 font-mono text-xs px-4 py-2 border">
+          NOTE: All products listed are mockups for products which may or may not go into production.
+        </li>
         <li v-for="(product, index) in products" :key="index" class="relative overflow-hidden cursor-pointer">
           <h2 class="font-mono text-xs tracking-wider absolute z-10 top-1 right-2">{{ product.id }}</h2>
           <img :src="baseUrl + product.url" class="hover:scale-105 transition-all duration-200 ease-in-out">
@@ -21,9 +24,6 @@
             class="hover:scale-105 transition-all duration-200 ease-in-out bg-cover"
             :style="{backgroundImage: `url(${baseUrl + product.url})`}"
             /> -->
-          </li>
-          <li class="lg:col-start-2 font-mono text-xs px-4 py-2 border">
-            NOTE: All products listed are mockups for products which may or may not go into production.
           </li>
       </ul>
     </section>

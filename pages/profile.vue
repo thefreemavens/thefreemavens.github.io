@@ -10,17 +10,26 @@
     <AppSection v-if="currentUser" class="md:pb-0 lg:pb-0">
       <template #title>
         Hello,<br>
-        {{ currentUser.name }}
+        {{ currentUser.name.split(' ')[0] }}
       </template>
       <template #desc>
         Welcome back
       </template>
 
-      {{ currentUser }}
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 lg:gap:8 xl:gap-9">
+        <p class="lg:col-start-2 font-mono text-xs px-4 py-2 border">
+          Your profile page is in development, please come back soon.
+        </p>
+      </div>
+
+      <!-- <p class="block mb-4">
+        {{ $pb.authStore }}
+      </p> -->
+
 
     </AppSection>
 
-    <!-- IF NOT User -->
+    <!-- If not logged in show login form or signup form -->
     <AppSection v-else class="md:pb-0 lg:pb-0">
       <template #title>
         {{ loginMode ? "Login" : "Signup" }}
@@ -199,10 +208,9 @@ const login = async () => {
       .authWithPassword(email.value, password.value)
 
     // after the above you can also access the auth data from the authStore
-    console.log($pb.authStore.isValid)
-    console.log($pb.authStore.token)
-    console.log($pb.authStore.model)
-    // currentUser.value = pb.authStore.model
+    // console.log($pb.authStore.isValid)
+    // console.log($pb.authStore.token)
+    // console.log($pb.authStore.model)
   } catch (error) {
     alert(error.message)
   }
@@ -216,7 +224,7 @@ const signup = async () => {
       "emailVisibility": true,
       "password": password.value,
       "passwordConfirm": password.value,
-      "name": firstName.value + '' + lastName.value
+      "name": firstName.value + ' ' + lastName.value
     }
 
     const record = await $pb.collection('users').create(data);
