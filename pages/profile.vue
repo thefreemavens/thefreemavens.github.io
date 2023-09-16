@@ -1,21 +1,26 @@
 <template>
-  <main class="container mx-auto">
+  <main class="container mx-auto relative">
 
+    <!-- Login / Logout -->
+    <button v-if="currentUser" class="absolute right-4 top-4 text-white bg-black dark:text-black dark:bg-white px-2" type="button" @click="logout">
+      Logout
+    </button>
+
+    <!-- IF User-->
     <AppSection v-if="currentUser" class="md:pb-0 lg:pb-0">
       <template #title>
-        Hello, {{ currentUser.name }}
+        Hello,<br>
+        {{ currentUser.name }}
       </template>
       <template #desc>
         Welcome back
       </template>
 
-      <section class="mx-4 lg:-mt-16">
-        <button v-if="currentUser" class="text-white bg-black dark:text-black dark:bg-white px-2" type="button" @click="logout">
-          Logout
-        </button>
-      </section>
+      {{ currentUser }}
+
     </AppSection>
 
+    <!-- IF NOT User -->
     <AppSection v-else class="md:pb-0 lg:pb-0">
       <template #title>
         {{ loginMode ? "Login" : "Signup" }}
@@ -31,7 +36,6 @@
               id="join"
               ref="formElement"
               class="text-left"
-              @submit.prevent="login"
             >
               <!-- First Name -->
               <div v-if="!loginMode" class="form-group group">
@@ -92,6 +96,9 @@
               <!-- Submit Button -->
               <!-- :disabled="invalid" -->
               <button
+                v-if="loginMode"
+                @click="login"
+                type="button"
                 class="
                   w-full
                   text-center
@@ -106,7 +113,28 @@
                   uppercase
                   text-base
                 ">
-                {{ loginMode? 'Login' : 'Signup' }}
+                Login
+              </button>
+
+              <button
+                v-if="!loginMode"
+                @click="signup"
+                type="button"
+                class="
+                  w-full
+                  text-center
+                  mt-2
+                  bg-grey-975
+                  dark:bg-white
+                  text-white
+                  dark:text-grey-975
+                  py-2.5
+                  --rounded
+                  font-bold
+                  uppercase
+                  text-base
+                ">
+                Signup
               </button>
   
               <!-- Form Disclaimers -->
@@ -143,7 +171,6 @@
           </div>
         </div>
       </section>
-
     </AppSection>
 
   </main>
@@ -184,15 +211,15 @@ const login = async () => {
 const signup = async () => {
   try {
     const data = {
-      "username": `user_${self.crypto.randomUUID().split("-")[0]}`,
+      "username": `TFM${self.crypto.randomUUID().split("-")[0]}`,
       "email": email.value,
       "emailVisibility": true,
       "password": password.value,
       "passwordConfirm": password.value,
-      "name": firstName.value + lastName.value
-    };
+      "name": firstName.value + '' + lastName.value
+    }
 
-    const record = await pb.collection('users').create(data);
+    const record = await $pb.collection('users').create(data);
 
     await login();
   } catch (error) {
