@@ -167,11 +167,11 @@ const menuItems3 = ref([
   //   slug: 'natural-law',
   //   url: '/natural-law'
   // },
-  // {
-  //   title: '#NoConsent',
-  //   slug: 'natural-law',
-  //   url: '/natural-law'
-  // },
+  {
+    title: 'Profile',
+    slug: 'profile',
+    url: '/profile'
+  },
   {
     title: '#Initiation',
     slug: 'init',

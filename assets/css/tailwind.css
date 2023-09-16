@@ -9,6 +9,7 @@
 
   [type='text'],
   [type='email'],
+  [type='password'],
   textarea,
   select {
     @apply

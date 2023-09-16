@@ -3,11 +3,11 @@
     <div class="mx-4">
       <p>{{ authData }}</p>
       <p class="pb-8">{{ currentUser }}</p>
-      <button v-if="currentUser" class="bg-black dark:bg-white px-2 text-black dark:text-black" type="button" @click="logout">
+      <button v-if="currentUser" class="text-white bg-black dark:text-black dark:bg-white px-2" type="button" @click="logout">
         Logout
       </button>
       <div v-else>
-        <button class="bg-black dark:bg-white px-2 text-black dark:text-black" type="button" @click="logout">
+        <button class="text-white bg-black dark:text-black dark:bg-white px-2" type="button" @click="login">
         Login
         </button>
 
@@ -20,11 +20,12 @@
 
 
 <script setup>
-import PocketBase from 'pocketbase'
-const pb = new PocketBase('http://127.0.0.1:8090')
+const { $pb } = useNuxtApp()
+// import PocketBase from 'pocketbase'
+// const pb = new PocketBase('http://127.0.0.1:8090')
 // const pb = new PocketBase('https://truebase.pockethost.io')
 
-const authData = await pb.collection('users').authWithPassword('lexrex618@gmail.com', '12340987')
+const authData = await $pb.collection('users').authWithPassword('lexrex618@gmail.com', '12340987')
 
 const currentUser = ref('')
 // after the above you can also access the auth data from the authStore
@@ -33,7 +34,7 @@ const currentUser = ref('')
 // console.log(pb.authStore.model.id)
 
 const logout = () => {
-  pb.authStore.clear()
+  $pb.authStore.clear()
   currentUser.value = null
 }
 
@@ -68,7 +69,7 @@ const logout = () => {
   // const authData = ref('')
   
   onMounted(() => {
-    currentUser.value = pb.authStore.model
+    currentUser.value = $pb.authStore.model
     // const records = pb.collection('users').getFullList(100)
     // const getAuthData = pb.collection('users').authWithPassword('lexrex618@gmail.com', '12340987')
     // authData.value = getAuthData
