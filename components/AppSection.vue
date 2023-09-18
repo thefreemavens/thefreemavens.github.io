@@ -24,8 +24,8 @@
         text-xl md:text-2xl lg:text-3xl
         mb-12
         border-b-0
-        md:border-b
-        md:pb-20
+        lg:border-b
+        lg:pb-20
         tracking-tight
         leading-normal md:leading-normal lg:leading-normal
       ">

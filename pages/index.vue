@@ -306,31 +306,6 @@
       </h2>
     </section> -->
 
-    <!-- Dev Notes -->
-    <section class="grid grid-cols-2 gap-6 mx-4 mb-8 lg:grid-cols-4">
-      <p>TLTR;</p>
-      <p>Reprogram yourself. The right way.</p>
-      <p>Become a founding member</p>
-      <p>De-Occult The Occult</p>
-      <p>Not info, knowledge</p>
-      <p>Learn to say the forbidden word, no</p>
-      <p>Keep Calm and learn Natural Law</p>
-      <p>Learn to decode symbolos of the past and their true meaning</p>
-      <p>Equip youtself with true knowledge</p>
-      <p>concquer yout biggest fears</p>
-      <p>Learn what true love is</p>
-      <p>Understand the direct correlation between true freedom and morality</p>
-      <p>We can show you the path, but it's your walk</p>
-      <p>Don't be a moral relativisit</p>
-      <p>Open source and free</p>
-      <p>The Matrix was a documentry</p>
-      <p>Data that matters</p>
-      <p>Work is for slaves. Creation is for free men</p>
-      <p>Learn Natural Law with interactive lessons and intuitive challanges</p>
-      <p>Suitable for all generation</p>
-      <!-- <p>Incorporate Products</p> -->
-      <p>Community for exchange goods and support mind-like fellow beings</p>
-    </section>
   </main>
 </template>
 

@@ -3,7 +3,7 @@
 
     <AppSection>
       <template #title>
-        Free<br>Mavenry
+        Freemavenry
       </template>
       <template #desc>
         Discover your true power and learn how to use it
@@ -45,10 +45,6 @@
             of creators, not workers. Our roots lie in the search for eternal truth and the spread of knowledge in the areas of metaphysics, occultism, 
             spirituality, symbology and human consciousness. 
           </p>
-
-          <button>
-            Be A Maven
-          </button>
         </div>
         
         <hr class="col-span-1 lg:col-span-2 my-8">
@@ -65,9 +61,7 @@
         </div>
         
         <hr class="col-span-1 lg:col-span-2 my-8">
-        
         <h4 class="mb-6 font-bold text-4xl sm:text-5xl md:text-5xl lg:text-6xl tracking-tight">Principles</h4>
-
         <div class="">
           <p class="mb-4">
             <b class="me-1 block text-xl md:text-2xl pb-3 tracking-tight">Truth</b> 
@@ -84,9 +78,48 @@
             by charitable giving, voluntary effort and taking actions.  
           </p>
         </div>
+
+        <hr class="col-span-1 lg:col-span-2 my-8">
+        <h4 class="mb-6 font-bold text-4xl sm:text-5xl md:text-5xl lg:text-6xl tracking-tight">Be a Maven</h4>
+        <div class="">
+          <p class="mb-4">
+            <b class="me-1 block text-xl md:text-2xl pb-8 tracking-tight">Your lifetime journey starts here.</b> 
+            Becoming a Free Maven is like going on a journey. It requires will, dedication and courage. From joining as an Entered Maven, it typically takes 
+            a few months to become a Master Maven, with each of the three stages marked by a special acknowledgment.
+          </p>
+          <p class="mb-4 mt-8">
+            <!-- <b class="me-1 block text-xl md:text-2xl pb-3 tracking-tight">Love</b>  -->
+            The essential qualifications for admission are abiding by our collective principles, understanding the real Law of Attraction and 
+            applying it in real life.
+          </p>
+          <p class="mt-10 mb-8 text-xs font-mono px-4 py-2 border">
+            <!-- <b class="me-1 block text-xl md:text-2xl pb-3 tracking-tight">Relief</b>  -->
+            Membership is open to all men and women of integrity who can fulfill these essential qualifications.   
+          </p>
+
+          <button
+            @click="$router.push('/profile')"
+            type="button"
+            class="
+              w-full
+              text-center
+              mt-2
+              bg-grey-975
+              dark:bg-white
+              text-white
+              dark:text-grey-975
+              py-2.5 px-4
+              --rounded
+              font-bold
+              uppercase
+              text-sm lg:text-base
+            ">
+            Become a founding member
+          </button>
+        </div>
         
-        <!-- <hr class="col-span-1 lg:col-span-2 mt-4 mb-12"> -->
-        <!-- </div> -->
+      
+      <!-- End Grid -->
       </div>
     </AppSection>
 
@@ -99,6 +132,7 @@
 </template>
 
 <script setup>
+// const route = useRoute()
 // const baseUrl = './img/market/'
 </script>
 
