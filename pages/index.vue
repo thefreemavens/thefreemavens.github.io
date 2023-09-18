@@ -328,7 +328,7 @@
       <p>Work is for slaves. Creation is for free men</p>
       <p>Learn Natural Law with interactive lessons and intuitive challanges</p>
       <p>Suitable for all generation</p>
-      <p>Incorporate Products</p>
+      <!-- <p>Incorporate Products</p> -->
       <p>Community for exchange goods and support mind-like fellow beings</p>
     </section>
   </main>

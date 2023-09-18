@@ -84,6 +84,16 @@
       />
     </symbol>
 
+    <!-- 2. ICON: Triangle -->
+    <symbol id="Trinagle" fill-rule="nonzero" viewBox="0 0 512 512">
+      <path
+        fill="currentcolor"
+        rx="0" ry="0"
+        d="M507.471,472.305L256.500,37.000L5.000,472.611L507.471,472.305Z"
+      />
+    </symbol>
+
+
   </defs>
 </svg>
 

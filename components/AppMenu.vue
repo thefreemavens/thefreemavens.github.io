@@ -6,7 +6,7 @@
       bg-white/95
       dark:bg-black/95
       --border-t
-      my-12
+      my-10
       py-2
       backdrop-filter
       backdrop-blur-[10px]
@@ -95,7 +95,12 @@ const menuItems1 = ref([
     title: 'Home',
     slug: 'home',
     url: '/'
-  }
+  },
+  {
+    title: 'Freemavenry',
+    slug: 'freemavenry',
+    url: '/freemavenry'
+  },
 ])
 
 const menuItems2 = ref([
@@ -119,11 +124,6 @@ const menuItems2 = ref([
     slug: 'tools',
     url: '/tools'
   },
-  // {
-  //   title: 'Freemavenry',
-  //   slug: 'freemavenry',
-  //   url: '/freemavenry'
-  // },
   // {
   //   title: 'Natural Law',
   //   slug: 'natural-law',

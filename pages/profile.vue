@@ -2,7 +2,7 @@
   <main class="container mx-auto relative">
 
     <!-- Login / Logout -->
-    <button v-if="currentUser" class="absolute right-4 top-4 text-white bg-black dark:text-black dark:bg-white px-2" type="button" @click="logout">
+    <button v-if="currentUser" class="absolute right-4 top-4 rounded-sm uppercase font-bold text-xs px-2 py-1 text-white bg-black dark:text-black dark:bg-white" type="button" @click="logout">
       Logout
     </button>
 
@@ -44,7 +44,7 @@
             <form
               id="join"
               ref="formElement"
-              class="text-left"
+              class="text-left relative"
             >
               <!-- First Name -->
               <div v-if="!loginMode" class="form-group group">
@@ -147,36 +147,30 @@
               </button>
   
               <!-- Form Disclaimers -->
-              <span class="text-xs flex mt-1.5">
+              <span class="text-xs flex mt-2">
                 <span class="block w-3.5 h-3.5 me-2">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                     <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 00-5.25 5.25v3a3 3 0 00-3 3v6.75a3 3 0 003 3h10.5a3 3 0 003-3v-6.75a3 3 0 00-3-3v-3c0-2.9-2.35-5.25-5.25-5.25zm3.75 8.25v-3a3.75 3.75 0 10-7.5 0v3h7.5z" clip-rule="evenodd" />
                   </svg>
                 </span>
-  
                 All applications are kept secure and private.
               </span>
     
+              <button
+                type="button"
+                @click="loginMode = !loginMode"
+                class="
+                  absolute -bottom-0.5 right-0
+                  border-b border-transparent hover:border-black dark:hover:border-white
+                  pb-0.5
+                  text-center
+                  font-bold
+                  uppercase
+                  text-xs
+              ">
+                {{ loginMode? 'Signup' : 'Login' }}
+              </button>
             </form>
-            <button
-              type="button"
-              @click="loginMode = !loginMode"
-              class="
-                w-1/2
-                text-center
-                mt-2
-                bg-grey-975
-                dark:bg-white
-                text-white
-                dark:text-grey-975
-                py-2.5
-                --rounded
-                font-bold
-                uppercase
-                text-base
-            ">
-              {{ loginMode? 'Signup' : 'Login' }}
-            </button>
           </div>
         </div>
       </section>

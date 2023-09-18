@@ -4,7 +4,7 @@
       :class="[layout == 'grid3' ? 'lg:grid-cols-3' : 'lg:grid-cols-2']"
       class="
         grid
-        grid-cols-1 md:grid-cols-2
+        grid-cols-1 lg:grid-cols-2
         gap-8
     ">
       <!-- :class="[layout == 'grid3' ? 'lg:col-span-1' : 'lg:grid-cols-1']" -->
@@ -26,6 +26,7 @@
         border-b-0
         md:border-b
         md:pb-20
+        tracking-tight
         leading-normal md:leading-normal lg:leading-normal
       ">
         <span class="mb-4 md:mb-8 block">---></span>
