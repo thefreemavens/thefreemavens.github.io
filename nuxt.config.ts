@@ -3,10 +3,14 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
   modules: [
+    '@nuxt/content',
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts'
   ],
+  content: {
+    documentDriven: false
+  },
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
     viewer: false
