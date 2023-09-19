@@ -26,6 +26,7 @@ html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto}.lenis.lenis-smo
 
 <script setup lang="ts">
 // const menu = useMenu()
+
 useHead({
   title: 'The Free Mavens',
   meta: [

@@ -1,0 +1,40 @@
+---
+title: Human Nature
+---
+
+<p class="emp">
+Human nature is neither inherently good, nor bad. Instead, we should consider the operating conditions, and the environment in which human beings exist, that influence their behaviour to a great extent; thus, creating the current human condition.
+</p>
+
+What is the nature of a computer? – To compute information; which is nor good, nor bad.
+
+ Human nature is to take in information, process it, and output in the form of behaviour. Much like a computer, human beings are programmable.
+
+Similar to a computer, if a human has a bad "file-system format" (conditions during a child's formative ears), a bad “operating system” (culture / environment), and bad “software programs” (erroneous, rigid, and dogmatic beliefs), their “output” (behaviour) onto the “screen” (life) will also be bad. Therefore, these people will contribute to deteriorating conditions on a mass scale, for themselves, and all other beings around them.
+
+The behaviour of any person will largely depend upon his or her programming; the quality of the information being taken in by them, which enables them to process and create efficiently.
+Garbage in → Garbage out / Quality in → Quality out
+
+---
+
+**Knowledge (or lack thereof):**
+Available information – This constitutes potential knowledge that may be generated,
+processed, understood, and acted upon by individuals.
+
+**Understanding (or lack thereof):**
+Decision-making process – These processes take place in the mind and are chosen by each
+individual based upon available information.
+
+**Wisdom (or lack thereof):**  
+Human behaviour – Each individual’s behaviour is based upon the quality of their decision-
+making processes. Which are based upon the quality of their available information.
+
+Wisdom is not the same as knowledge or understanding.
+
+Wisdom is either action, or inaction, always. It is knowledge and understanding which has
+been applied. “Knowledge is knowing a tomato is a fruit, wisdom is not putting it in a fruit
+salad.” – Miles Kington, English journalist
+
+**Generated Result (order or chaos):**
+Manifested reality – The quality of the condition which manifests in any society is based upon
+ 

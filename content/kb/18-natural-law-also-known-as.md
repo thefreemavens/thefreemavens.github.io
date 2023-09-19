@@ -1,0 +1,23 @@
+---
+title: Natural Law Also Known As...
+---
+
+<!-- <p class="emp"> -->
+<!-- </p> -->
+Natural Law has had many different names in many different cultures and traditions
+throughout the world, during different times in history. Some examples are:
+
+## Law of Cause and Effect:
+- “Effect invariably follows cause.”
+- “For every action, there exists an equal and opposing reaction.”
+
+## Law of Attraction:
+- “The energy you emit is the energy you attract.”
+- “Energy flows where attention goes.”
+- “As you think, feel, and act – so you shall be.”
+
+## Karmic Law or Moral Law:
+- “You reap what you sow.”
+
+## Golden Rule:
+- “Do not do to others as you would prefer not to have done to you.”

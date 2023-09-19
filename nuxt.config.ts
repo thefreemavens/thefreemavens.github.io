@@ -9,8 +9,14 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts'
   ],
   content: {
-    documentDriven: false
-  },
+    documentDriven: false,
+    watch: {
+      ws: {
+        port: 4000,
+        showUrl: true
+        }
+      }
+    },
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
     viewer: false
