@@ -105,9 +105,9 @@ const menuItems1 = ref([
 
 const menuItems2 = ref([
 {
-    title: 'Knowledge Base',
-    slug: 'knowledge-base',
-    url: '/kb'
+    title: 'Knowledge',
+    slug: 'knowledge',
+    url: '/knowledge'
   },
   {
     title: 'Lessons',
