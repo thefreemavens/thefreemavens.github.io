@@ -4,6 +4,11 @@ import type { Config } from 'tailwindcss'
 export default <Partial<Config>>{
   darkMode: 'class',
   theme: {
+    extend: {
+      fontSize: {
+        '2xs': ['10px', '14px']
+      }
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',

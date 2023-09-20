@@ -41,6 +41,6 @@
   .content p {
     @apply
       text-sm md:text-base
-      leading-relaxed py-4
+      leading-relaxed md:leading-relaxed py-4
   }
 }

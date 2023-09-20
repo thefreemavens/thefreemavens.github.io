@@ -11,8 +11,11 @@
       </li>
     </ul>
 
-    <span class="flex justify-center items-center w-full h-36 text-xs bg-black/10">
-      Adspace
+    <span
+      class="flex justify-center items-center w-full aspect-video text-xs bg-black/10 dark:bg-white/10 bg-center  bg-cover rounded-sm"
+      style="background-image: url('/img/market/tfm-notebook-angle-left-white.webp');"
+    >
+      <!-- Demo Adspace -->
     </span>    
   </div>
 </template>

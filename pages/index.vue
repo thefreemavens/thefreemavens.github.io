@@ -29,7 +29,7 @@
       border-t
     ">
       <!-- Knowledge -->
-      <NuxtLink to="/kb">
+      <NuxtLink to="/knowledge">
         <div class="relative pb-4 group group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Knowledge</h3>
           <div class="relative my-6 aspect-square bg-black/5 dark:bg-white/5">
