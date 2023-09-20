@@ -4,6 +4,7 @@
 
 /* Base */
 @layer base {
+  html { @apply scroll-smooth}
   /* Forms */
   .form-group { @apply text-left mb-3 relative}
   .form-group .error { @apply text-sm}
@@ -39,6 +40,7 @@
   /* Content */
   .content p {
     @apply
+      text-sm md:text-base
       leading-relaxed py-4
   }
 }

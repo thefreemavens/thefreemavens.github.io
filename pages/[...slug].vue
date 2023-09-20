@@ -13,22 +13,22 @@
           <ContentDoc v-slot="{ doc }">
             <article>
               <div class="flex pt-2 w-full text-sm">
-                <span class="flex-1">---></span>
-                <span class="flex-1 font-mono"> 0{{ doc.index }}</span>
+                <span class="flex-1 font-mono">P / {{ doc.index? doc.index : '--' }}</span>
+                <span class="flex-1 rotate-180">---></span>
               </div>
               <!-- <span class="text-lg">->{{ doc.index }}</span> -->
-              <h1 class="py-6 text-3xl font-bold tracking-tight sm:py-8 md:py-12 lg:py-16 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">{{ doc.title }}</h1>
+              <h1 class="pb-6  pt-6 text-3xl font-bold tracking-tight sm:pb-8  md:pb-12 md:pt-8  lg:pb-16 lg:pt-10  sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">{{ doc.title }}</h1>
               <ContentRenderer :value="doc" />
             </article>
+            <nav>
+              <ContentPrevNext />
+            </nav>
           </ContentDoc>
         </main>
 
         <!-- Endbar -->
         <div class="col-span-12 lg:col-span-2 lg:col-start-11">
-          <span class="flex sticky top-16 justify-center items-center w-full h-36 text-xs bg-black/10">
-            Adspace
-          </span>
-          <!-- <ContentTable /> -->
+          <ContentTable />
         </div>
       </div>
     </div>
@@ -36,7 +36,6 @@
 </template>
 
 <script setup>
-
 const queryKnowledge = queryContent({ where: { _path: { $contains: 'kb' }}})
 const queryLessons = queryContent({ where: { _path: { $contains: 'lessons' }}})
 
