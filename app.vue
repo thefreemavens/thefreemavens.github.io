@@ -36,14 +36,14 @@ useHead({
     { name: 'theme-color', content: '#ffffff' },
     // Open Graph / Facebook
     { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://lexxrex.github.io/togw/' },
+    { property: 'og:url', content: 'https://tfm.github.io/togw/' },
     { property: 'og:title', content: 'The Free Mavens' },
     { property: 'og:description', content: 'DESCRIPTION' },
     { property: 'og:image', content: 'OG_IMAGE' },
 
     // Twitter
     { property: 'twitter:card', content: 'summary_large_image' },
-    { property: 'twitter:url', content: 'https://lexxrex.github.io/togw/' },
+    { property: 'twitter:url', content: 'https://tfm.github.io/togw/' },
     { property: 'twitter:title', content: 'The Free Mavens' },
     { property: 'twitter:description', content: 'DESCRIPTION' },
     { property: 'twitter:image', content: 'OG_IMAGE' },

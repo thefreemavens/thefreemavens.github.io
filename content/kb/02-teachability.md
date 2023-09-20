@@ -1,5 +1,6 @@
 ---
 title: Teachability
+index: 02
 # img: /images/posts/mentalism.jpg
 # alt: Mentalism
 ---

@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts'
   ],
   content: {
-    documentDriven: false,
+    documentDriven: true,
     watch: {
       ws: {
         port: 4000,

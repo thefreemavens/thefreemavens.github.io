@@ -9,10 +9,30 @@
         As a whole, the body of knowledge presented here has the potential to save humanity from our
         current state of slavery. 
       </template>
-    </AppSection>
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 md:gap-6 lg:gap:8 xl:gap-9">
+        <NuxtLink
+          to="/kb/01-before-we-begin"
+          class="
+            lg:col-start-2
+            py-2
+            rounded-sm
+            dark:bg-white
+            dark:text-black
+            bg-black text-white
+            uppercase
+            font-bold
+            text-sm
+            text-center
+            tracking-tight
+            [word-spacing:2px]
+        ">
+          View Knowledge Base
+        </NuxtLink>
+      </div>
+      </AppSection>
 
     <section class="mx-4">
-      <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 lg:gap:8 xl:gap-9">
+      <ul class="grid grid-cols-1 gap-4 lg:grid-cols-2 md:gap-6 lg:gap:8 xl:gap-9">
 
       </ul>
     </section>

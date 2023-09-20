@@ -1,5 +1,6 @@
 ---
 title: Before We Begin
+index: 01
 # path: before-we-begin
 # description: All is mental
 # img: /images/posts/mentalism.jpg

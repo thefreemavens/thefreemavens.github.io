@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Base: Forms */
+/* Base */
 @layer base {
+  /* Forms */
   .form-group { @apply text-left mb-3 relative}
   .form-group .error { @apply text-sm}
 
@@ -25,7 +26,6 @@
       focus-visible:border-black focus-visible:ring-black
       transform transition-all duration-200 ease-in-out;
   }
-
   label {
     @apply
       absolute flex items-center -z-[1]
@@ -35,5 +35,10 @@
       top-4 group-focus-within:top-5 peer-valid:top-5
       group-focus-within:-translate-y-full peer-valid:-translate-y-full
       transform transition-all duration-100 ease-linear;
+  }
+  /* Content */
+  .content p {
+    @apply
+      leading-relaxed py-4
   }
 }
