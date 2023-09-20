@@ -3,7 +3,7 @@
     <div class="mx-4">
       <div class="grid grid-cols-12 pt-4 --border-t">
         <!-- Startbar -->
-        <nav class="hidden col-span-12 lg:block lg:col-span-2 overflow-y-scroll max-h-[calc(100dvh-50px)] sticky top-16">
+        <nav class="hidden col-span-12 lg:block lg:col-span-2 overflow-y-scroll max-h-[calc(100dvh-80px)] sticky top-16">
           <ContentNavigation :navigation-tree="knowledge" />
           <ContentNavigation :navigation-tree="lessons" />
         </nav>
@@ -17,7 +17,7 @@
                 <span class="flex-1 rotate-180">---></span>
               </div>
               <!-- <span class="text-lg">->{{ doc.index }}</span> -->
-              <h1 class="pb-6  pt-6 text-3xl font-bold tracking-tight sm:pb-8  md:pb-12 md:pt-8  lg:pb-16 lg:pt-10  sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">{{ doc.title }}</h1>
+              <h1>{{ doc.title }}</h1>
               <ContentRenderer :value="doc" />
             </article>
             <nav>

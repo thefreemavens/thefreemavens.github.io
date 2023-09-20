@@ -7,9 +7,8 @@ index: 01
 # alt: Mentalism
 ---
 
-<p class="emp">
-This first section is called before we begin, and ‘begin’ is the key word here; this is an initiation into very deeply esoteric material, that has been hidden from humanity for decades.
-</p>
+
+<span class="desc">This first section is called before we begin, and ‘begin’ is the key word here. This Knowledge-Base is an initiation into very deeply esoteric material, that has been hidden from humanity for decades.</span>
 
 If you feel that the current human condition and life on Earth are tolerable just the way they are, and you are content with our global situation as it is now, then there is nothing for you to find here. The information you will encounter in this thesis is not new information. While it will most likely be new to most who read it, all of this information can be found in numerous different books, seminars, and lectures written by numerous different people.
 
