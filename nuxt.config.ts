@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
+  nitro: { preset: 'service-worker' },
   modules: [
     '@nuxt/content',
     '@nuxtjs/color-mode',

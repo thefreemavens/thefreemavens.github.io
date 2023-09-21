@@ -46,7 +46,7 @@
   }
   .content h2 {
     @apply
-      text-lg sm:text-lg md:text-xl
+      text-lg lg:text-xl
       font-bold
       pt-16 lg:pb-2
       -mt-12

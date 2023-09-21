@@ -1,8 +1,8 @@
 <template>
-  <main class="container mx-auto relative">
+  <main class="container relative mx-auto">
 
     <!-- Login / Logout -->
-    <button v-if="currentUser" class="absolute right-4 top-4 rounded-sm uppercase font-bold text-xs px-2 py-1 text-white bg-black dark:text-black dark:bg-white" type="button" @click="logout">
+    <button v-if="currentUser" class="absolute top-4 right-4 px-2 py-1 text-xs font-bold text-white uppercase bg-black rounded-sm dark:text-black dark:bg-white" type="button" @click="logout">
       Logout
     </button>
 
@@ -16,8 +16,8 @@
         Welcome back
       </template>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 lg:gap:8 xl:gap-9">
-        <p class="lg:col-start-2 font-mono text-xs px-4 py-2 border">
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 md:gap-6 lg:gap:8 xl:gap-9">
+        <p class="px-4 py-2 font-mono text-xs border lg:col-start-2">
           Your profile page is in development, please come back soon.
         </p>
       </div>
@@ -44,13 +44,13 @@
         {{ loginMode ? "Glad to see you again" : 'Please tell us a bit about yourself so that we may review your request for an application.¹' }}
       </template>
 
-      <section class="mx-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="md:col-start-2 lg:max-w-md">
+      <section class="">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <div class="lg:col-start-2 lg:max-w-md">
             <form
               id="join"
               ref="formElement"
-              class="text-left relative"
+              class="relative text-left"
             >
               <!-- First Name -->
               <div v-if="!loginMode" class="form-group group">
@@ -114,20 +114,7 @@
                 v-if="loginMode"
                 @click="login"
                 type="button"
-                class="
-                  w-full
-                  text-center
-                  mt-2
-                  bg-grey-975
-                  dark:bg-white
-                  text-white
-                  dark:text-grey-975
-                  py-2.5
-                  --rounded
-                  font-bold
-                  uppercase
-                  text-base
-                ">
+                class="py-2.5 mt-2 w-full text-base font-bold text-center text-white uppercase bg-grey-975 dark:bg-white dark:text-grey-975 --rounded">
                 Login
               </button>
 
@@ -135,25 +122,12 @@
                 v-if="!loginMode"
                 @click="signup"
                 type="button"
-                class="
-                  w-full
-                  text-center
-                  mt-2
-                  bg-grey-975
-                  dark:bg-white
-                  text-white
-                  dark:text-grey-975
-                  py-2.5
-                  --rounded
-                  font-bold
-                  uppercase
-                  text-base
-                ">
+                class="py-2.5 mt-2 w-full text-base font-bold text-center text-white uppercase rounded-sm bg-grey-975 dark:bg-white dark:text-grey-975 --rounded">
                 Signup
               </button>
   
               <!-- Form Disclaimers -->
-              <span class="text-xs flex mt-2">
+              <span class="flex mt-2 text-xs">
                 <span class="block w-3.5 h-3.5 me-2">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                     <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 00-5.25 5.25v3a3 3 0 00-3 3v6.75a3 3 0 003 3h10.5a3 3 0 003-3v-6.75a3 3 0 00-3-3v-3c0-2.9-2.35-5.25-5.25-5.25zm3.75 8.25v-3a3.75 3.75 0 10-7.5 0v3h7.5z" clip-rule="evenodd" />
@@ -165,15 +139,7 @@
               <button
                 type="button"
                 @click="loginMode = !loginMode"
-                class="
-                  absolute -bottom-0.5 right-0
-                  border-b border-transparent hover:border-black dark:hover:border-white
-                  pb-0.5
-                  text-center
-                  font-bold
-                  uppercase
-                  text-xs
-              ">
+                class="absolute right-0 -bottom-0.5 pb-0.5 text-xs font-bold text-center uppercase border-b border-transparent hover:border-black dark:hover:border-white">
                 {{ loginMode? 'Signup' : 'Login' }}
               </button>
             </form>

@@ -1,11 +1,16 @@
 <template>
   <div class="container mx-auto">
     <div class="mx-4">
-      <div class="grid grid-cols-12 pt-4 --border-t">
+      <div class="grid grid-cols-12 lg:pt-4 --border-t">
         <!-- Startbar -->
         <nav class="hidden col-span-12 lg:block lg:col-span-2 overflow-y-scroll max-h-[calc(100dvh-80px)] sticky top-16">
           <ContentNavigation :navigation-tree="knowledge" />
           <ContentNavigation :navigation-tree="lessons" />
+        </nav>
+
+        <nav class="top-0 col-span-12 py-2 mb-4 border-b-4 lg:hidden border-y">
+          <ContentNavigation :navigation-tree="knowledge" :show-children="false" />
+          <ContentNavigation :navigation-tree="lessons" :show-children="false" />
         </nav>
 
         <!-- Content -->
@@ -18,7 +23,7 @@
               </div>
               <!-- <span class="text-lg">->{{ doc.index }}</span> -->
               <h1>{{ doc.title }}</h1>
-              <ContentRenderer :value="doc" :key="$route.path" />
+              <ContentRenderer :value="doc" />
             </article>
             <nav>
               <ContentPrevNext />
