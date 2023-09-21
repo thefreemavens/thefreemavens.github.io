@@ -23,7 +23,7 @@
               </div>
               <!-- <span class="text-lg">->{{ doc.index }}</span> -->
               <h1>{{ doc.title }}</h1>
-              <ContentRenderer :value="doc" />
+              <ContentRenderer :value="doc" :key="$route.path" />
             </article>
             <nav>
               <ContentPrevNext />
