@@ -32,10 +32,16 @@
     <!-- If not logged in show login form or signup form -->
     <AppSection v-else class="md:pb-0 lg:pb-0">
       <template #title>
-        {{ loginMode ? "Login" : "Signup" }}
+        <template v-if="loginMode">
+          Login
+        </template>
+        <template v-else>
+          Application<br>Form
+        </template>
+        <!-- {{ loginMode ? "Login" : "Application Form" }} -->
       </template>
       <template #desc>
-        {{ loginMode ? "Glad to see you again" : 'Become a founding member' }}
+        {{ loginMode ? "Glad to see you again" : 'Please tell us a bit about yourself so that we may review your request for an application.¹' }}
       </template>
 
       <section class="mx-4">

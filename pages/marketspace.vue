@@ -18,7 +18,7 @@
           NOTE: All products listed are mockups for products which may or may not go into production.
         </li>
         <li v-for="(product, index) in clientProducts" :key="index" class="relative overflow-hidden cursor-pointer">
-          <h2 class="font-mono text-xs tracking-wider absolute z-10 bottom-2 left-3 dark:text-black">
+          <h2 class="font-mono text-2xs tracking-wider absolute z-10 bottom-2 left-3 dark:text-black">
             {{ product.puid }}
           </h2>
           <!-- <div @click="product.likes++" class="absolute bottom-1 right-2.5 z-10 text-xs font-mono flex items-center gap-0.5 rounded-sm pt-0.5 px-1 bg-black/0">

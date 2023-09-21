@@ -1,7 +1,9 @@
 <template>
-  <div class="grid grid-cols-2 mt-16 text-xs font-bold border-t mb-4">
-    <NuxtLink v-if="prev" :to="prev._path" class="border-t-1 pt-4 w-auto justify-self-start">{{ prev.title }}<span class="block pt-2">{{ arrowLeft }}</span></NuxtLink>
-    <NuxtLink v-if="next" :to="next._path" class="border-t-1 pt-4 w-auto text-right justify-self-end">{{ next.title }}<span class="block pt-2">--></span></NuxtLink>
+  <div class="grid grid-cols-2 mt-16 mb-4 text-xs font-bold border-t">
+    <NuxtLink v-if="prev" :to="prev._path" class="justify-self-start pt-4 w-auto border-t-1">{{ prev.title }}<span class="block pt-2">{{ arrowLeft }}</span></NuxtLink>
+    <div v-else />
+    <NuxtLink v-if="next" :to="next._path" class="justify-self-end pt-4 w-auto text-right border-t-1">{{ next.title }}<span class="block pt-2">--></span></NuxtLink>
+    <div v-else />
   </div>
 </template>
   

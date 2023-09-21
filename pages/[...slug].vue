@@ -13,12 +13,12 @@
           <ContentDoc v-slot="{ doc }">
             <article>
               <div class="flex pt-2 w-full text-sm">
-                <span class="flex-1 font-mono">P / {{ doc.index? doc.index : '--' }}</span>
+                <span class="flex-1 font-mono">{{ doc.id? doc.id : '--' }}</span>
                 <span class="flex-1 rotate-180">---></span>
               </div>
               <!-- <span class="text-lg">->{{ doc.index }}</span> -->
               <h1>{{ doc.title }}</h1>
-              <ContentRenderer :value="doc" />
+              <ContentRenderer :value="doc" :key="$route.path" />
             </article>
             <nav>
               <ContentPrevNext />
@@ -28,7 +28,7 @@
 
         <!-- Endbar -->
         <div class="col-span-12 lg:col-span-2 lg:col-start-11">
-          <ContentTable />
+          <ContentAside />
         </div>
       </div>
     </div>

@@ -22,7 +22,7 @@ const isDark = computed({
         class="transition-transform duration-200 ease-out p-2 --bg-red/20"
         @click="isDark = !isDark"
       >
-        <AppIcon name="CustomColorMode" class="w-[21px] h-[21px] text-black dark:text-white" />
+        <AppIcon name="CustomColorMode" class="w-[16px] h-[16px] text-black dark:text-white" />
       </button>
     </div>
   </ClientOnly>
