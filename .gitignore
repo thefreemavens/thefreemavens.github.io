@@ -27,3 +27,5 @@ pb
 pocketbase
 pb_data
 pb_migrations
+
+.deploy

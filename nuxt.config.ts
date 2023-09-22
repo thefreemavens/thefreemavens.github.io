@@ -5,10 +5,13 @@ const routes = globSync('./content/**/*.md')
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
+  app: {
+    baseURL: '/tfm-web/'
+  },
   // ssr: false,
   experimental: {
-    renderJsonPayloads: true,
-    payloadExtraction: true
+    renderJsonPayloads: false,
+    payloadExtraction: false
   },
   nitro: { 
     // preset: 'service-worker',
@@ -80,7 +83,7 @@ export default defineNuxtConfig({
     watch: {
       ws: {
         port: 4000,
-        // showUrl: trues
+        // showUrl: true
         }
       }
     },

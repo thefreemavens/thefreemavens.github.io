@@ -5,7 +5,7 @@ export default defineEventHandler(async (event) => {
   // Fetch all documents
   const docs = await serverQueryContent(event).find()
   const sitemap = new SitemapStream({
-    hostname: 'http://localhost:3000'
+    hostname: 'http://thefreemavens.github.io/tfm-web'
   })
 
   for (const doc of docs) {
