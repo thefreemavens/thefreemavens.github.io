@@ -1,5 +1,3 @@
-<script setup>
-</script>
 
 <template>
   <AppHeader />
@@ -9,20 +7,6 @@
   </PageContainer>
   <AppFooter/>
 </template>
-
-<style lang="css">
-body {
-  @apply
-    min-h-screen
-    text-black dark:text-white
-    bg-white dark:bg-black
-    selection:text-white dark:selection:text-black
-    selection:bg-black dark:selection:bg-white;
-  }
-  
-/* Lenis */
-/* html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto}.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}.lenis.lenis-stopped{overflow:hidden}.lenis.lenis-scrolling iframe{pointer-events:none} */
-</style>
 
 <script setup lang="ts">
 // const menu = useMenu()
@@ -73,3 +57,16 @@ useHead({
 
 </script>
 
+<style lang="postcss">
+body {
+  @apply
+    min-h-screen
+    text-black dark:text-white
+    bg-white dark:bg-black
+    selection:text-white dark:selection:text-black
+    selection:bg-black dark:selection:bg-white;
+  }
+  
+/* Lenis */
+/* html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto}.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}.lenis.lenis-stopped{overflow:hidden}.lenis.lenis-scrolling iframe{pointer-events:none} */
+</style>

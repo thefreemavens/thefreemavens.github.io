@@ -17,6 +17,8 @@
     "nuxt": "^3.7.3"
   },
   "dependencies": {
-    "pocketbase": "^0.18.0"
+    "glob": "^10.3.5",
+    "pocketbase": "^0.18.0",
+    "sitemap": "^7.1.1"
   }
 }
