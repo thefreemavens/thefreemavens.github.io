@@ -58,7 +58,7 @@
             </svg>
           </div>
           <p class="text-base xl:text-lg">
-            Interactive and well thought out organization for optimal and effective learning. View Lessons</p>
+            Organized and well thought out interactive lessons for optimal and effective learning.</p>
           <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
         </div>
       </NuxtLink>
