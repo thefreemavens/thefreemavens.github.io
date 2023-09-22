@@ -48,15 +48,19 @@
     @apply
       text-lg lg:text-xl
       font-bold
-      pt-16 lg:pb-2
+      pt-14 lg:pb-2
       -mt-12
   }
   .content p {
     @apply
     text-sm md:text-base
-    leading-relaxed md:leading-relaxed py-2
+    leading-relaxed md:leading-relaxed mt-2 mb-8
   }
-  .desc {
+  .content hr {
+    @apply
+      my-6;
+  }
+  .content .desc {
     @apply
       text-lg/normal sm:text-lg/normal md:text-xl/normal lg:text-2xl/normal xl:text-3xl/normal
       font-thin leading-normal block

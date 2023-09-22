@@ -26,6 +26,11 @@ body {
 
 <script setup lang="ts">
 // const menu = useMenu()
+const nuxtApp = useNuxtApp()
+
+nuxtApp.hook("page:finish", () => {
+   window.scrollTo(0, 0)
+})
 
 useHead({
   title: 'The Free Mavens',

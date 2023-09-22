@@ -3,7 +3,7 @@
     <div class="mx-4">
       <div class="grid grid-cols-12 lg:pt-4 --border-t">
         <!-- Startbar -->
-        <nav class="hidden col-span-12 lg:block lg:col-span-2 overflow-y-scroll max-h-[calc(100dvh-80px)] sticky top-16">
+        <nav class="hidden col-span-12 lg:block lg:col-span-2 overflow-y-scroll max-h-[calc(100dvh-80px)] sticky top-14">
           <ContentNavigation :navigation-tree="knowledge" />
           <ContentNavigation :navigation-tree="lessons" />
         </nav>

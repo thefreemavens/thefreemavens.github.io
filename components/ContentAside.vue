@@ -11,13 +11,21 @@
         </a>
       </li>
     </ul>
-
-    <!-- Adspace [DEMO] -->
+    
+    <div class="flex flex-col gap-2">
+    <!-- Adspace [DEMO Square] -->
     <span
-      class="flex justify-center items-center w-full text-xs bg-center bg-cover rounded-sm aspect-video bg-black/10 dark:bg-white/10"
-      style="background-image: url('/img/market/tfm-notebook-angle-left-white.webp');"
+      class="flex justify-center items-center w-full text-xs bg-center bg-cover rounded-sm aspect-square bg-black/10 dark:bg-white/10"
+      style="background-image: url('/img/market/tfm-tshirt-white-new-black.webp');"
     >
     </span>
+    <!-- Adspace [DEMO Video] -->
+      <span
+        class="flex justify-center items-center w-full text-xs bg-center bg-cover rounded-sm aspect-square bg-black/10 dark:bg-white/10"
+        style="background-image: url('/img/market/tfm-notebook-angle-left-black.webp');"
+      >
+      </span>
+    </div>
     
   </aside>
 </template>
