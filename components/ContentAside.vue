@@ -122,5 +122,5 @@
   //   url: 'tfm-wristband-trio-black-white-white.webp'
   // },
 ])
-  const product = products[Math.floor(Math.random()*products.length)];
+  // const product = products[Math.floor(Math.random()*products.length)];
 </script>

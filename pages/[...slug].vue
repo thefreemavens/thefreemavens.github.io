@@ -5,8 +5,8 @@
         <!-- Startbar -->
         <nav class="hidden col-span-12 lg:block lg:col-span-2 overflow-y-scroll max-h-[calc(100dvh-80px)] sticky top-14">
           <ContentNavigation :navigation-tree="knowledge" />
-          <ContentNavigation :navigation-tree="lessons" />
-          <ContentNavigation :navigation-tree="challenges" />
+          <ContentNavigation :navigation-tree="lessons" :show-children="false" />
+          <ContentNavigation :navigation-tree="challenges" :show-children="false" />
         </nav>
 
         <nav class="top-0 col-span-12 py-2 mb-4 border-b-4 lg:hidden border-y">
