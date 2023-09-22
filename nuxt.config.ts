@@ -5,21 +5,23 @@ const routes = globSync('./content/**/*.md')
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  app: {
-    baseURL: '/tfm-web/'
-  },
+  // app: {
+  //   baseURL: '/tfm-web/'
+  // },
   // ssr: false,
   experimental: {
-    renderJsonPayloads: false,
-    payloadExtraction: false
+    renderJsonPayloads: true,
+    payloadExtraction: true
   },
   nitro: { 
     // preset: 'service-worker',
     preset: 'static',
+    serveStatic: true,
     prerender: {
-      // crawlLinks: true,
+      crawlLinks: true,
       routes: [
         '/sitemap.xml',
+        ...routes
         // '/kb/_dir',
         // '/kb/intro',
         // '/kb/requirements-amd-the-role-of-knowledge',
@@ -68,7 +70,6 @@ export default defineNuxtConfig({
         // '/kb',
         // '/lessons/next',
         // '/challenges/next'
-        ...routes
       ]
     }
   },

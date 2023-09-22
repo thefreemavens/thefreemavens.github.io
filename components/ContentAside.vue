@@ -13,19 +13,12 @@
     </ul>
     
     <div class="flex flex-col gap-2">
-    <!-- Adspace [DEMO Square] -->
-    <!-- <span v-for="(product, index) in clientProducts" :key="index" class="relative overflow-hidden cursor-pointer"> -->
-    <span v-for="(product, index) in  products" :key="index"
-      class="flex justify-center items-center w-full text-xs bg-center bg-cover aspect-square bg-black/10 dark:bg-white/10"
-      :style="{ backgroundImage: `url(${ baseUrl + product.url})`}"
-    >
-    </span>
-    <!-- Adspace [DEMO Video] -->
-      <!-- <span
+    <!-- Adspace [DEMO Square with a random product] -->
+      <span 
         class="flex justify-center items-center w-full text-xs bg-center bg-cover aspect-square bg-black/10 dark:bg-white/10"
-        style="background-image: url('/img/market/tfm-notebook-angle-left-black.webp');"
-      >
-      </span> -->
+        :style="{ backgroundImage: `url(${ baseUrl + product.url})`}"
+        >
+      </span>
     </div>
     
   </aside>
@@ -33,10 +26,10 @@
 
 <script setup lang="ts">
   const { toc } = useContent()
-  const baseUrl = '../img/market/'
-
-  const products = ref([
-  {
+  const baseUrl = './../img/market/'
+  
+  const products = [
+    {
     puid: 'TRNL-P01B',
     title: 'The Black Notebbok',
     slug: 'notebook',  
@@ -121,6 +114,8 @@
   //   slug: '',  
   //   url: 'tfm-wristband-trio-black-white-white.webp'
   // },
-])
-  // const product = products[Math.floor(Math.random()*products.length)];
+  ]
+
+  const product = products[Math.floor(Math.random()*products.length)];
+
 </script>
