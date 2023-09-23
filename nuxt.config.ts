@@ -102,4 +102,9 @@ export default defineNuxtConfig({
       // 'Victor Mono:ital': [500]
     }
   },
+  // vue: {
+  //   compilerOptions: {
+  //     isCustomElement: (tag) => ['my-', 'ellipse'].some(prefix => tag.startsWith(prefix)),
+  //   },
+  // }
 })

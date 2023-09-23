@@ -4,13 +4,13 @@
       <div class="grid grid-cols-12 lg:pt-4 --border-t">
         <!-- Startbar -->
         <nav class="hidden col-span-12 lg:block lg:col-span-2 overflow-y-scroll max-h-[calc(100dvh-80px)] sticky top-14">
-          <ContentNavigation :navigation-tree="knowledge" />
-          <ContentNavigation :navigation-tree="lessons" :show-children="false" />
+          <!-- <ContentNavigation :navigation-tree="knowledge" /> -->
+          <ContentNavigation :navigation-tree="lessons" />
           <ContentNavigation :navigation-tree="challenges" :show-children="false" />
         </nav>
 
         <nav class="top-0 col-span-12 py-2 mb-4 border-b-4 lg:hidden border-y">
-          <ContentNavigation :navigation-tree="knowledge" :show-children="false" />
+          <!-- <ContentNavigation :navigation-tree="knowledge" :show-children="false" /> -->
           <ContentNavigation :navigation-tree="lessons" :show-children="false" />
           <ContentNavigation :navigation-tree="challenges" :show-children="false" />
         </nav>
@@ -20,8 +20,8 @@
           <ContentDoc v-slot="{ doc }">
             <article>
               <div class="flex pt-2 w-full text-sm">
-                <span class="flex-1 font-mono">{{ doc.id? doc.id : '--' }}</span>
-                <span class="flex-1 rotate-180">---></span>
+                <span class="flex-1 font-mono">{{ doc.id ? doc.cat + ' / ' + doc.id : '--' }}</span>
+                <!-- <span class="flex-1 rotate-180">-></span> -->
               </div>
               <!-- <span class="text-lg">->{{ doc.index }}</span> -->
               <h1>{{ doc.title }}</h1>
@@ -43,11 +43,11 @@
 </template>
 
 <script setup>
-const queryKnowledge = queryContent({ where: { _path: { $contains: 'kb' }}})
+// const queryKnowledge = queryContent({ where: { _path: { $contains: 'kb' }}})
 const queryLessons = queryContent({ where: { _path: { $contains: 'lessons' }}})
 const queryChallenges = queryContent({ where: { _path: { $contains: 'challenges' }}})
 
-const { data: knowledge } = await useAsyncData('knowledge', () => fetchContentNavigation(queryKnowledge))
+// const { data: knowledge } = await useAsyncData('knowledge', () => fetchContentNavigation(queryKnowledge))
 const { data: lessons } = await useAsyncData('lessons', () => fetchContentNavigation(queryLessons))
 const { data: challenges } = await useAsyncData('challenges', () => fetchContentNavigation(queryChallenges))
 
