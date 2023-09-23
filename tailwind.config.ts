@@ -51,5 +51,7 @@ export default <Partial<Config>>{
     }
   },
   plugins: [],
-  content: []
+  content: [
+    './content/**/*.md',
+  ]
 }

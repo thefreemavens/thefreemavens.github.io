@@ -11,7 +11,7 @@
       </template>
       <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 md:gap-6 lg:gap:8 xl:gap-9">
         <NuxtLink
-          to="/lessons/cover"
+          to="/lessons/main"
           class="
             lg:col-start-2
             py-2
