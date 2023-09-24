@@ -7,12 +7,14 @@
           <!-- <ContentNavigation :navigation-tree="knowledge" /> -->
           <ContentNavigation :navigation-tree="lessons" />
           <ContentNavigation :navigation-tree="challenges" :show-children="false" />
+          <ContentNavigation :navigation-tree="resources" :show-children="false" />
         </nav>
 
         <nav class="top-0 col-span-12 py-2 mb-4 border-b-4 lg:hidden border-y">
           <!-- <ContentNavigation :navigation-tree="knowledge" :show-children="false" /> -->
           <ContentNavigation :navigation-tree="lessons" :show-children="false" />
           <ContentNavigation :navigation-tree="challenges" :show-children="false" />
+          <ContentNavigation :navigation-tree="resources" :show-children="false" />
         </nav>
 
         <!-- Content -->
@@ -43,13 +45,13 @@
 </template>
 
 <script setup>
-// const queryKnowledge = queryContent({ where: { _path: { $contains: 'kb' }}})
 const queryLessons = queryContent({ where: { _path: { $contains: 'lessons' }}})
 const queryChallenges = queryContent({ where: { _path: { $contains: 'challenges' }}})
+const queryrResources = queryContent({ where: { _path: { $contains: 'resources' }}})
 
-// const { data: knowledge } = await useAsyncData('knowledge', () => fetchContentNavigation(queryKnowledge))
 const { data: lessons } = await useAsyncData('lessons', () => fetchContentNavigation(queryLessons))
 const { data: challenges } = await useAsyncData('challenges', () => fetchContentNavigation(queryChallenges))
+const { data: resources } = await useAsyncData('knowledge', () => fetchContentNavigation(queryrResources))
 
 useHead({
   title: 'The Free Mavens',
