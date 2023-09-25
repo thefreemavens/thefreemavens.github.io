@@ -1,5 +1,5 @@
 <template>
-  <div class="font-mono text-xs px-2 py-1 border leading-relaxed inline-block">
+  <div class="font-mono text-xs px-2 py-1 border leading-relaxed inline-block mb-8">
     TODO: <ContentSlot :use="$slots.default" unwrap="p" />
   </div>
 </template>
