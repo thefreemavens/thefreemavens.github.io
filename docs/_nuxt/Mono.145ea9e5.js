@@ -1,1 +1,0 @@
-import{r as o}from"./slot.bcdda91b.js";import{_ as t,o as n,c as r}from"./entry.dbaa827f.js";import"./node.b22fc9f5.js";const c={},s={class:"font-mono text-xs px-4 py-3 border leading-relaxed"};function _(e,a){return n(),r("div",s,[o(e.$slots,"default",{unwrap:"p"},void 0,!0)])}const f=t(c,[["render",_],["__scopeId","data-v-ec86975c"]]);export{f as default};
