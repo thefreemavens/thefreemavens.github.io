@@ -27,7 +27,8 @@
       </svg>
     </div>
     <NuxtLink to="/" @click="menu = false" class="ps-1 pe-3 py-3 --bg-red/20">
-      <AppLogotype class="w-[52px] h-auto" />
+      <AppIcon name="tfm" class="w-[52px] h-auto"/>
+      <!-- <AppLogotype class="w-[52px] h-auto" /> -->
     </NuxtLink>
 
     <!-- <h1 class="mx-4 text-2xl font-black">TFM</h1> -->
