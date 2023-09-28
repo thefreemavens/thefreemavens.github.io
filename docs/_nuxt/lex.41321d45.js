@@ -1,0 +1,1 @@
+import{_ as s,c as t,a as c,b as a,o,x as n}from"./entry.b81cf281.js";const r={},_={class:"container mx-auto relative"},i={class:"h-screen flex justify-center items-start"};function l(x,p){const e=n;return o(),t("div",_,[c("div",i,[a(e,{name:"lexrex",class:"absolute -top-[20px] w-10 h-[30px] z-50"})])])}const f=s(r,[["render",l]]);export{f as default};
