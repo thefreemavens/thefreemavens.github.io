@@ -6,8 +6,11 @@
           <AppIcon name="tfm-s" class="w-40 h-[40px]"/>
           <!-- <AppLogotype class="translate-y-[30%] w-full h-full opacity-100" /> -->
           <span class="font-mono col-start-3 col-span-2 text-2xs uppercase tracking-wider flex-1 text-right -mt-[3px]">
-            All Natural Rights Reserved @ 2023
-            <NuxtLink to="https://t.me/thefreemavens" target="_blank" class="block">Telegram</NuxtLink>
+            All Natural Rights Reserved <span class="hidden md:inline">@ All Times <span class="hidden lg:inline">@ All Cost</span></span>
+            <span class="flex justify-end gap-x-2">
+              <NuxtLink to="https://t.me/thefreemavens" target="_blank" class="">--> Telegram</NuxtLink>
+              <NuxtLink to="https://twitter.com/thefreemavens" target="_blank" class="">--> X</NuxtLink>
+            </span>
           </span>
           <!-- <AppLogomark class="w-24 h-24"/> -->
         <!-- </div> -->

@@ -8,18 +8,57 @@
         class="mb-24 flex flex-col col-span-6 col-start-1 text-5xl font-bold tracking-tighter leading-none xl:pe-36 sm:text-6xl md:text-7xl lg:text-8xl">
         Discover your true power and learn how to use it 
       </h1>
-        <!-- <AppIcon
-          name="Causality"
-          class="
-          mt-8 lg:mt-12
-          col-span-3 xl:col-span-2
-          col-start-4 xl:col-start-5
-          aspect-square
-          relative
-          w-full h-full
-          text-black dark:text-white
-        "/> -->
     </section>
+
+    <section class="relative mx-4 py-12 border-t">
+      <img src="/img/market/tfm-notebook-angle-left-white.webp">
+      <!-- <div class="w-full h-screen bg-cover block bg-origin-padding bg-[url('/img/market/tfm-notebook-angle-left-white.webp')]"> -->
+
+      <!-- </div> -->
+    </section>
+
+    <!-- Picons + Principles -->
+    <AppSection layout="grid3">
+      <template #title>
+        Picons
+      </template>
+      <template #desc>
+        Introducing <span class="font-bold">Picons</span> (<span class="italic">Principles + Icons</span>), 
+        open-source and free-to-use set of 8 icons symbolizing the great body of knowledge of Natural Law and the 8
+        immutable metaphisical principles of our universe<sup class="inline-block text-sm relative -top-3 start-1">🡵</sup>
+      </template>
+      <ul class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+        <li
+          v-for="(principle, index) in principles" :key="index"
+          ref="el"
+          class="
+            group
+            --bg-black
+            flex justify-center items-center
+            aspect-square
+            cursor-pointer
+            rounded-[0%] hover:rounded-[0%]
+            --bg-white --dark:bg-black
+            --hover:bg-black --dark:hover:bg-white
+            transition-all duration-300 ease-in-out
+        ">
+          <AppIcon
+            :name="principle.title"
+            class="
+            text-black dark:text-white
+            group-hover:opacity-0
+            w-full h-full
+            p-[19.1%]
+            transition-all duration-300 ease-in-out
+          "/>
+            <!-- :class="principle.color" -->
+          <h3
+            class="absolute text-5xl text-black opacity-0 transition-opacity duration-300 ease-in-out scale-90 group-hover:opacity-100 dark:text-white">
+            {{ principle.title}}<sup class="relative -top-6 text-xl start-0.5">{{ principle.id }}</sup>
+          </h3>
+        </li>
+      </ul>
+    </AppSection>
 
     <!-- Features -->
     <section class="
@@ -178,49 +217,6 @@
         </div>
       </NuxtLink>
     </section>
-
-    <!-- Picons + Principles -->
-    <AppSection layout="grid3">
-      <template #title>
-        Picons
-      </template>
-      <template #desc>
-        Introducing <span class="font-bold">Picons</span> (<span class="italic">Principles + Icons</span>), 
-        a set of eight thoughtout and crafted open-source and free-to-use icons that visually represnt the eight
-        immutable principles of Natural Law<sup class="inline-block text-sm relative -top-3 start-1">🡵</sup>
-      </template>
-      <ul class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-        <li
-          v-for="(principle, index) in principles" :key="index"
-          ref="el"
-          class="
-            group
-            --bg-black
-            flex justify-center items-center
-            aspect-square
-            cursor-pointer
-            rounded-[0%] hover:rounded-[0%]
-            --bg-white --dark:bg-black
-            --hover:bg-black --dark:hover:bg-white
-            transition-all duration-300 ease-in-out
-        ">
-          <AppIcon
-            :name="principle.title"
-            class="
-            text-black dark:text-white
-            group-hover:opacity-0
-            w-full h-full
-            p-[19.1%]
-            transition-all duration-300 ease-in-out
-          "/>
-            <!-- :class="principle.color" -->
-          <h3
-            class="absolute text-5xl text-black opacity-0 transition-opacity duration-300 ease-in-out scale-90 group-hover:opacity-100 dark:text-white">
-            {{ principle.title}}<sup class="relative -top-6 text-xl start-0.5">{{ principle.id }}</sup>
-          </h3>
-        </li>
-      </ul>
-    </AppSection>
 
   </main>
 </template>
