@@ -26,8 +26,8 @@
         <!-- <path fill-rule="evenodd" d="M3 9a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 9zm0 6.75a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" /> -->
       </svg>
     </div>
-    <NuxtLink to="/" @click="menu = false" class="ps-1 pe-3 py-3 --bg-red/20">
-      <AppIcon name="tfm" class="w-[52px] h-auto"/>
+    <NuxtLink to="/" @click="menu = false" class="ps-1 pe-2 py-2 --bg-red/20">
+      <AppIcon name="tfm" class="w-[52px] h-[30px]"/>
       <!-- <AppLogotype class="w-[52px] h-auto" /> -->
     </NuxtLink>
 
