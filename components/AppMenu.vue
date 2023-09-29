@@ -80,12 +80,16 @@
         </section>
       </div>
       <hr class="mt-8">
+      <div class="font-mono text-2xs pt-1">
+        V --> {{ appConfig.version }}
+      </div>
     </nav>
   </div>
 </template>
 
 <script setup lang="ts">
 const menu = useState('menu', () => false)
+const appConfig = useAppConfig()
 
 // ------------------------------------------------>
 // Menu Items

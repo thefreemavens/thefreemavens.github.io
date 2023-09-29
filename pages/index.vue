@@ -11,9 +11,11 @@
     </section>
 
     <section class="relative mx-4 py-12 border-t">
-      <img src="/img/market/tfm-notebook-angle-left-white.webp">
+      <!-- <img src="/img/market/tfm-hoodie-white-nl-new-black.webp"> -->
+      <NuxtLink to="marketspace">
+        <img src="/img/market/tfm-notebook-angle-left-white.webp">
       <!-- <div class="w-full h-screen bg-cover block bg-origin-padding bg-[url('/img/market/tfm-notebook-angle-left-white.webp')]"> -->
-
+      </NuxtLink>
       <!-- </div> -->
     </section>
 
@@ -30,32 +32,29 @@
       <ul class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         <li
           v-for="(principle, index) in principles" :key="index"
-          ref="el"
-          class="
-            group
-            --bg-black
-            flex justify-center items-center
-            aspect-square
-            cursor-pointer
-            rounded-[0%] hover:rounded-[0%]
-            --bg-white --dark:bg-black
-            --hover:bg-black --dark:hover:bg-white
-            transition-all duration-300 ease-in-out
-        ">
-          <AppIcon
-            :name="principle.title"
+          ref="el">
+          <NuxtLink
+            :to="principleBaseUrl + principle.slug"
             class="
-            text-black dark:text-white
-            group-hover:opacity-0
-            w-full h-full
-            p-[19.1%]
-            transition-all duration-300 ease-in-out
-          "/>
-            <!-- :class="principle.color" -->
-          <h3
-            class="absolute text-5xl text-black opacity-0 transition-opacity duration-300 ease-in-out scale-90 group-hover:opacity-100 dark:text-white">
-            {{ principle.title}}<sup class="relative -top-6 text-xl start-0.5">{{ principle.id }}</sup>
-          </h3>
+              group
+              flex justify-center items-center
+              aspect-square
+              transition-all duration-300 ease-in-out
+            ">
+            <AppIcon
+              :name="principle.title"
+              class="
+              text-black dark:text-white
+              group-hover:opacity-0
+              w-full h-full
+              p-[19.1%]
+              transition-all duration-300 ease-in-out
+            "/>
+            <h3
+              class="absolute text-5xl text-black opacity-0 transition-opacity duration-300 ease-in-out scale-90 group-hover:opacity-100 dark:text-white">
+              {{ principle.title}}<sup class="relative -top-6 text-xl start-0.5">{{ principle.id }}</sup>
+            </h3>
+          </NuxtLink>
         </li>
       </ul>
     </AppSection>
@@ -125,7 +124,7 @@
       <!-- Products -->
       <NuxtLink to="/marketspace">
         <div class="pb-4 group">
-          <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Products</h3>
+          <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Marketspace</h3>
           <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
             <span class="grid grid-cols-2 origin-center scale-75">
               <span class="rotate-90">
@@ -223,22 +222,7 @@
 
 <script setup>
 const principles = usePrinciples()
-// // import { ref, onMounted, onUnmounted } from "vue"
-
-// const el = ref(null)
-
-// const observer = new IntersectionObserver((entries, observer) => {
-//   console.log(entries.value)
-// })
-
-// onMounted(() => {
-//   observer.observe(el.value)
-// })
-
-// Probably optional
-// onUnmounted(() => {
-//   observer.disconnect()
-// })
+const principleBaseUrl = 'knowledge/principles-of-natural-law#'
 
 
 </script>

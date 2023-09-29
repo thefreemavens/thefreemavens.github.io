@@ -1,4 +1,5 @@
-import { globSync } from "glob" // using glob here but any package you are comfortable with works
+// Handle content routes
+import { globSync } from "glob"
 const routes = globSync('./content/**/*.md')
   .map(path => path.slice(7, -3).replace(/\d+\./g, '').replace(/\\/g, '/'))
 
@@ -77,14 +78,12 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-fonts'
   ],
   content: {
     documentDriven: true,
     watch: {
       ws: {
         port: 4000,
-        // showUrl: true
         }
       }
     },
@@ -94,17 +93,5 @@ export default defineNuxtConfig({
   },
   colorMode: {
     classSuffix: ''
-  },
-  googleFonts: {
-    families: {
-      Inter: [400, 700, 900],
-      'Victor Mono': [500]
-      // 'Victor Mono:ital': [500]
-    }
-  },
-  // vue: {
-  //   compilerOptions: {
-  //     isCustomElement: (tag) => ['my-', 'ellipse'].some(prefix => tag.startsWith(prefix)),
-  //   },
-  // }
+  }
 })

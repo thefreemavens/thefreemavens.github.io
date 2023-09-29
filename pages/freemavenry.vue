@@ -69,7 +69,7 @@
           </p>
           <p class="mb-4 mt-8">
             <b class="me-1 block text-xl md:text-2xl pb-3 tracking-tight">Love</b> 
-            The Selfless kind. Every member will show tolerance and respect for the opinions of others and behave 
+            The Selfless kind. Every member will show tolerance and respect for others and behave 
             with kindness and understanding to his fellow beings.  
           </p>
           <p class="mb-4 mt-8">
