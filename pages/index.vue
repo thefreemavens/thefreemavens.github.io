@@ -19,46 +19,6 @@
       <!-- </div> -->
     </section>
 
-    <!-- Picons + Principles -->
-    <AppSection layout="grid3">
-      <template #title>
-        Picons
-      </template>
-      <template #desc>
-        Introducing <span class="font-bold">Picons</span> (<span class="italic">Principles + Icons</span>), 
-        open-source and free-to-use set of 8 icons symbolizing the great body of knowledge of Natural Law and the 8
-        immutable metaphisical principles of our universe<sup class="inline-block text-sm relative -top-3 start-1">🡵</sup>
-      </template>
-      <ul class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-        <li
-          v-for="(principle, index) in principles" :key="index"
-          ref="el">
-          <NuxtLink
-            :to="principleBaseUrl + principle.slug"
-            class="
-              group
-              flex justify-center items-center
-              aspect-square
-              transition-all duration-300 ease-in-out
-            ">
-            <AppIcon
-              :name="principle.title"
-              class="
-              text-black dark:text-white
-              group-hover:opacity-0
-              w-full h-full
-              p-[19.1%]
-              transition-all duration-300 ease-in-out
-            "/>
-            <h3
-              class="absolute text-5xl text-black opacity-0 transition-opacity duration-300 ease-in-out scale-90 group-hover:opacity-100 dark:text-white">
-              {{ principle.title}}<sup class="relative -top-6 text-xl start-0.5">{{ principle.id }}</sup>
-            </h3>
-          </NuxtLink>
-        </li>
-      </ul>
-    </AppSection>
-
     <!-- Features -->
     <section class="
       mx-4
@@ -216,6 +176,46 @@
         </div>
       </NuxtLink>
     </section>
+
+    <!-- Picons + Principles -->
+    <AppSection layout="grid3">
+      <template #title>
+        Picons
+      </template>
+      <template #desc>
+        Introducing <span class="font-bold">Picons</span> (<span class="italic">Principles + Icons</span>), 
+        open-source and free-to-use set of 8 icons symbolizing the great body of knowledge of Natural Law and the 8
+        immutable metaphisical principles of our universe<sup class="inline-block text-sm relative -top-3 start-1">🡵</sup>
+      </template>
+      <ul class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+        <li
+          v-for="(principle, index) in principles" :key="index"
+          ref="el">
+          <NuxtLink
+            :to="principleBaseUrl + principle.slug"
+            class="
+              group
+              flex justify-center items-center
+              aspect-square
+              transition-all duration-300 ease-in-out
+            ">
+            <AppIcon
+              :name="principle.title"
+              class="
+              text-black dark:text-white
+              group-hover:opacity-0
+              w-full h-full
+              p-[19.1%]
+              transition-all duration-300 ease-in-out
+            "/>
+            <h3
+              class="absolute text-5xl text-black opacity-0 transition-opacity duration-300 ease-in-out scale-90 group-hover:opacity-100 dark:text-white">
+              {{ principle.title}}<sup class="relative -top-6 text-xl start-0.5">{{ principle.id }}</sup>
+            </h3>
+          </NuxtLink>
+        </li>
+      </ul>
+    </AppSection>
 
   </main>
 </template>
