@@ -60,7 +60,6 @@ useHead({
 <style lang="postcss">
 body {
   @apply
-    min-h-screen
     text-black dark:text-white
     bg-white dark:bg-black
     selection:text-white dark:selection:text-black

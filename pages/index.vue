@@ -27,7 +27,7 @@
       border-t
     ">
       <!-- Knowledge -->
-      <NuxtLink to="/knowledge">
+      <NuxtLink to="/knowledge/main">
         <div class="relative pb-4 group group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Knowledge</h3>
           <div class="relative my-6 aspect-square bg-black/5 dark:bg-white/5">
@@ -43,7 +43,7 @@
       </NuxtLink>
 
       <!-- Lessons -->
-      <NuxtLink to="/lessons">
+      <NuxtLink to="/lessons/main">
         <div class="pb-4 group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Lessons</h3>
           <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
@@ -62,7 +62,7 @@
       </NuxtLink>
 
       <!-- Challanges -->
-      <NuxtLink to="/challenges">
+      <NuxtLink to="/challenges/main">
         <div class="pb-4 group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Challanges</h3>
           <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
@@ -81,10 +81,10 @@
         </div>
       </NuxtLink>
 
-      <!-- Products -->
-      <NuxtLink to="/marketspace">
+      <!-- Resources -->
+      <NuxtLink to="/resources/main">
         <div class="pb-4 group">
-          <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Marketspace</h3>
+          <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Resources</h3>
           <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
             <span class="grid grid-cols-2 origin-center scale-75">
               <span class="rotate-90">
@@ -121,20 +121,21 @@
               </span>
             </span>
           </div>
+
           <p class="text-base xl:text-lg">
-            Community based marketplace with products and services you can buy, sell, trade or offer.
+            A currated list of Resources arranged by categories to assist with your Natural Law study.
           </p>
           <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
         </div>
       </NuxtLink>
 
       <!-- Tools -->
-      <NuxtLink to="/tools">
+      <NuxtLink to="/tools/main">
         <div class="pb-4 group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Tools</h3>
           <div class="relative my-6 aspect-square bg-black/5 dark:bg-white/5" >
             <span class="grid grid-cols-2 origin-center scale-75">
-              <span class="-rotate-90">
+              <span class="rotate-90">
                 <svg
                   viewBox="0 0 512 512" stroke-width="4" xmlns="http://www.w3.org/2000/svg"
                   class="fill-black dark:fill-white stroke-black dark:stroke-white"
@@ -175,6 +176,54 @@
           <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
         </div>
       </NuxtLink>
+
+      <!-- Marketspace -->
+      <NuxtLink to="/marketspace">
+        <div class="pb-4 group">
+          <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Marketspace</h3>
+          <div class="relative my-6 aspect-square bg-black/5 dark:bg-white/5" >
+            <span class="grid grid-cols-2 origin-center scale-75">
+              <span class="-rotate-90">
+                <svg
+                  viewBox="0 0 512 512" stroke-width="4" xmlns="http://www.w3.org/2000/svg"
+                  class="fill-black dark:fill-white stroke-black dark:stroke-white"
+                >
+                  <polygon points="512,0 512,512 0,512"/>
+                </svg>
+              </span>
+              <span class="rotate-90">
+                <svg
+                  viewBox="0 0 512 512" stroke-width="4" xmlns="http://www.w3.org/2000/svg"
+                  class="fill-black dark:fill-white stroke-black dark:stroke-white"
+                >
+                  <polygon points="512,0 512,512 0,512"/>
+                </svg>
+              </span>
+              <span class="-rotate-90">
+                <svg
+                  viewBox="0 0 512 512" stroke-width="4" xmlns="http://www.w3.org/2000/svg"
+                  class="fill-black dark:fill-white stroke-black dark:stroke-white"
+                >
+                  <polygon points="512,0 512,512 0,512"/>
+                </svg>
+              </span>
+              <span class="rotate-90">
+                <svg
+                  viewBox="0 0 512 512" stroke-width="4" xmlns="http://www.w3.org/2000/svg"
+                  class="fill-black dark:fill-white stroke-black dark:stroke-white"
+                >
+                  <polygon points="512,0 512,512 0,512"/>
+                </svg>
+              </span>
+            </span>
+          </div>
+          <p class="text-base xl:text-lg">
+            Community based marketplace with products and services you can buy, sell, trade or offer.
+          </p>
+          <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
+        </div>
+      </NuxtLink>
+
     </section>
 
     <!-- Picons + Principles -->

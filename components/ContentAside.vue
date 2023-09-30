@@ -14,11 +14,12 @@
     
     <div class="flex flex-col gap-2">
     <!-- Adspace [DEMO Square with a random product] -->
-      <span 
+      <NuxtLink 
+        to="/marketspace"
         class="flex justify-center items-center w-full text-xs bg-center bg-cover aspect-square bg-black/10 dark:bg-white/10"
         :style="{ backgroundImage: `url(${ baseUrl + product.url})`}"
         >
-      </span>
+      </NuxtLink>
     </div>
     
   </aside>

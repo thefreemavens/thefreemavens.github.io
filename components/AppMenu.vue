@@ -81,7 +81,7 @@
       </div>
       <hr class="mt-8">
       <div class="font-mono text-2xs pt-1">
-        V --> {{ appConfig.version }}
+        Beta --> v{{ appConfig.version }}
       </div>
     </nav>
   </div>
@@ -111,22 +111,27 @@ const menuItems2 = ref([
 {
     title: 'Knowledge',
     slug: 'knowledge',
-    url: '/knowledge'
+    url: '/knowledge/main'
   },
   {
     title: 'Lessons',
     slug: 'lessons',
-    url: '/lessons'
+    url: '/lessons/main'
   },
   {
     title: 'Challenges',
     slug: 'challenges',
-    url: '/challenges'
+    url: '/challenges/main'
+  },
+  {
+    title: 'Resources',
+    slug: 'resources',
+    url: '/resources/main'
   },
   {
     title: 'Tools',
     slug: 'tools',
-    url: '/tools'
+    url: '/tools/main'
   },
   // {
   //   title: 'Natural Law',
