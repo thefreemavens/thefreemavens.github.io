@@ -33,7 +33,14 @@
                 <ContentRenderer :value="doc" :key="$route.path" />
               </article>
               <nav>
-                <ContentPrevNext />
+                <!-- {{ prev.title }} // {{  next.title }} -->
+                <div class="grid grid-cols-2 mt-16 mb-4 text-xs font-bold border-t">
+                  <NuxtLink v-if="prev" :to="prev._path" class="justify-self-start pt-4 w-auto border-t-1">{{ prev.title }}<span class="block pt-2">{{ arrowLeft }}</span></NuxtLink>
+                  <div v-else />
+                  <NuxtLink v-if="next" :to="next._path" class="justify-self-end pt-4 w-auto text-right border-t-1">{{ next.title }}<span class="block pt-2">{{ arrowRight }}</span></NuxtLink>
+                  <div v-else />
+                </div>
+                <!-- <ContentPrevNext /> -->
               </nav>
             <!-- </template> -->
 
@@ -43,7 +50,19 @@
             
             <!-- Endbar -->
             <div class="col-span-12 lg:col-span-2 lg:col-start-11">
-              <ContentAside />
+              <aside class="sticky top-16 pt-2 border-t-4">
+                <!-- Table of Contents -->
+                <h3 class="pb-4 text-sm font-bold">Table of contents</h3>
+                <ul class="pb-6 text-xs">
+                  <li v-for="link of doc.body.toc.links" :key="link.id"
+                  class="py-0.5"
+                  >
+                    <a :href="`#${link.id}`" class="block px-2 py-0.5 rounded-sm transition-colors duration-200 --relative bg-black/0 hover:text-white hover:bg-black dark:hover:text-black dark:hover:bg-white hover:duration-100">{{ link.text }}</a>
+                  </li>
+                </ul>
+                <ContentAside />
+              </aside>
+            
             </div>
           </div>
         </template>
@@ -64,6 +83,28 @@ const { data: lessons } = await useAsyncData('lessons', () => fetchContentNaviga
 const { data: challenges } = await useAsyncData('challenges', () => fetchContentNavigation(queryChallenges))
 const { data: resources } = await useAsyncData('resources', () => fetchContentNavigation(queryrResources))
 const { data: tools } = await useAsyncData('tools', () => fetchContentNavigation(queryrTools))
+
+// Prev/Next navigation
+const { path } = useRoute();
+const { data } = await useAsyncData(`content-${path}`, async () => {
+  // fetch document where the document path matches with the cuurent route
+  // let article = queryContent().where({ _path: path }).findOne();
+  // get the surround information,
+  // which is an array of documeents that come before and after the current document
+  let surround = queryContent().only(["_path", "title"]).sort({ _id: 1 }).findSurround(path);
+
+  return {
+    // article: await article,
+    surround: await surround,
+  };
+});
+
+// destrucure `prev` and `next` value from data
+const [prev, next] = data.value.surround;
+console.log({ prev, next });
+
+const arrowLeft = '<--'
+const arrowRight = '-->'
 
 useHead({
   title: 'The Free Mavens',

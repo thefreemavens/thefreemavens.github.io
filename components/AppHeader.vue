@@ -34,7 +34,7 @@
 
     <!-- <h1 class="mx-4 text-2xl font-black">TFM</h1> -->
     <div class="flex-row-reverse flex absolute right-0 items-center gap-1">
-      <NuxtLink to="/profile" class="py-4 pe-4 ps-2" @click="menu = false">
+      <NuxtLink to="/maven/account" class="py-4 pe-4 ps-2" @click="menu = false">
         <div class="bg-black dark:bg-white w-5 h-5 rounded-full" />
       </NuxtLink>
       <AppColorModeButton class="--bg-red/20" />

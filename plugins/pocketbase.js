@@ -30,7 +30,7 @@ export default defineNuxtPlugin(async () => {
       token: pb.authStore.token,
       model: pb.authStore.model,
     };
-  });
+  }, true);
 
   try {
       // get an up-to-date auth store state by verifying and refreshing the loaded auth model (if any)
