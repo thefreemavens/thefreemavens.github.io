@@ -29,24 +29,53 @@
 
     </AppSection>
 
-    <!-- If not logged in show login form or signup form -->
-    <AppSection v-else class="md:pb-0 lg:pb-0">
-      <template #title>
-        <template v-if="loginMode">
-          Login
-        </template>
-        <template v-else>
-          Application<br>Form
-        </template>
-        <!-- {{ loginMode ? "Login" : "Application Form" }} -->
-      </template>
-      <template #desc>
-        {{ loginMode ? "Glad to see you again" : 'Please tell us a bit about yourself so that we may review your request for an application.¹' }}
-      </template>
+    <section v-else class="mx-4 --border-t pt-8 pb-8 lg:pt-12 lg:pb-20">
+    <div
+      class="
+        grid
+        grid-cols-1 lg:grid-cols-2
+        gap-8
+    ">
+      <div class="--hidden lg:block mt-0 mb-4 font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl">---></div>
 
-      <section class="">
-        <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
-          <div class="lg:col-start-2 lg:max-w-md">
+      <h2
+        class="
+          py-0 mb-4 md:mb-10
+          flex flex-col
+          text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl
+          font-bold
+          tracking-tighter
+          lg:col-start-2
+          lg:max-w-xl
+      ">
+      <span>
+        <span v-if="loginMode">
+          Login
+        </span>
+        <span v-else>
+          Initiation<br>Form
+        </span>
+        <!-- {{ loginMode ? "Login" : "Application Form" }} -->
+      </span>
+      </h2>
+      <h3
+        class="
+        lg:col-span-1
+        lg:col-start-2
+        lg:max-w-xl
+        text-xl md:text-2xl lg:text-3xl
+        pt-12
+        border-t
+        pb-4
+        tracking-tight
+        leading-normal md:leading-normal lg:leading-normal
+      ">
+        <!-- <span class="mb-4 md:mb-8 block">-></span> -->
+        {{ loginMode ? "Glad to see you again" : 'Please tell us a bit about yourself so that we may review your request for an application.¹' }}
+      </h3>
+      <section class="lg:col-start-2">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-1">
+          <div class="lg:col-start-1 lg:max-w-xl">
             <form
               id="join"
               ref="formElement"
@@ -122,7 +151,7 @@
                 v-if="!loginMode"
                 @click="signup"
                 type="button"
-                class="py-2.5 mt-2 w-full text-base font-bold text-center text-white uppercase rounded-sm bg-grey-975 dark:bg-white dark:text-grey-975 --rounded">
+                class="py-2.5 mt-2 w-full text-base font-bold text-center text-white uppercase rounded bg-grey-975 dark:bg-white dark:text-grey-975 --rounded">
                 Signup
               </button>
   
@@ -146,7 +175,10 @@
           </div>
         </div>
       </section>
-    </AppSection>
+    </div>
+  </section>
+
+    <!-- If not logged in show login form or signup form -->
 
   </main>
 </template>

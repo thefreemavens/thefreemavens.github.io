@@ -1,7 +1,7 @@
 <template>
   <footer class="max-w-screen">
     <div class="container mx-auto">
-      <section class="mt-12 mx-4 border-t-8 --bg-red/20 flex py-4 ">
+      <section class="mt-12 mx-4 border-t-2 --bg-red/20 flex py-4 ">
         <!-- <div class="grid grid-cols-4 gap-8 justify-start pt-0 start overflow-clip"> -->
           <NuxtLink to="/">
             <AppIcon name="tfm-s" class="w-40 h-[40px]"/>
