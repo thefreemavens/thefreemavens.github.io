@@ -33,17 +33,17 @@
         </div>
 
         <div>
-          <p class="mb-6 leading-relaxed">
-            <span class="font-bold pe-1">The Free Mavens</span> promotes the great body of knwoledge of Natural Law, so that
+          <p class="mb-12 leading-relaxed">
+            <span class="font-bold me-1 block text-xl md:text-2xl pb-3 tracking-tight">Freemavenry</span> Freemavenry is a voluntary, non-religious, non-political, fraternal and benevolent collective 
+            of creators, not workers. Our roots lie in the search for eternal truth and the spread of knowledge in the areas of metaphysics, occultism, 
+            spirituality, symbology and human consciousness. 
+          </p>
+
+          <p class="leading-relaxed">
+            <span class="font-bold me-1 block text-xl md:text-2xl pb-3 tracking-tight">The Free Mavens</span> TFM promotes the great body of knwoledge of Natural Law, so that
             people all over the world can gain a better understanding of the causal factors and the real issues we are faced in the world today
             in effort to feed a desire to help and to create a reality that is based in truth, morality, love and freedom;
             <span class="line-through">Not lies, immorality, fear and slavery.</span>
-          </p>
-
-          <p class="mb-4 leading-relaxed">
-            <span class="font-bold pe-1">Freemavenry</span> is a voluntary, non-religious, non-political, fraternal and benevolent collective 
-            of creators, not workers. Our roots lie in the search for eternal truth and the spread of knowledge in the areas of metaphysics, occultism, 
-            spirituality, symbology and human consciousness. 
           </p>
         </div>
         
@@ -83,7 +83,7 @@
         <h4 class="mb-6 font-bold text-4xl sm:text-5xl md:text-5xl lg:text-6xl tracking-tight">Be a Maven</h4>
         <div class="">
           <p class="mb-4">
-            <b class="me-1 block text-xl md:text-2xl pb-8 tracking-tight">Your lifetime journey starts here.</b> 
+            <b class="me-1 block text-xl md:text-2xl pb-8 tracking-tight">Start Your Journey</b> 
             Becoming a Free Maven is like going on a journey. It requires will, dedication and courage. From joining as an Entered Maven, it typically takes 
             a few months to become a Master Maven, with each of the three stages marked by a special acknowledgment.
           </p>

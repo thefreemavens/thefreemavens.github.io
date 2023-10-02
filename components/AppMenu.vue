@@ -50,7 +50,7 @@
 
         <section class="flex justify-start items-start w-full h-full">
           <ul class="block mt-4 w-full tracking-wide">
-            <li class="mb-2 text-xs font-bold uppercase sm:mb-4 lg:mb-6 text-grey-975 dark:text-white">Members</li>
+            <li class="mb-2 text-xs font-bold uppercase sm:mb-4 lg:mb-6 text-grey-975 dark:text-white">Market</li>
             <li
               v-for="(menuItem, index) in menuItems3" :key="index"
               class="py-2 my-0"
@@ -66,7 +66,7 @@
 
         <section class="flex justify-start items-start w-full h-full">
           <ul class="block mt-4 w-full tracking-wide">
-            <li class="mb-2 text-xs font-bold uppercase sm:mb-4 lg:mb-6 text-grey-975 dark:text-white">Market</li>
+            <li class="mb-2 text-xs font-bold uppercase sm:mb-4 lg:mb-6 text-grey-975 dark:text-white">Members</li>
             <li
               v-for="(menuItem, index) in menuItems4" :key="index"
               class="py-2 my-0"
@@ -133,82 +133,27 @@ const menuItems2 = ref([
     slug: 'tools',
     url: '/tools/main'
   },
-  // {
-  //   title: 'Natural Law',
-  //   slug: 'natural-law',
-  //   url: '/natural-law'
-  // },
-  // {
-  //   title: 'The Principles',
-  //   slug: 'principles',
-  //   url: '/principles'
-  // },
-  // {
-  //   title: '#Initiation',
-  //   slug: 'initiation',
-  //   url: '/initiation'
-  // }
 ])
 
 const menuItems3 = ref([
-  // {
-  //   title: 'Home',
-  //   slug: 'home',
-  //   url: '/'
-  // },
-  // {
-  //   title: 'Freemavenry',
-  //   slug: 'freemavenry',
-  //   url: '/freemavenry'
-  // },
-  // {
-  //   title: 'Natural Law',
-  //   slug: 'natural-law',
-  //   url: '/natural-law'
-  // },
-  {
-    title: 'Profile',
-    slug: 'profile',
-    url: '/profile'
-  },
-  {
-    title: '#Initiation',
-    slug: 'init',
-    url: '/init'
-  }
-])
-
-const menuItems4 = ref([
   {
     title: 'Marketspace',
     slug: 'marketspace',
     url: '/marketspace'
   }
-  // {
-  //   title: 'Home',
-  //   slug: 'home',
-  //   url: '/'
-  // },
-  // {
-  //   title: 'Freemavenry',
-  //   slug: 'freemavenry',
-  //   url: '/freemavenry'
-  // },
-  // {
-  //   title: 'Natural Law',
-  //   slug: 'natural-law',
-  //   url: '/natural-law'
-  // },
-  // {
-  //   title: '#NoConsent',
-  //   slug: 'natural-law',
-  //   url: '/natural-law'
-  // },
-  // {
-  //   title: '#Initiation',
-  //   slug: 'initiation',
-  //   url: '/initiation'
-  // }
+])
+
+const menuItems4 = ref([
+  {
+    title: 'Login',
+    slug: 'login',
+    url: '/maven/login'
+  },
+  {
+    title: 'Initiate',
+    slug: 'init',
+    url: '/maven/initiation'
+  }
 ])
 
 onMounted(() => {

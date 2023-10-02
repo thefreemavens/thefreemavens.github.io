@@ -75,7 +75,7 @@
               <button
                 @click="login"
                 type="button"
-                class="py-2.5 mt-2 w-full text-base font-bold text-center text-white uppercase bg-grey-975 dark:bg-white dark:text-grey-975 --rounded">
+                class="py-2.5 mt-2 w-full text-base font-bold text-center text-white uppercase bg-grey-975 dark:bg-white dark:text-grey-975 rounded">
                 Login
               </button>
 
@@ -92,7 +92,7 @@
     
               <button
                 type="button"
-                @click="router.push('/maven/initiation')"
+                @click="navigateTo('/maven/initiation')"
                 class="absolute right-0 -bottom-0.5 pb-0.5 text-xs font-bold text-center uppercase border-b border-transparent hover:border-black dark:hover:border-white"
               >
                 Signup
@@ -111,7 +111,7 @@
 
 <script setup>
 const { $pb } = useNuxtApp()
-const router = useRouter()
+// const router = useRouter()
 
 // const firstName = ref('')
 // const lastName = ref('')
