@@ -101,7 +101,7 @@ const { data } = await useAsyncData(`content-${path}`, async () => {
 
 // destrucure `prev` and `next` value from data
 const [prev, next] = data.value.surround;
-console.log({ prev, next });
+// console.log({ prev, next });
 
 const arrowLeft = '<--'
 const arrowRight = '-->'

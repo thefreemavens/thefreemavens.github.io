@@ -21,11 +21,12 @@
           Your profile page is in development, please come back soon.
         </p>
       </div>
-
+      <!-- {{ currentUser }} -->
       <!-- <p class="block mb-4">
         {{ $pb.authStore }}
       </p> -->
-
+      
+      <!-- {{  $pb.authStore.isValid }} -->
 
     </AppSection>
 
