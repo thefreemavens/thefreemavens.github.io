@@ -61,7 +61,7 @@
         </div>
         
         <hr class="col-span-1 lg:col-span-2 my-8">
-        <h4 class="mb-6 font-bold text-4xl sm:text-5xl md:text-5xl lg:text-6xl tracking-tight">Principles</h4>
+        <h4 id="Principles" class="mb-6 font-bold text-4xl sm:text-5xl md:text-5xl lg:text-6xl tracking-tight">Principles</h4>
         <div class="">
           <p class="mb-4">
             <b class="me-1 block text-xl md:text-2xl pb-3 tracking-tight">Truth</b> 
@@ -89,7 +89,7 @@
           </p>
           <p class="mb-4 mt-8">
             <!-- <b class="me-1 block text-xl md:text-2xl pb-3 tracking-tight">Love</b>  -->
-            The essential qualifications for admission are abiding by our collective principles, understanding the real Law of Attraction and 
+            The essential qualifications for admission are abiding by our collective <NuxtLink to="#Principles" class="border-b mx-[0.2em] font-bold">Principles<sup>🡵</sup></NuxtLink>, understanding <NuxtLink to="/knowledge/main" class="border-b mx-[0.2em] font-bold">The Real Natural Law<sup>🡵</sup></NuxtLink> and 
             applying it in real life.
           </p>
           <p class="mt-10 mb-8 text-xs font-mono px-4 py-2 border">
@@ -109,7 +109,7 @@
               text-white
               dark:text-grey-975
               py-2.5 px-4
-              --rounded
+              rounded
               font-bold
               uppercase
               text-sm lg:text-base

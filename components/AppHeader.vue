@@ -37,11 +37,11 @@
     <!-- <h1 class="mx-4 text-2xl font-black">TFM</h1> -->
     <div class="flex-row-reverse flex absolute right-0 items-center gap-1">
       <NuxtLink to="/maven/account" class="py-4 pe-4 ps-2" @click="menu = false">
-        <div class="--bg-black --dark:bg-white w-7 h-7 rounded-full">
-          <img
+        <div class="bg-black dark:bg-white w-6 h-6 rounded-full">
+          <!-- <img
           :src="'https://tfmbase.pockethost.io/api/files/' +  maven.collectionId + '/' + maven.id + '/' + maven.avatar + '?thumb=100x100'" alt="Avatar"
           class="rounded-full"
-          />
+          /> -->
         </div>
       </NuxtLink>
       <AppColorModeButton class="--bg-red/20" />
@@ -55,14 +55,15 @@
 
 <script setup lang="ts">
 const menu = useState('menu', () => false)
-const { $pb } = useNuxtApp()
 
-const maven = ref<any>({})
+// const { $pb } = useNuxtApp()
 
-onMounted(() => {
-  $pb.authStore.onChange(() => {
-    maven.value = $pb.authStore.model  
-  }, true)
-})
+// const maven = ref<any>({})
+
+// onMounted(() => {
+//   $pb.authStore.onChange(() => {
+//     maven.value = $pb.authStore.model  
+//   }, true)
+// })
 
 </script>

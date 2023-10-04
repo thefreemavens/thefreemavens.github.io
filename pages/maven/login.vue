@@ -118,6 +118,7 @@ const { $pb } = useNuxtApp()
 const email = ref('')
 const password = ref('')
 
+// const maven = useState('maven', () => false)
 const currentUser = ref('')
 // const loginMode = ref(true)
 
@@ -127,6 +128,7 @@ const login = async () => {
     const authData = await $pb.collection('users')
       .authWithPassword(email.value, password.value)
       navigateTo('/maven/account')
+      // console.log(authData)
 
     // after the above you can also access the auth data from the authStore
     // console.log($pb.authStore.isValid)

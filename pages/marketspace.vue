@@ -6,9 +6,19 @@
         Marketspace
       </template>
       <template #desc>
-        A space for us all to buy, sell, trade and offer products and services that help promotes the body of knowledge of Natural Law, 
-        objective morality, absolute freedom and selfless love.
-        <!-- Your fruits of creativity and productivity shared with people that understand how true markets can and should be. -->
+        A space for all members to trade, offer, buy and sell products and services that help promotes the body of knowledge of 
+        <NuxtLink class="border-b mx-[0.2em] font-bold" to="/knowledge/main#natural-law">Natural Law
+          <sup class="">🡵</sup>
+        </NuxtLink>, 
+        <NuxtLink class="border-b mx-[0.2em] font-bold" to="/knowledge/main#objective-morality">Objective Morality
+          <sup class="">🡵</sup>
+        </NuxtLink>, 
+        <NuxtLink class="border-b mx-[0.2em] font-bold" to="/knowledge/the-law-of-freedom#true-freedom">True Freedom
+          <sup class="">🡵</sup>
+        </NuxtLink>, and 
+        <NuxtLink class="border-b mx-[0.2em] font-bold" to="/knowledge/natural-law-expressions#_1-love-fear">Selfless Love
+          <sup class="">🡵</sup>
+        </NuxtLink>.
       </template>
     </AppSection>
 

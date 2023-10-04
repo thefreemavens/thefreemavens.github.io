@@ -37,6 +37,7 @@
   /* HTML */
   html { @apply scroll-smooth}
 
+  sup { @apply text-[0.5em] align-super}
   /* Forms */
   .form-group { @apply text-left mb-3 relative}
   .form-group .error { @apply text-sm}
