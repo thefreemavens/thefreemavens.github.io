@@ -2,15 +2,15 @@
   <main class="container relative mx-auto">
 
     <!-- Login / Logout -->
-    <button v-if="currentUser" class="absolute top-4 right-4 px-2 py-1 text-xs font-bold text-white uppercase bg-black rounded-sm dark:text-black dark:bg-white" type="button" @click="logout">
+    <button v-if="maven" class="absolute top-4 right-4 px-2 py-1 text-xs font-bold text-white uppercase bg-black rounded dark:text-black dark:bg-white" type="button" @click="logout">
       Logout
     </button>
 
     <!-- IF User-->
-    <AppSection v-if="currentUser" class="md:pb-0 lg:pb-0">
+    <AppSection v-if="maven" class="md:pb-0 lg:pb-0">
       <template #title>
         Hello,<br>
-        {{ currentUser.name.split(' ')[0] }}
+        {{ maven.name.split(' ')[0] }}
       </template>
       <template #desc>
         Welcome back
@@ -36,7 +36,8 @@
 <script setup>
 const { $pb } = useNuxtApp()
 
-const currentUser = ref('')
+// const currentUser = ref('')
+const maven = useState('maven', () => '')
 
 definePageMeta({
   middleware: 'auth'
@@ -44,14 +45,14 @@ definePageMeta({
 
 const logout = () => {
   $pb.authStore.clear()
-  currentUser.value = null
+  maven.value = null
   navigateTo('/maven/login')
 }
 
 
 onMounted(() => {
   $pb.authStore.onChange(() => {
-    currentUser.value = $pb.authStore.model  
+    maven.value = $pb.authStore.model  
   }, true)
 })
 

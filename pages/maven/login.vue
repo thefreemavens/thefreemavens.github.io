@@ -118,8 +118,8 @@ const { $pb } = useNuxtApp()
 const email = ref('')
 const password = ref('')
 
-// const maven = useState('maven', () => false)
-const currentUser = ref('')
+const maven = useState('maven', () => '')
+// const currentUser = ref('')
 // const loginMode = ref(true)
 
 
@@ -145,7 +145,7 @@ definePageMeta({
 
 onMounted(() => {
   $pb.authStore.onChange(() => {
-    currentUser.value = $pb.authStore.model
+    maven.value = $pb.authStore.model
   }, true)
 })
 

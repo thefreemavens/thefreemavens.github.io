@@ -98,7 +98,7 @@
           </p>
 
           <button
-            @click="$router.push('/profile')"
+            @click="$router.push('/maven/initiation')"
             type="button"
             class="
               w-full

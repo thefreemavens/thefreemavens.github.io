@@ -119,7 +119,7 @@
     
               <button
                 type="button"
-                @click="router.push('/maven/login')"
+                @click="navigateTo('/maven/login')"
                 class="absolute right-0 -bottom-0.5 pb-0.5 text-xs font-bold text-center uppercase border-b border-transparent hover:border-black dark:hover:border-white">
                 Login
               </button>
@@ -137,14 +137,15 @@
 
 <script setup>
 const { $pb } = useNuxtApp()
-const router = useRouter()
 
 const firstName = ref('')
 const lastName = ref('')
 const email = ref('')
 const password = ref('')
 
-const currentUser = ref('')
+// const currentUser = ref('')
+const maven = useState('maven', () => '')
+
 // const loginMode = ref(true)
 
 definePageMeta({
@@ -161,7 +162,6 @@ const login = async () => {
     const authData = await $pb.collection('users')
       .authWithPassword(email.value, password.value)
       navigateTo('/maven/account')
-
     // after the above you can also access the auth data from the authStore
     // console.log($pb.authStore.isValid)
     // console.log($pb.authStore.token)
@@ -192,7 +192,7 @@ const signup = async () => {
 
 onMounted(() => {
   $pb.authStore.onChange(() => {
-    currentUser.value = $pb.authStore.model
+    maven.value = $pb.authStore.model
   }, true)
 })
 

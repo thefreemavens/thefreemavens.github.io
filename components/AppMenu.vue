@@ -14,7 +14,7 @@
       --[@supports(backdrop-filter:blur(0px))]:dark:bg-grey-980/70
     ">
 
-      <hr class="mb-8 border-t-8">
+      <hr class="mb-8 border-t-4">
 
       <div class="grid overscroll-contain grid-cols-1 gap-2 w-full sm:grid-cols-2 lg:grid-cols-4">
 

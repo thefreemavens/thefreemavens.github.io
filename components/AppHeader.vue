@@ -26,7 +26,7 @@
         <!-- <path fill-rule="evenodd" d="M3 9a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 9zm0 6.75a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" /> -->
       </svg>
 
-      <!-- {{ maven }} -->
+      <!-- {{ cookie.model ? cookie.model.avatar : '' }} -->
     </div>
     <NuxtLink to="/" @click="menu = false" class="ps-1 pe-2 py-2 --bg-red/20">
       <!-- <AppIcon name="tfm" class="w-[52px] h-[30px]"/> -->
@@ -37,12 +37,15 @@
     <!-- <h1 class="mx-4 text-2xl font-black">TFM</h1> -->
     <div class="flex-row-reverse flex absolute right-0 items-center gap-1">
       <NuxtLink to="/maven/account" class="py-4 pe-4 ps-2" @click="menu = false">
-        <div class="bg-black dark:bg-white w-6 h-6 rounded-full">
-          <!-- <img
-          :src="'https://tfmbase.pockethost.io/api/files/' +  maven.collectionId + '/' + maven.id + '/' + maven.avatar + '?thumb=100x100'" alt="Avatar"
-          class="rounded-full"
-          /> -->
+        <div
+        v-if="maven.model"
+        class="w-7 h-7 rounded-full overflow-hidden">
+          <img
+          :src="'https://tfmbase.pockethost.io/api/files/' +  maven.model.collectionId + '/' + maven.model.id + '/' + maven.model.avatar + '?thumb=100x100'" alt="Avatar"
+          class=""
+          />
         </div>
+        <div v-else class="bg-black dark:bg-white w-6 h-6 rounded-full" />
       </NuxtLink>
       <AppColorModeButton class="--bg-red/20" />
       <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -55,15 +58,19 @@
 
 <script setup lang="ts">
 const menu = useState('menu', () => false)
+// const maven = ref()
+const maven = useCookie('pb_auth')
 
 // const { $pb } = useNuxtApp()
+
 
 // const maven = ref<any>({})
 
 // onMounted(() => {
-//   $pb.authStore.onChange(() => {
-//     maven.value = $pb.authStore.model  
-//   }, true)
+//   // maven.value = cookie.value
+//   // $pb.authStore.onChange(() => {
+//   //   maven.value = $pb.authStore.model  
+//   // }, true)
 // })
 
 </script>
