@@ -38,7 +38,7 @@
     <div class="flex-row-reverse flex absolute right-0 items-center gap-1">
       <NuxtLink to="/maven/account" class="py-4 pe-4 ps-2" @click="menu = false">
         <div
-        v-if="maven.model"
+        v-if="maven.model.avatar"
         class="w-7 h-7 rounded-full overflow-hidden">
           <img
           :src="'https://tfmbase.pockethost.io/api/files/' +  maven.model.collectionId + '/' + maven.model.id + '/' + maven.model.avatar + '?thumb=100x100'" alt="Avatar"
@@ -56,7 +56,7 @@
   </header>
 </template>
 
-<script setup lang="ts">
+<script setup lang="js">
 const menu = useState('menu', () => false)
 // const maven = ref()
 const maven = useCookie('pb_auth')
