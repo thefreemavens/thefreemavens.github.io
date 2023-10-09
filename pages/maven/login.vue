@@ -42,7 +42,6 @@
           <div class="lg:col-start-1 lg:max-w-xl">
             <form
               id="join"
-              ref="formElement"
               class="relative text-left"
             >
   
@@ -53,19 +52,19 @@
                   v-model="email"
                   type="text"
                   required="required"
-                  name="entry.1097449195"
                 />
                 <label for="user-email"> Email </label>
               </div>
   
               <!-- Password -->
+              <!-- <AppInput v-model="password" type="password" required="true" label-for="user-password" label="Password"/> -->
+
               <div class="form-group group">
                 <input
                   class="peer"
                   v-model="password"
                   type="password"
                   required="required"
-                  name="entry.1097449195"
                 />
                 <label for="user-password"> Password </label>
               </div>

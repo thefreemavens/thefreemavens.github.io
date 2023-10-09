@@ -15,7 +15,7 @@ const isDark = computed({
 </script>
 
 <template>
-  <ClientOnly>
+  <!-- <ClientOnly> -->
     <div class="flex relative">
       <button
         :class="{ 'rotate-[180deg]': isDark, 'rotate-0': !isDark }"
@@ -25,5 +25,5 @@ const isDark = computed({
         <AppIcon name="CustomColorMode" class="w-5 h-5 text-black dark:text-white" />
       </button>
     </div>
-  </ClientOnly>
+  <!-- </ClientOnly> -->
 </template>

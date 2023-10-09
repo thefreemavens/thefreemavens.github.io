@@ -30,6 +30,7 @@
 
     </AppSection>
 
+    <NuxtLink to="/maven/account/update">Update</NuxtLink>
   </main>
 </template>
 
