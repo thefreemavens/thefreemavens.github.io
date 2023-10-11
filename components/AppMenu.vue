@@ -3,20 +3,19 @@
     <nav class="
       mx-2
       h-full
-      bg-white/95
-      dark:bg-black/95
-      --border-t
-      my-10
-      py-2
+      bg-white/100
+      dark:bg-black/100
+      my-0
+      py-10
       backdrop-filter
       backdrop-blur-[10px]
       --[@supports(backdrop-filter:blur(0px))]:bg-white/80
       --[@supports(backdrop-filter:blur(0px))]:dark:bg-grey-980/70
     ">
 
-      <hr class="mb-8 border-t-4">
+      <!-- <hr class="pt-6 mb-8 border-t-2 border-black"> -->
 
-      <div class="grid overscroll-contain grid-cols-1 gap-2 w-full sm:grid-cols-2 lg:grid-cols-4">
+      <div class="grid mt-12 overscroll-contain grid-cols-1 gap-2 w-full sm:grid-cols-2 lg:grid-cols-4">
 
         <section class="flex justify-start items-start w-full h-full">
           <ul class="block mt-4 w-full tracking-wide">
@@ -79,9 +78,14 @@
           </ul>
         </section>
       </div>
-      <hr class="mt-8">
-      <div class="font-mono text-2xs pt-1">
-        Beta --> v{{ appConfig.version }}
+      <hr class="mt-8 border-2">
+      <div class="font-mono text-2xs pt-1 flex">
+        <span class="flex-1">
+        thefreemavens.org
+      </span>
+      <span class="">
+      beta --> v{{ appConfig.version }}
+      </span>
       </div>
     </nav>
   </div>

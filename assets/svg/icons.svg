@@ -100,6 +100,7 @@
         d="M 0,38.281247 V 0 H 152.09616 V 38.281247 H 99.460642 V 175 H 52.635531 V 38.281247 Z M 169.86908,175 V 0 h 123.04406 v 38.281247 h -75.53539 v 30.078125 h 68.01604 V 106.64064 H 217.37775 V 175 Z M 310.34443,0 h 59.12951 l 40.6729,99.12109 h 2.05076 L 452.87048,0 H 512 V 175 H 465.51667 V 73.82813 h -1.36714 l -38.96396,99.8047 h -28.0267 L 358.19489,73.144526 h -1.36716 V 175 h -46.4833 z"
       />
     </symbol>
+
     <!-- Short -->
     <symbol id="tfm-s" fill-rule="nonzero" viewBox="0 0 512 130">
       <path
@@ -122,6 +123,21 @@
         fill="currentcolor"
         d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32L19.513 8.2z"
       />
+    </symbol>
+
+    <symbol id="tfm-neue-oval" fill-rule="nonzero" viewBox="0 0 512 512">
+        <circle
+          transform="scale(3.7795276)"
+          style="font-variation-settings:'wght' 900;fill:#000000;stroke-width:0.231364;-webkit-print-color-adjust:exact"
+          id="path1-6"
+          cx="67.73333"
+          cy="67.73333"
+          r="67.73333" />
+        <path
+          transform="scale(3.7795276)"
+          id="path7-3-7"
+          style="font-size:160.116px;font-family:'Inter V';-inkscape-font-specification:'Inter V, @wght=900';font-variation-settings:'wght' 900;dominant-baseline:ideographic;white-space:pre;fill:#ffffff;stroke-width:0.310429;-webkit-print-color-adjust:exact"
+          d="m 14.007041,54.231501 v 7.907559 h 10.8724 v 18.945859 h 9.672533 V 62.13906 h 10.8724 v -7.907559 z m 35.088656,0 v 26.853418 h 9.813337 v -4.82522 H 72.958946 V 68.352138 H 58.909034 V 62.13906 h 15.603179 v -7.907559 z m 29.016835,0 v 26.853418 h 9.601935 v -11.74433 h 0.282413 l 4.553671,11.74433 h 12.802869 l 4.52987,-11.60313 h 0.28225 v 11.60313 h 9.60154 V 54.231501 H 107.55323 L 99.151508,74.706422 H 98.727905 L 90.326609,54.231501 Z" />
     </symbol>
 
   </defs>

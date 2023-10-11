@@ -3,9 +3,9 @@
     <div class="mx-4">
       <ContentDoc>
         <template v-slot="{ doc }">
-      <div class="grid grid-cols-12 lg:pt-4 --border-t">
+      <div class="grid grid-cols-12 lg:pt-8 --border-t">
         <!-- Startbar -->
-        <nav class="hidden col-span-12 lg:block lg:col-span-2 overflow-y-scroll max-h-[calc(100dvh-80px)] sticky top-14">
+        <nav class="hidden col-span-12 lg:block lg:col-span-2 overflow-y-scroll max-h-[calc(100dvh-80px)] sticky top-16">
           <ContentNavigation :navigation-tree="knowledge" />
           <ContentNavigation :navigation-tree="lessons" :show-children="true" />
           <ContentNavigation :navigation-tree="challenges" :show-children="false" />
@@ -50,7 +50,7 @@
             
             <!-- Endbar -->
             <div class="col-span-12 lg:col-span-2 lg:col-start-11">
-              <aside class="sticky top-16 pt-2 border-t-4">
+              <aside class="sticky top-20 pt-2 border-t-4">
                 <!-- Table of Contents -->
                 <h3 v-if="doc.body.toc.links" class="pb-4 text-sm font-bold">Table of contents</h3>
                 <ul class="pb-6 text-xs">

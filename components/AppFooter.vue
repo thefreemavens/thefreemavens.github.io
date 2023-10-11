@@ -1,13 +1,19 @@
 <template>
   <footer class="max-w-screen">
     <div class="container mx-auto">
-      <section class="mt-12 mx-4 border-t-2 --bg-red/20 flex py-4 ">
+      <section class="mt-12 mx-4 border-t-2 --bg-red/20 flex pt-3 pb-6 ">
         <!-- <div class="grid grid-cols-4 gap-8 justify-start pt-0 start overflow-clip"> -->
-          <NuxtLink to="/">
-            <AppIcon name="tfm-s" class="w-40 h-[40px]"/>
+          <!-- <NuxtLink to="/" class=" me-12">
+            <AppIcon name="tfm-neue-oval" class="w-12 h-12"/>
+          </NuxtLink> -->
+
+          <NuxtLink to="/" class="">
+            <AppIcon name="tfm-s" class="w-20 h-8"/>
           </NuxtLink>
+
+          
           <!-- <AppLogotype class="translate-y-[30%] w-full h-full opacity-100" /> -->
-          <span class="font-mono col-start-3 col-span-2 text-2xs uppercase tracking-wider flex-1 text-right -mt-[3px]">
+          <span class="font-mono col-start-3 col-span-2 text-2xs uppercase tracking-wider flex-1 text-right mt-1">
             All Natural Rights Reserved
             <!-- <span class="hidden md:inline">@ All Times <span class="hidden lg:inline">@ All Cost</span></span> -->
             <span class="flex justify-end gap-x-2">

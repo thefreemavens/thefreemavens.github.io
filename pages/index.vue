@@ -30,7 +30,7 @@
       <NuxtLink to="/knowledge/main">
         <div class="relative pb-4 group group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Knowledge</h3>
-          <div class="relative my-6 aspect-square bg-black/5 dark:bg-white/5">
+          <div class="relative my-6 aspect-square ">
             <span class="absolute z-10 rounded-full w-1/2 h-1/2 top-[25%] left-[25%] bg-white mix-blend-difference"/>
             <span class="flex w-full h-full bg-black rounded-none scale-75 dark:bg-white" />
           </div>
@@ -46,7 +46,7 @@
       <NuxtLink to="/lessons/main">
         <div class="pb-4 group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Lessons</h3>
-          <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
+          <div class="relative my-6  aspect-square">
             <span class="absolute z-10 rounded-none w-1/2 h-1/2 top-[25%] left-[25%] bg-white mix-blend-difference"/>
             <svg
               viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@
       <NuxtLink to="/challenges/main">
         <div class="pb-4 group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Challanges</h3>
-          <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
+          <div class="relative my-6  aspect-square">
             <span class="absolute z-10 rounded-full w-1/2 h-1/2 top-[25%] left-[25%] bg-white mix-blend-difference"/>
             <svg
               viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +85,7 @@
       <NuxtLink to="/resources/main">
         <div class="pb-4 group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Resources</h3>
-          <div class="relative my-6 bg-black/5 dark:bg-white/5 aspect-square">
+          <div class="relative my-6  aspect-square">
             <span class="grid grid-cols-2 origin-center scale-75">
               <span class="rotate-90">
                 <svg
@@ -133,7 +133,7 @@
       <NuxtLink to="/tools/main">
         <div class="pb-4 group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Tools</h3>
-          <div class="relative my-6 aspect-square bg-black/5 dark:bg-white/5" >
+          <div class="relative my-6 aspect-square " >
             <span class="grid grid-cols-2 origin-center scale-75">
               <span class="rotate-90">
                 <svg
@@ -181,7 +181,7 @@
       <NuxtLink to="/marketspace">
         <div class="pb-4 group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Marketspace</h3>
-          <div class="relative my-6 aspect-square bg-black/5 dark:bg-white/5" >
+          <div class="relative my-6 aspect-square " >
             <span class="grid grid-cols-2 origin-center scale-75">
               <span class="-rotate-90">
                 <svg
@@ -259,7 +259,7 @@
             "/>
             <h3
               class="absolute text-5xl text-black opacity-0 transition-opacity duration-300 ease-in-out scale-90 group-hover:opacity-100 dark:text-white">
-              {{ principle.title}}<sup class="relative -top-6 text-xl start-0.5">{{ principle.id }}</sup>
+              {{ principle.title}}<sup class="relative text-xl start-0.5">{{ principle.id }}</sup>
             </h3>
           </NuxtLink>
         </li>

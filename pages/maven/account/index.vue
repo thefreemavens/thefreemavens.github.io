@@ -2,7 +2,7 @@
   <main class="container relative mx-auto">
 
     <!-- Login / Logout -->
-    <button v-if="maven" class="absolute top-4 right-4 px-2 py-1 text-xs font-bold text-white uppercase bg-black rounded dark:text-black dark:bg-white" type="button" @click="logout">
+    <button v-if="maven" class="absolute top-8 right-4 px-2 py-1 text-xs font-bold text-white uppercase bg-black rounded dark:text-black dark:bg-white" type="button" @click="logout">
       Logout
     </button>
 

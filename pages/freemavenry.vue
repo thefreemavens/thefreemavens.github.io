@@ -53,10 +53,16 @@
 
         <div class="">
           <p class="mb-4">
-            <b class="me-1 block text-xl md:text-2xl pb-3 tracking-tight">Free</b> The word Free means not under the control or in the power of another; able to act or be done as one wishes. 
+            <b class="me-1 block text-xl md:text-2xl pb-3 tracking-tight">Free</b> 
+            The word Free means not under the control or in the power of another; 
+            able to act or be done as one wishes. 
           </p>
           <p class="mb-4 mt-8">
-            <b class="me-1 block text-xl md:text-2xl pb-3 tracking-tight">Maven</b> The word Maven derives from the Yiddish word Meyvn, meaning "one who understands." To be a Maven you have to be more than just understand a topic, you have to know its ins and outs. Often Mavens are the people that you turn to as experts in a field. You don't become a Maven overnight. That kind of expertise and understanding comes with an accumulation of knowledge over the years. 
+            <b class="me-1 block text-xl md:text-2xl pb-3 tracking-tight">Maven</b> 
+            The word Maven derives from the Yiddish word Meyvn, meaning "one who understands." 
+            To be a Maven one have to know a topic's ins and outs. Often Mavens are the people that we turn to 
+            as experts in a field. You don't become a Maven overnight. That kind of expertise and understanding 
+            comes with an accumulation of knowledge over the years. 
           </p>
         </div>
         
@@ -79,7 +85,7 @@
           </p>
         </div>
 
-        <hr class="col-span-1 lg:col-span-2 my-8">
+        <hr id="init" class="col-span-1 lg:col-span-2 my-8">
         <h4 class="mb-6 font-bold text-4xl sm:text-5xl md:text-5xl lg:text-6xl tracking-tight">Be a Maven</h4>
         <div class="">
           <p class="mb-4">
