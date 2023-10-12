@@ -15,7 +15,7 @@
 
       <!-- <hr class="pt-6 mb-8 border-t-2 border-black"> -->
 
-      <div class="grid mt-12 overscroll-contain grid-cols-1 gap-2 w-full sm:grid-cols-2 lg:grid-cols-4">
+      <div class="grid overscroll-contain grid-cols-1 gap-2 mt-12 w-full sm:grid-cols-2 lg:grid-cols-4">
 
         <section class="flex justify-start items-start w-full h-full">
           <ul class="block mt-4 w-full tracking-wide">
@@ -79,11 +79,11 @@
         </section>
       </div>
       <hr class="mt-8 border-2">
-      <div class="font-mono text-2xs pt-1 flex">
-        <span class="flex-1">
+      <div class="flex pt-1">
+        <span class="flex-1 text-xs font-bold">
         thefreemavens.org
       </span>
-      <span class="">
+      <span class="font-mono text-2xs">
       beta --> v{{ appConfig.version }}
       </span>
       </div>

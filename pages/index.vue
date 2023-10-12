@@ -1,16 +1,16 @@
 <template>
   <main class="container mx-auto">
     <!-- HERO -->
-    <section class="relative grid grid-cols-6 mx-4 border-t pt-8 pb-16 lg:pt-12 lg:pb-20">
+    <section class="grid relative grid-cols-6 pt-8 pb-16 mx-4 border-t lg:pt-12 lg:pb-20">
       <!-- HERO: Title -->
-      <div class="mt-0 mb-12 font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl">---></div>
+      <div class="mt-0 mb-12 text-5xl font-bold sm:text-6xl md:text-7xl lg:text-8xl">---></div>
       <h1
-        class="mb-24 flex flex-col col-span-6 col-start-1 text-5xl font-bold tracking-tighter leading-none xl:pe-36 sm:text-6xl md:text-7xl lg:text-8xl">
+        class="flex flex-col col-span-6 col-start-1 mb-24 text-5xl font-bold tracking-tighter leading-none xl:pe-36 sm:text-6xl md:text-7xl lg:text-8xl">
         Discover your true power and learn how to use it 
       </h1>
     </section>
 
-    <section class="relative mx-4 py-12 border-t">
+    <section class="relative py-12 mx-4 border-t">
       <!-- <img src="/img/market/tfm-hoodie-white-nl-new-black.webp"> -->
       <NuxtLink to="marketspace">
         <img src="/img/market/tfm-notebook-angle-left-white.webp">
@@ -20,17 +20,12 @@
     </section>
 
     <!-- Features -->
-    <section class="
-      mx-4
-      pt-8 pb-16 lg:pt-12 lg:pb-20
-      grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 lg:gap-10 xl:gap-12
-      border-t
-    ">
+    <section class="grid grid-cols-1 gap-8 pt-8 pb-16 mx-4 border-t  lg:pt-12 lg:pb-20 md:grid-cols-2 xl:grid-cols-3 lg:gap-10 xl:gap-12">
       <!-- Knowledge -->
       <NuxtLink to="/knowledge/main">
-        <div class="relative pb-4 group group">
+        <div class="relative pb-4 group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Knowledge</h3>
-          <div class="relative my-6 aspect-square ">
+          <div class="relative my-6 aspect-square">
             <span class="absolute z-10 rounded-full w-1/2 h-1/2 top-[25%] left-[25%] bg-white mix-blend-difference"/>
             <span class="flex w-full h-full bg-black rounded-none scale-75 dark:bg-white" />
           </div>
@@ -38,7 +33,7 @@
             Knowledge base you can use and apply in your life. Unlike information that is "good to know" and has no real-life use. 
             Know the immutable laws of the universe and you shall know thyself.
           </p>
-          <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
+          <span class="inline-block invisible mt-4 text-xs group-hover:visible">Read More --></span>
         </div>
       </NuxtLink>
 
@@ -46,7 +41,7 @@
       <NuxtLink to="/lessons/main">
         <div class="pb-4 group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Lessons</h3>
-          <div class="relative my-6  aspect-square">
+          <div class="relative my-6 aspect-square">
             <span class="absolute z-10 rounded-none w-1/2 h-1/2 top-[25%] left-[25%] bg-white mix-blend-difference"/>
             <svg
               viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -56,8 +51,8 @@
             </svg>
           </div>
           <p class="text-base xl:text-lg">
-            Organized and well thought out interactive lessons for optimal and effective learning.</p>
-          <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
+            Organized and well thought out interactive lessons for optimal and effective learning, so you can become a Master and better understand how to apply the knowledge in your life.</p>
+          <span class="inline-block invisible mt-4 text-xs group-hover:visible">Read More --></span>
         </div>
       </NuxtLink>
 
@@ -65,7 +60,7 @@
       <NuxtLink to="/challenges/main">
         <div class="pb-4 group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Challanges</h3>
-          <div class="relative my-6  aspect-square">
+          <div class="relative my-6 aspect-square">
             <span class="absolute z-10 rounded-full w-1/2 h-1/2 top-[25%] left-[25%] bg-white mix-blend-difference"/>
             <svg
               viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +72,7 @@
           <p class="text-base xl:text-lg">
             Challanges to track your learning progress and level of undersatnding.
           </p>
-          <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
+          <span class="inline-block invisible mt-4 text-xs group-hover:visible">Read More --></span>
         </div>
       </NuxtLink>
 
@@ -85,7 +80,7 @@
       <NuxtLink to="/resources/main">
         <div class="pb-4 group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Resources</h3>
-          <div class="relative my-6  aspect-square">
+          <div class="relative my-6 aspect-square">
             <span class="grid grid-cols-2 origin-center scale-75">
               <span class="rotate-90">
                 <svg
@@ -125,7 +120,7 @@
           <p class="text-base xl:text-lg">
             A currated list of Resources arranged by categories to assist with your Natural Law study.
           </p>
-          <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
+          <span class="inline-block invisible mt-4 text-xs group-hover:visible">Read More --></span>
         </div>
       </NuxtLink>
 
@@ -133,7 +128,7 @@
       <NuxtLink to="/tools/main">
         <div class="pb-4 group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Tools</h3>
-          <div class="relative my-6 aspect-square " >
+          <div class="relative my-6 aspect-square" >
             <span class="grid grid-cols-2 origin-center scale-75">
               <span class="rotate-90">
                 <svg
@@ -173,7 +168,7 @@
           <p class="text-base xl:text-lg">
             Tools, techniques and tips you can use to "Exit the Matrix", the right way.
           </p>
-          <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
+          <span class="inline-block invisible mt-4 text-xs group-hover:visible">Read More --></span>
         </div>
       </NuxtLink>
 
@@ -181,7 +176,7 @@
       <NuxtLink to="/marketspace">
         <div class="pb-4 group">
           <h3 class="mb-6 text-3xl font-bold tracking-tighter lg:text-4xl xl:text-5xl">Marketspace</h3>
-          <div class="relative my-6 aspect-square " >
+          <div class="relative my-6 aspect-square" >
             <span class="grid grid-cols-2 origin-center scale-75">
               <span class="-rotate-90">
                 <svg
@@ -220,7 +215,7 @@
           <p class="text-base xl:text-lg">
             Community based marketplace with products and services you can buy, sell, trade or offer.
           </p>
-          <span class="invisible group-hover:visible text-xs mt-4 inline-block">Read More --></span>
+          <span class="inline-block invisible mt-4 text-xs group-hover:visible">Read More --></span>
         </div>
       </NuxtLink>
 
@@ -234,7 +229,7 @@
       <template #desc>
         Introducing <span class="font-bold">Picons</span> (<span class="italic">Principles + Icons</span>), 
         open-source and free-to-use set of 8 icons symbolizing the great body of knowledge of Natural Law and the 8
-        immutable metaphisical principles of our universe<sup class="inline-block text-sm relative -top-3 start-1">🡵</sup>
+        immutable metaphisical principles of our universe<sup class="inline-block relative -top-3 text-sm start-1">🡵</sup>
       </template>
       <ul class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         <li
@@ -242,12 +237,7 @@
           ref="el">
           <NuxtLink
             :to="principleBaseUrl + principle.slug"
-            class="
-              group
-              flex justify-center items-center
-              aspect-square
-              transition-all duration-300 ease-in-out
-            ">
+            class="flex justify-center items-center transition-all duration-300 ease-in-out  group aspect-square">
             <AppIcon
               :name="principle.title"
               class="

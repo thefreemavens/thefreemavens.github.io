@@ -8,7 +8,7 @@
           </NuxtLink> -->
 
           <NuxtLink to="/" class="">
-            <AppIcon name="tfm-s" class="w-20 h-8"/>
+            <AppIcon name="tfm-s" class="w-28 h-8"/>
           </NuxtLink>
 
           

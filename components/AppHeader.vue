@@ -51,8 +51,8 @@
       </NuxtLink> -->
 
       <!-- <NuxtLink to="/freemavenry#init" @click="menu = false" class="px-4 py-1.5 font-mono text-xs text-white uppercase bg-black rounded-md me-4"> -->
-      <NuxtLink to="/freemavenry#init" @click="menu = false" class="px-4 py-1 font-mono text-xs uppercase border lg:px-9 me-4">
-        Be a Maven
+      <NuxtLink to="/freemavenry#init" @click="menu = false" class="px-4 py-1 font-mono text-xs uppercase border lg:px-4 me-4">
+      --> Be a Maven
       </NuxtLink>
 
       <AppColorModeButton class="--bg-red/20" />
