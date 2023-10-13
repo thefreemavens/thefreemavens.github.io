@@ -5,20 +5,20 @@
         <template v-slot="{ doc }">
       <div class="grid grid-cols-12 lg:pt-8 --border-t">
         <!-- Startbar -->
-        <nav class="hidden col-span-12 lg:block lg:col-span-2 overflow-y-scroll max-h-[calc(100dvh-80px)] sticky top-16">
-          <ContentNavigation :navigation-tree="knowledge" />
-          <ContentNavigation :navigation-tree="lessons" :show-children="true" />
-          <ContentNavigation :navigation-tree="challenges" :show-children="false" />
-          <ContentNavigation :navigation-tree="resources" :show-children="false" />
-          <ContentNavigation :navigation-tree="tools" :show-children="false" />
+        <nav class="hidden col-span-12 lg:block lg:col-span-2 overflow-y-scroll max-h-[calc(100dvh-80px)] sticky top-20">
+          <ContentNavigation :navigation-tree="knowledge" :show-children="currentRouterSlug === 'knowledge'" />
+          <ContentNavigation :navigation-tree="lessons" :show-children="currentRouterSlug === 'lessons'" />
+          <ContentNavigation :navigation-tree="challenges" :show-children="currentRouterSlug === 'challenges'"/>
+          <ContentNavigation :navigation-tree="resources" :show-children="currentRouterSlug === 'resources'"/>
+          <ContentNavigation :navigation-tree="tools" :show-children="currentRouterSlug === 'tools'"/>
         </nav>
 
         <nav class="top-0 col-span-12 py-2 mb-4 border-b-4 lg:hidden border-y">
-          <ContentNavigation :navigation-tree="knowledge" :show-children="false" />
-          <ContentNavigation :navigation-tree="lessons" :show-children="false" />
-          <ContentNavigation :navigation-tree="challenges" :show-children="false" />
-          <ContentNavigation :navigation-tree="resources" :show-children="false" />
-          <ContentNavigation :navigation-tree="tools" :show-children="false" />
+          <ContentNavigation :navigation-tree="knowledge" :show-children="currentRouterSlug === 'knowledge'"/>
+          <ContentNavigation :navigation-tree="lessons" :show-children="currentRouterSlug === 'lessons'"/>
+          <ContentNavigation :navigation-tree="challenges" :show-children="currentRouterSlug === 'challenges'"/>
+          <ContentNavigation :navigation-tree="resources" :show-children="currentRouterSlug === 'resources'"/>
+          <ContentNavigation :navigation-tree="tools" :show-children="currentRouterSlug === 'tools'"/>
         </nav>
 
         <!-- Content -->
@@ -72,6 +72,9 @@
 </template>
 
 <script setup>
+const router = useRouter()
+const currentRouterSlug = router.currentRoute.value.params.slug[0]
+
 const queryKnowledge = queryContent({ where: { _path: { $contains: 'knowledge' }}})
 const queryLessons = queryContent({ where: { _path: { $contains: 'lessons' }}})
 const queryChallenges = queryContent({ where: { _path: { $contains: 'challenges' }}})
@@ -84,8 +87,9 @@ const { data: challenges } = await useAsyncData('challenges', () => fetchContent
 const { data: resources } = await useAsyncData('resources', () => fetchContentNavigation(queryrResources))
 const { data: tools } = await useAsyncData('tools', () => fetchContentNavigation(queryrTools))
 
+
 // Prev/Next navigation
-const { path } = useRoute();
+const { path } = useRoute()
 const { data } = await useAsyncData(`content-${path}`, async () => {
   // fetch document where the document path matches with the cuurent route
   // let article = queryContent().where({ _path: path }).findOne();

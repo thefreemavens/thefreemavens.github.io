@@ -28,7 +28,7 @@ defineProps({
   },
   showChildren: {
     type: Boolean,
-    default: true
+    default: false
   },
 })
 
