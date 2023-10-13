@@ -53,7 +53,7 @@
       </div>
     </AppSection>
 
-    <section class="py-12 mx-4 my-12 border-t lg:pt-12 lg:pb-20">
+    <!-- <section class="py-12 mx-4 my-12 border-t lg:pt-12 lg:pb-20">
       <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 md:gap-6 lg:gap:8 xl:gap-9">
         <h4 class="col-span-1 mb-6 text-4xl font-bold tracking-tight lg:col-span-2 sm:text-5xl md:text-5xl lg:text-6xl">Definitions</h4>
 
@@ -72,8 +72,8 @@
           </p>
         </div>
       </div>
-    </section>
-    
+    </section> -->
+
     <section class="grid grid-cols-1 gap-8 py-12 mx-4 my-12 border-t lg:pt-12 lg:pb-20 lg:grid-cols-3 lg:gap-10 xl:gap-12">
       <h4 id="Principles" class="col-span-1 mb-6 text-4xl font-bold tracking-tight lg:col-span-3 sm:text-5xl md:text-5xl lg:text-6xl">Principles</h4>
         <p class="mb-8">
@@ -98,6 +98,28 @@
           <b class="block pb-3 text-xl tracking-tight me-1 md:text-2xl">Care</b> 
           Freemavens are taught to practice charity, and to care, not only for their own members, but for the community as a whole, 
           by charitable giving, voluntary effort and taking actions.  
+        </p>
+    </section>
+
+    <section class="grid grid-cols-1 gap-8 py-12 mx-4 my-12 border-t lg:pt-12 lg:pb-20 lg:grid-cols-3 lg:gap-10 xl:gap-12">
+      <h4 id="Principles" class="col-span-1 mb-6 text-4xl font-bold tracking-tight lg:col-span-3 sm:text-5xl md:text-5xl lg:text-6xl">Definitions</h4>
+        <p class="mb-8 lg:col-start-2">
+          <div class="">
+            <AppIcon name="f" class="scale-50 aspect-video lg:aspect-square w-full h-full fill-none stroke-current stroke-[10px]" />
+          </div>
+          <b class="block pb-3 text-xl tracking-tight me-1 md:text-2xl">Free</b> 
+            The word Free means not under the control or in the power of another; 
+            able to act or be done as one wishes. 
+        </p>
+        <p class="mb-8">
+          <div class="">
+            <AppIcon name="m" class="scale-50 aspect-video lg:aspect-square w-full h-full fill-none stroke-current stroke-[10px]" />
+          </div>
+          <b class="block pb-3 text-xl tracking-tight me-1 md:text-2xl">Maven</b> 
+            The word Maven derives from the Yiddish word Meyvn, meaning "one who understands." 
+            To be a Maven one have to know the ins and outs of a topic. Often Mavens are the people that we turn to 
+            as experts in a field. You don't become a Maven overnight. That kind of expertise and understanding 
+            comes with an accumulation of knowledge over the years. 
         </p>
     </section>
 

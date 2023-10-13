@@ -178,6 +178,31 @@
         <polygon points="251.578686 144.788682 335.14106 289.577364 167.975351 289.577364"/>
       </g>
     </symbol>
+
+    <!-- Logotype: M -->
+    <symbol id="f" fill-rule="evenodd" viewBox="0 0 512 512">
+      <g transform="scale(3.7795276)">
+        <path
+          fill="currentcolor"
+          stroke="currentStroke"
+          d="M 26.404228,24.067717 V 111.39878 H 58.318619 V 95.7066 H 104.01107 V 69.990081 H 58.318619 V 49.78424 H 109.06249 V 24.067717 Z"
+        />
+      </g>
+    </symbol>
+
+    <!-- Logotype: F -->
+    <symbol id="m" fill-rule="evenodd" viewBox="0 0 512 512">
+      <g transform="scale(3.7795276)">
+        <path
+          fill="currentcolor"
+          stroke="currentStroke"
+           d="M 0,24.067717 V 111.39878 H 31.226885 V 73.20466 h 0.918439 l 14.809205,38.19412 H 88.591313 L 103.32324,73.663873 h 0.91779 v 37.734907 h 31.22564 V 24.067717 H 95.745432 L 68.421794,90.655136 H 67.044182 L 39.721946,24.067717 Z"
+        />
+      </g>
+    </symbol>
+
+
+
   </defs>
 </svg>
 
