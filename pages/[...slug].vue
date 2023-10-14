@@ -5,7 +5,7 @@
         <template v-slot="{ doc }">
       <div class="grid grid-cols-12 lg:pt-8 --border-t">
         <!-- Startbar -->
-        <nav class="hidden col-span-12 lg:block lg:col-span-2 overflow-y-scroll max-h-[calc(100dvh-80px)] sticky top-20">
+        <nav class="hidden col-span-12 lg:block lg:col-span-2 overflow-y-scroll max-h-[calc(100dvh-96px)] sticky top-20">
           <ContentNavigation :navigation-tree="knowledge" :show-children="currentRouterSlug === 'knowledge'" />
           <ContentNavigation :navigation-tree="lessons" :show-children="currentRouterSlug === 'lessons'" />
           <ContentNavigation :navigation-tree="challenges" :show-children="currentRouterSlug === 'challenges'"/>
@@ -13,7 +13,7 @@
           <ContentNavigation :navigation-tree="tools" :show-children="currentRouterSlug === 'tools'"/>
         </nav>
 
-        <nav class="top-0 col-span-12 py-2 mb-4 border-b-4 lg:hidden border-y">
+        <nav class="top-0 mt-6 col-span-12 py-2 mb-4 border-b-4 lg:hidden">
           <ContentNavigation :navigation-tree="knowledge" :show-children="currentRouterSlug === 'knowledge'"/>
           <ContentNavigation :navigation-tree="lessons" :show-children="currentRouterSlug === 'lessons'"/>
           <ContentNavigation :navigation-tree="challenges" :show-children="currentRouterSlug === 'challenges'"/>

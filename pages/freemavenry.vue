@@ -77,14 +77,14 @@
     <section class="grid grid-cols-1 gap-8 py-12 mx-4 my-12 border-t lg:pt-12 lg:pb-20 lg:grid-cols-3 lg:gap-10 xl:gap-12">
       <h4 id="Principles" class="col-span-1 mb-6 text-4xl font-bold tracking-tight lg:col-span-3 sm:text-5xl md:text-5xl lg:text-6xl">Principles</h4>
         <p class="mb-8">
-          <div class="">
+          <div class="--lg:border">
             <AppIcon name="tetrahedron" class="scale-50 aspect-video lg:aspect-square w-full h-full fill-none stroke-current stroke-[10px]" />
           </div>
           <b class="block pb-3 text-xl tracking-tight me-1 md:text-2xl">Truth</b> 
           Freemavenry strives for the singular and objective truth and requires high moral standards of all our members and friends. 
         </p>
         <p class="mb-8">
-          <div class="">
+          <div class="--lg:border">
             <AppIcon name="polyhedron" class="scale-50 aspect-video lg:aspect-square w-full h-full fill-none stroke-current stroke-[10px]" />
           </div>
           <b class="block pb-3 text-xl tracking-tight me-1 md:text-2xl">Love</b> 
@@ -92,7 +92,7 @@
           with kindness and understanding to his fellow beings.  
         </p>
         <p class="mb-8">
-          <div class="">
+          <div class="--lg:border">
             <AppIcon name="icosahedron" class="scale-50 aspect-video lg:aspect-square w-full h-full fill-none stroke-current stroke-[10px]" />
           </div>
           <b class="block pb-3 text-xl tracking-tight me-1 md:text-2xl">Care</b> 
@@ -104,7 +104,7 @@
     <section class="grid grid-cols-1 gap-8 py-12 mx-4 my-12 border-t lg:pt-12 lg:pb-20 lg:grid-cols-3 lg:gap-10 xl:gap-12">
       <h4 id="Principles" class="col-span-1 mb-6 text-4xl font-bold tracking-tight lg:col-span-3 sm:text-5xl md:text-5xl lg:text-6xl">Definitions</h4>
         <p class="mb-8 lg:col-start-2">
-          <div class="">
+          <div class="--lg:border">
             <AppIcon name="f" class="scale-50 aspect-video lg:aspect-square w-full h-full fill-none stroke-current stroke-[10px]" />
           </div>
           <b class="block pb-3 text-xl tracking-tight me-1 md:text-2xl">Free</b> 
@@ -112,7 +112,7 @@
             able to act or be done as one wishes. 
         </p>
         <p class="mb-8">
-          <div class="">
+          <div class="--lg:border">
             <AppIcon name="m" class="scale-50 aspect-video lg:aspect-square w-full h-full fill-none stroke-current stroke-[10px]" />
           </div>
           <b class="block pb-3 text-xl tracking-tight me-1 md:text-2xl">Maven</b> 

@@ -1,6 +1,6 @@
 # TFM
 
-The Free Mavens official website.
+The Freemavens official website.
 
 ## TODO:
 
