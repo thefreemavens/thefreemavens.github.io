@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import FormKitVariants from '@formkit/themes/tailwindcss'
 
 // Default are on https://tailwindcss.nuxtjs.org/tailwind/config#default-configuration
 export default <Partial<Config>>{
@@ -50,8 +51,9 @@ export default <Partial<Config>>{
       // 'display': ['Major Mono Display'],
     }
   },
-  plugins: [],
+  plugins: [FormKitVariants],
   content: [
     './content/**/*.md',
+    './.configs/formkit-tailwind-theme.js',
   ]
 }

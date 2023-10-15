@@ -30,7 +30,11 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
+    '@formkit/nuxt'
   ],
+  colorMode: {
+    classSuffix: ''
+  },
   content: {
     documentDriven: false,
     watch: {
@@ -39,12 +43,14 @@ export default defineNuxtConfig({
       }
     }
   },
+  formkit: {
+    // Experimental support for auto loading (see note):
+    autoImport: true,
+    configFile: './.configs/formkit.config.ts',
+  },
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
     viewer: false
-  },
-  colorMode: {
-    classSuffix: ''
   },
   // build: {
   //   transpile: ['ellipse']

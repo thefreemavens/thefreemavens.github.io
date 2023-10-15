@@ -40,14 +40,16 @@
       <section class="lg:col-start-2">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-1">
           <div class="lg:col-start-1 lg:max-w-xl">
-            <!-- FormKit -->
+
+          <!-- FormKit -->
+          <div class="mt-10">
             <FormKit type="form" @submit="login" >
               <FormKit
                 type="text"
                 name="email"
                 id="email"
                 label="Email"
-                validation="required|*email"
+                validation="required"
                 v-model="email"
               />
 
@@ -60,8 +62,48 @@
                 v-model="password"
               />
             </FormKit>
+          </div>
+
+            <form
+              id="join"
+              class="relative text-left"
+            >
+  
+              <!-- Email -->
+              <div class="form-group group">
+                <input
+                  class="peer"
+                  v-model="email"
+                  type="text"
+                  required="required"
+                />
+                <label for="user-email"> Email </label>
+              </div>
+  
+              <!-- Password -->
+              <!-- <AppInput v-model="password" type="password" required="true" label-for="user-password" label="Password"/> -->
+
+              <div class="form-group group">
+                <input
+                  class="peer"
+                  v-model="password"
+                  type="password"
+                  required="required"
+                />
+                <label for="user-password"> Password </label>
+              </div>
+  
+              <!-- Submit Button -->
+              <!-- :disabled="invalid" -->
+              <button
+                @click="login"
+                type="button"
+                class="py-2.5 mt-2 w-full text-base font-bold text-center text-white uppercase bg-grey-975 dark:bg-white dark:text-grey-975 rounded">
+                Login
+              </button>
+
+  
               <!-- Form Disclaimers -->
-            <div class="relative">
               <span class="flex mt-2 text-xs">
                 <span class="block w-3.5 h-3.5 me-2">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -78,7 +120,8 @@
               >
                 Signup
               </button>
-            </div>
+            </form>
+
           </div>
         </div>
       </section>
@@ -92,9 +135,17 @@
 
 <script setup>
 const { $pb } = useNuxtApp()
+// const router = useRouter()
+
+// const firstName = ref('')
+// const lastName = ref('')
 const email = ref('')
 const password = ref('')
+
 const maven = useState('maven', () => '')
+// const currentUser = ref('')
+// const loginMode = ref(true)
+
 
 const login = async () => {
   try {

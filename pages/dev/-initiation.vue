@@ -64,31 +64,90 @@
                 name="email"
                 id="email"
                 label="Email"
-                validation="required|*email"
+                validation="required"
                 v-model="email"
               />
 
-              <FormKit
+            <FormKit
                 type="password"
                 name="password"
                 id="password"
                 label="Password"
-                validation="required|?length:8"
-                :validation-messages="{ length: 'Try to make your password longer!',}"
+                validation="required"
                 v-model="password"
-              />
-
-              <FormKit
-                type="password"
-                name="password_confirm"
-                id="passwordConfirm"
-                label="Confirm Password"
-                validation="required|confirm"
               />
             </FormKit>
 
+            <form
+              id="join"
+              ref="formElement"
+              class="relative text-left"
+            >
+              <!-- First Name -->
+              <div class="form-group group">
+                <input
+                class="peer"
+                v-model="firstName"
+                type="text"
+                required="required"
+                name="entry.1090129806"
+                />
+                <label
+                  for="firstName"
+                  class=""
+                >
+                  First Name
+                </label>
+              </div>
+  
+              <!-- Last Name -->
+              <div class="form-group group">
+                <input
+                class="peer"
+                v-model="lastName"
+                type="text"
+                required="required"
+                name="entry.57994274"
+                />
+                <label for="lastName"
+                  class="">
+                  Last Name
+                </label>
+              </div>
+  
+              <!-- Email -->
+              <div class="form-group group">
+                <input
+                  class="peer"
+                  v-model="email"
+                  type="text"
+                  required="required"
+                  name="entry.1097449195"
+                />
+                <label for="user-email"> Email </label>
+              </div>
+  
+              <!-- Password -->
+              <div class="form-group group">
+                <input
+                  class="peer"
+                  v-model="password"
+                  type="password"
+                  required="required"
+                  name="entry.1097449195"
+                />
+                <label for="user-password"> Password </label>
+              </div>
+  
+              <!-- Submit Button -->
+              <button
+                @click="signup"
+                type="button"
+                class="py-2.5 mt-2 w-full text-base font-bold text-center text-white uppercase rounded bg-grey-975 dark:bg-white dark:text-grey-975 --rounded">
+                Signup
+              </button>
+  
               <!-- Form Disclaimers -->
-              <div class="relative">
               <span class="flex mt-2 text-xs">
                 <span class="block w-3.5 h-3.5 me-2">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -101,11 +160,10 @@
               <button
                 type="button"
                 @click="navigateTo('/maven/login')"
-                class="absolute right-0 -bottom-0.5 pb-0.5 text-xs font-bold text-center uppercase border-b border-transparent hover:border-black dark:hover:border-white"
-              >
+                class="absolute right-0 -bottom-0.5 pb-0.5 text-xs font-bold text-center uppercase border-b border-transparent hover:border-black dark:hover:border-white">
                 Login
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </section>
