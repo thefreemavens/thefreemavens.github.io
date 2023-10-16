@@ -41,7 +41,7 @@
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-1">
           <div class="lg:col-start-1 lg:max-w-xl">
             <!-- FormKit -->
-            <FormKit type="form" @submit="login" >
+            <FormKit type="form" @submit="login" submit-label="Login" >
               <FormKit
                 type="text"
                 name="email"
@@ -71,13 +71,12 @@
                 All applications are kept secure and private.
               </span>
     
-              <button
-                type="button"
-                @click="navigateTo('/maven/initiation')"
+              <NuxtLink
+                to="/maven/initiation"
                 class="absolute right-0 -bottom-0.5 pb-0.5 text-xs font-bold text-center uppercase border-b border-transparent hover:border-black dark:hover:border-white"
               >
                 Signup
-              </button>
+              </NuxtLink>
             </div>
           </div>
         </div>

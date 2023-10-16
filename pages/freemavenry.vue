@@ -189,7 +189,7 @@
         </div>
 
         <div>
-          <p class="px-4 py-2 mt-10 mb-8 font-mono text-xs border">
+          <p class="px-4 py-2 mt-2 mb-16 font-mono text-xs border">
             <!-- <b class="block pb-3 text-xl tracking-tight me-1 md:text-2xl">Relief</b>  -->
             Membership is open to all men and women of integrity who can fulfill these essential qualifications.   
           </p>

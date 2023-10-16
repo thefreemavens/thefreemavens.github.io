@@ -40,13 +40,13 @@
           <div class="lg:col-start-1 lg:max-w-xl">
 
             <!-- FormKit -->
-            <FormKit type="form" @submit="signup" >
+            <FormKit type="form" @submit="signup" submit-label="Be a Maven" >
               <FormKit
                 type="text"
                 name="firstName"
                 id="firstName"
                 label="First Name"
-                validation="required"
+                validation="required|alpha:latin"
                 v-model="firstName"
               />
 
@@ -55,7 +55,7 @@
                 name="lastName"
                 id="lastName"
                 label="Last Name"
-                validation="required"
+                validation="required|alpha:latin"
                 v-model="lastName"
               />
 
@@ -98,13 +98,15 @@
                 All applications are kept secure and private.
               </span>
     
-              <button
-                type="button"
-                @click="navigateTo('/maven/login')"
+              <NuxtLink
+                to="/maven/login"
                 class="absolute right-0 -bottom-0.5 pb-0.5 text-xs font-bold text-center uppercase border-b border-transparent hover:border-black dark:hover:border-white"
               >
                 Login
-              </button>
+              </NuxtLink>
+
+              <!-- <h2>Using <code>FormKitIcon</code> you can output any loaded icon anywhere.</h2>
+              <FormKitIcon icon="bitcoin" /> -->
             </div>
           </div>
         </div>
@@ -118,6 +120,8 @@
 </template>
 
 <script setup>
+import { FormKitIcon } from '@formkit/vue'
+
 const { $pb } = useNuxtApp()
 
 const firstName = ref('')

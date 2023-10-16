@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     serveStatic: true,
     prerender: {
       crawlLinks: true,
+      failOnError: false,
       routes: [
         '/sitemap.xml',
         ...routes

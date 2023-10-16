@@ -49,7 +49,7 @@
 
         <section class="flex justify-start items-start w-full h-full">
           <ul class="block mt-4 w-full tracking-wide">
-            <li class="mb-2 text-xs font-bold uppercase sm:mb-4 lg:mb-6 text-grey-975 dark:text-white">Market</li>
+            <li class="mb-2 text-xs font-bold uppercase sm:mb-4 lg:mb-6 text-grey-975 dark:text-white">Community</li>
             <li
               v-for="(menuItem, index) in menuItems3" :key="index"
               class="py-2 my-0"
