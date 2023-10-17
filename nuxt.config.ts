@@ -53,6 +53,17 @@ export default defineNuxtConfig({
     cssPath: '~/assets/css/tailwind.css',
     viewer: false
   },
+  // vite: {
+  //   vue: {
+  //     // customElement: true,
+  //     template: {
+  //       compilerOptions: {
+  //         // treat all tags with a dash as custom elements
+  //         isCustomElement: (tag) => tag.startsWith("Ellipse"),
+  //       },
+  //     },
+  //   }
+  // }
   // build: {
   //   transpile: ['ellipse']
   // },

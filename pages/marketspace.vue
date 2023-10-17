@@ -126,6 +126,18 @@ const clientProducts = ref([
     slug: '',  
     url: 'tfm-tshirt-white-new-black.webp'
   },
+  {
+    puid: 'TRNL-P05B',
+    title: 'The Black Tote Bag',
+    slug: '',  
+    url: 'tfm-tote-bag-angle-black.webp'
+  },
+  {
+    puid: 'TRNL-P05W',
+    title: 'The White Tote Bag',
+    slug: '',  
+    url: 'tfm-tote-bag-front-white.webp'
+  },
   // {
   //   title: '',
   //   slug: '',  
