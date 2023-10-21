@@ -44,6 +44,9 @@ export default defineNuxtConfig({
       }
     }
   },
+  // css: [
+  //   '@/node_modules/lite-youtube-embed/src/lite-yt-embed.css',
+  // ],
   formkit: {
     // Experimental support for auto loading (see note):
     autoImport: true,
@@ -59,7 +62,7 @@ export default defineNuxtConfig({
   //     template: {
   //       compilerOptions: {
   //         // treat all tags with a dash as custom elements
-  //         isCustomElement: (tag) => tag.startsWith("Ellipse"),
+  //         isCustomElement: (tag) => tag.startsWith('youtube-lite'),
   //       },
   //     },
   //   }
@@ -67,9 +70,10 @@ export default defineNuxtConfig({
   // build: {
   //   transpile: ['ellipse']
   // },
-  // vue: {
-  //   compilerOptions: {
-  //     isCustomElement: tag => ['ellipse'].includes(tag)
-  //   }
-  // }
+  vue: {
+    compilerOptions: {
+      isCustomElement: tag => ['lite-youtube'].includes(tag)
+      // isCustomElement: (tag: 'lite-youtube') => tag
+    }
+  }
 })

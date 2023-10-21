@@ -37,6 +37,9 @@
   /* HTML */
   html { @apply scroll-smooth}
   sup { @apply text-[0.5em] align-super}
+  lite-youtube { max-width: 100%;}
+  lite-youtube::before { height: 100px !important;}
+
 
   /* Forms */
   /* .form-group { @apply text-left mb-3 relative}
