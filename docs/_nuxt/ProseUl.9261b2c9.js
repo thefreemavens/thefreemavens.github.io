@@ -1,0 +1,1 @@
+import{_ as e,o,c as t,D as c}from"./entry.a45b924a.js";const l={},r={class:"list-inside list-disc ps-4 mb-8 text-sm/loose md:text-base/loose"};function n(s,a){return o(),t("ol",r,[c(s.$slots,"default")])}const d=e(l,[["render",n]]);export{d as default};
