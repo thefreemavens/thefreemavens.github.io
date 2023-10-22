@@ -63,7 +63,7 @@
 
 <script setup>
 const { $pb } = useNuxtApp()
-const baseUrl = './img/market/'
+const baseUrl = '/img/market/'
 const products = ref([])
 const clientProducts = ref([
   {
