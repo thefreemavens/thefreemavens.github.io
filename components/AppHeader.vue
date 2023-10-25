@@ -51,7 +51,7 @@
       </NuxtLink> -->
 
       <!-- <NuxtLink to="/freemavenry#init" @click="menu = false" class="px-4 py-1.5 font-mono text-xs text-white uppercase bg-black rounded-md me-4"> -->
-      <NuxtLink to="/freemavenry#init" @click="menu = false" class="px-4 py-1 font-mono text-xs uppercase border lg:px-4 me-4">
+      <NuxtLink to="/freemavenry#" @click="menu = false" class="px-2 py-1 font-mono text-xs uppercase border lg:px-3 me-4">
       --> Be a Maven
       </NuxtLink>
 

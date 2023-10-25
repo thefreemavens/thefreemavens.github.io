@@ -15,7 +15,6 @@ export default defineNuxtConfig({
     payloadExtraction: true
   },
   nitro: { 
-    // preset: 'service-worker',
     preset: 'static',
     serveStatic: true,
     prerender: {
@@ -44,11 +43,7 @@ export default defineNuxtConfig({
       }
     }
   },
-  // css: [
-  //   '@/node_modules/lite-youtube-embed/src/lite-yt-embed.css',
-  // ],
   formkit: {
-    // Experimental support for auto loading (see note):
     autoImport: true,
     configFile: './.configs/formkit.config.ts',
   },
@@ -56,24 +51,9 @@ export default defineNuxtConfig({
     cssPath: '~/assets/css/tailwind.css',
     viewer: false
   },
-  // vite: {
-  //   vue: {
-  //     // customElement: true,
-  //     template: {
-  //       compilerOptions: {
-  //         // treat all tags with a dash as custom elements
-  //         isCustomElement: (tag) => tag.startsWith('youtube-lite'),
-  //       },
-  //     },
-  //   }
-  // }
-  // build: {
-  //   transpile: ['ellipse']
-  // },
   vue: {
     compilerOptions: {
       isCustomElement: tag => ['lite-youtube'].includes(tag)
-      // isCustomElement: (tag: 'lite-youtube') => tag
     }
   }
 })

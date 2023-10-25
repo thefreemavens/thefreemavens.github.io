@@ -3,26 +3,26 @@
     <div class="mx-4">
       <ContentDoc>
         <template v-slot="{ doc }">
-      <div class="grid grid-cols-12 lg:pt-8 --border-t">
-        <!-- Startbar -->
-        <nav class="hidden col-span-12 lg:block lg:col-span-2 overflow-y-scroll max-h-[calc(100dvh-96px)] sticky top-20">
-          <ContentNavigation :navigation-tree="knowledge" :show-children="currentRouterSlug === 'knowledge'" />
-          <ContentNavigation :navigation-tree="lessons" :show-children="currentRouterSlug === 'lessons'" />
-          <ContentNavigation :navigation-tree="challenges" :show-children="currentRouterSlug === 'challenges'"/>
-          <ContentNavigation :navigation-tree="resources" :show-children="currentRouterSlug === 'resources'"/>
-          <ContentNavigation :navigation-tree="tools" :show-children="currentRouterSlug === 'tools'"/>
-        </nav>
+          <div class="grid grid-cols-12 lg:pt-8 --border-t">
+            <!-- Startbar -->
+            <nav class="hidden col-span-12 lg:block lg:col-span-2 overflow-y-scroll max-h-[calc(100dvh-96px)] sticky top-20">
+              <ContentNavigation :navigation-tree="knowledge" :show-children="currentRouterSlug === 'knowledge'" />
+              <ContentNavigation :navigation-tree="lessons" :show-children="currentRouterSlug === 'lessons'" />
+              <ContentNavigation :navigation-tree="challenges" :show-children="currentRouterSlug === 'challenges'"/>
+              <ContentNavigation :navigation-tree="resources" :show-children="currentRouterSlug === 'resources'"/>
+              <ContentNavigation :navigation-tree="tools" :show-children="currentRouterSlug === 'tools'"/>
+            </nav>
 
-        <nav class="top-0 mt-6 col-span-12 py-2 mb-4 border-b-4 lg:hidden">
-          <ContentNavigation :navigation-tree="knowledge" :show-children="currentRouterSlug === 'knowledge'"/>
-          <ContentNavigation :navigation-tree="lessons" :show-children="currentRouterSlug === 'lessons'"/>
-          <ContentNavigation :navigation-tree="challenges" :show-children="currentRouterSlug === 'challenges'"/>
-          <ContentNavigation :navigation-tree="resources" :show-children="currentRouterSlug === 'resources'"/>
-          <ContentNavigation :navigation-tree="tools" :show-children="currentRouterSlug === 'tools'"/>
-        </nav>
+            <nav class="top-0 mt-6 col-span-12 py-2 mb-4 border-b-4 lg:hidden">
+              <ContentNavigation :navigation-tree="knowledge" :show-children="currentRouterSlug === 'knowledge'"/>
+              <ContentNavigation :navigation-tree="lessons" :show-children="currentRouterSlug === 'lessons'"/>
+              <ContentNavigation :navigation-tree="challenges" :show-children="currentRouterSlug === 'challenges'"/>
+              <ContentNavigation :navigation-tree="resources" :show-children="currentRouterSlug === 'resources'"/>
+              <ContentNavigation :navigation-tree="tools" :show-children="currentRouterSlug === 'tools'"/>
+            </nav>
 
-        <!-- Content -->
-        <main class="col-span-12 lg:px-12 xl:px-24 lg:col-span-8 lg:col-start-3">
+            <!-- Content -->
+            <main class="col-span-12 lg:px-12 xl:px-24 lg:col-span-8 lg:col-start-3">
               <article>
                 <div class="flex pt-2 w-full text-sm">
                   <span class="flex-1 font-mono">{{ doc.id ? doc.cat + ' / ' + doc.id : '--' }}</span>
@@ -65,6 +65,18 @@
             
             </div>
           </div>
+        </template>
+
+        <template #not-found>
+          <AppSection>
+            <template #title>
+              Not Found
+            </template>
+            <template #desc>
+              Error 404: Not Found<br>
+              <NuxtLink to="/knowledge/discovery-vs-belief" class="border-b font-bold">Back to Home<sup>🡵</sup></NuxtLink>
+            </template>
+          </AppSection>
         </template>
       </ContentDoc>
     </div>

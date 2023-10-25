@@ -23,7 +23,7 @@
     },
     params: {
       type: String,
-      default: 'rel=0&start=0'
+      default: 'rel=0&start=0&cc_load_policy=1&cc_lang_pref=en'
     },
     poster: {
       type: String,

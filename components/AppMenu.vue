@@ -109,6 +109,11 @@ const menuItems1 = ref([
     slug: 'freemavenry',
     url: '/freemavenry'
   },
+  // {
+  //   title: 'FAQ',
+  //   slug: 'faq',
+  //   url: '/faq'
+  // },
 ])
 
 const menuItems2 = ref([

@@ -39,6 +39,7 @@
   sup { @apply text-[0.5em] align-super}
   lite-youtube { max-width: 100%;}
   lite-youtube::before { height: 100px !important;}
+  b {@apply font-bold}
 
 
   /* Forms */

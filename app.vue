@@ -16,27 +16,23 @@ nuxtApp.hook("page:finish", () => {
    window.scrollTo(0, 0)
 })
 
+useSeoMeta({
+  title: 'The Free Mavens',
+  description: 'Discover your true power and learn how to use it.',
+  ogTitle: 'The Free Mavens',
+  ogDescription: 'Discover your true power and learn how to use it.',
+  ogType: 'website',
+  ogUrl: 'https://thefreemavens.org',
+  ogImage: '/tfm-og-img.webp',
+  twitterTitle: 'The Free Mavens',
+  twitterDescription: 'Discover your true power and learn how to use it.',
+  twitterCard: 'summary_large_image',
+  twitterSite: 'https://thefreemavens.org',
+  twitterCreator: '@thefreemavens',
+})
+
 useHead({
   title: 'The Free Mavens',
-  meta: [
-    { name: 'title', content: 'The Free Mavens' },
-    { name: 'description', content: 'DESCRIPTION' },
-    { name: 'msapplication-TileColor', content: '#000000' },
-    { name: 'theme-color', content: '#ffffff' },
-    // Open Graph / Facebook
-    { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://tfm.github.io/togw/' },
-    { property: 'og:title', content: 'The Free Mavens' },
-    { property: 'og:description', content: 'DESCRIPTION' },
-    { property: 'og:image', content: 'OG_IMAGE' },
-
-    // Twitter
-    { property: 'twitter:card', content: 'summary_large_image' },
-    { property: 'twitter:url', content: 'https://tfm.github.io/togw/' },
-    { property: 'twitter:title', content: 'The Free Mavens' },
-    { property: 'twitter:description', content: 'DESCRIPTION' },
-    { property: 'twitter:image', content: 'OG_IMAGE' },
-  ],
   link: [
     { rel: 'apple-touch-icon', sizes: '180x180', href: './apple-touch-icon.png' },
     { rel: 'icon', type: 'image/png', sizes: '32x32', href: './favicon-32x32.png' },
@@ -45,14 +41,30 @@ useHead({
     { rel: 'manifest', href: '/site.webmanifest' },
     { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#000000' },
   ],
-  //
-  // Leave for syntex options example:
-  bodyAttrs: {
-    // used by Lenis plugin
-    class: 'app'
-  },
+  // bodyAttrs: {
+  //   class: 'app' // used by Lenis plugin
+  // },
   // script: [ { innerHTML: 'console.log(\'Hello world\')' } ]
   //
+  // meta: [
+  //   { name: 'title', content: 'The Freemavens' },
+  //   { name: 'description', content: 'Discover your true power and learn how to use it.' },
+  //   { name: 'msapplication-TileColor', content: '#ffffff' },
+  //   { name: 'theme-color', content: '#ffffff' },
+  //   // Open Graph / Facebook
+  //   { property: 'og:type', content: 'website' },
+  //   { property: 'og:url', content: 'https://thefreemavens.org/' },
+  //   { property: 'og:title', content: 'The Freemavens' },
+  //   { property: 'og:description', content: 'Discover your true power and learn how to use it.' },
+  //   { property: 'og:image', content: '/tfm-og-img.webp' },
+  
+  //   // Twitter
+  //   { property: 'twitter:card', content: 'summary_large_image' },
+  //   { property: 'twitter:url', content: 'https://thefreemavens.org/' },
+  //   { property: 'twitter:title', content: 'The Freemavens' },
+  //   { property: 'twitter:description', content: 'Discover your true power and learn how to use it.' },
+  //   { property: 'twitter:image', content: '/tfm-og-img.webp' },
+  // ],
 })
 
 </script>
