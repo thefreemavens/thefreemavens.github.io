@@ -52,7 +52,7 @@
             <div class="col-span-12 lg:col-span-2 lg:col-start-11">
               <aside class="sticky top-20 pt-2 border-t-4">
                 <!-- Table of Contents -->
-                <h3 v-if="doc.body.toc.links" class="pb-4 text-sm font-bold">Table of contents</h3>
+                <h3 v-if="doc.body.toc.links.length" class="pb-4 text-sm font-bold">Table of contents</h3>
                 <ul class="pb-6 text-xs">
                   <li v-for="link of doc.body.toc.links" :key="link.id"
                   class="py-0.5"

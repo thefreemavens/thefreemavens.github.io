@@ -132,8 +132,6 @@ const password = ref('')
 // const currentUser = ref('')
 const maven = useState('maven', () => '')
 
-// const loginMode = ref(true)
-
 definePageMeta({
   middleware: 'auth'
 })

@@ -20,7 +20,25 @@
         <p class="px-4 py-2 font-mono text-xs border lg:col-start-2">
           Your profile page is in development, please come back soon.
         </p>
+        
+        <div class="lg:col-start-2">
+          <NuxtLink to="/maven/account/update" class="my-8 block">Update</NuxtLink>
+          <ul>
+            <li>First Name: {{ maven.name.split(' ')[0] }}</li>
+            <li>Last Name: {{ maven.name.split(' ')[1] }}</li>
+            <hr class="border-none my-4">
+            <li>Email: {{ maven.email }}</li>
+            <hr class="border-none my-4">
+            <li>Telegram @username: NA</li>
+            <li>X @username: NA</li>
+            <hr class="border-none my-4">
+            <li>Country: NA</li>
+            <li>State: NA</li>
+            <li>City: NA</li>
+          </ul>
+        </div>
       </div>
+
       <!-- {{ currentUser }} -->
       <!-- <p class="block mb-4">
         {{ $pb.authStore }}
