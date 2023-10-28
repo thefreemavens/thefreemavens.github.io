@@ -67,7 +67,7 @@
           <ul class="block mt-4 w-full tracking-wide">
             <li class="mb-2 text-xs font-bold uppercase sm:mb-4 lg:mb-6 text-grey-975 dark:text-white">Members</li>
             <li
-              v-for="(menuItem, index) in menuItems4" :key="index"
+              v-for="(menuItem, index) in menuItemsMember" :key="index"
               class="py-2 my-0"
             >
               <NuxtLink :to="menuItem.url" @click="menu = false" class="flex items-center py-1 text-sm transition-colors duration-100 ease-in-out group --font-mono --uppercase hover:text-white hover:bg-black dark:hover:bg-white dark:hover:text-black">
@@ -93,6 +93,13 @@
 
 <script setup lang="ts">
 const menu = useState('menu', () => false)
+
+// interface Maven {
+//   model: any,
+//   // CookieRef: object
+// }
+const maven = useCookie<any>('pb_auth')
+
 const appConfig = useAppConfig()
 
 // ------------------------------------------------>
@@ -101,69 +108,87 @@ const appConfig = useAppConfig()
 const menuItems1 = ref([
   {
     title: 'Home',
-    slug: 'home',
     url: '/'
+    // slug: 'home',
   },
   {
     title: 'Freemavenry',
-    slug: 'freemavenry',
     url: '/freemavenry'
+    // slug: 'freemavenry',
   },
   // {
   //   title: 'FAQ',
-  //   slug: 'faq',
   //   url: '/faq'
+    // slug: 'faq',
   // },
 ])
 
 const menuItems2 = ref([
 {
     title: 'Knowledge',
-    slug: 'knowledge',
     url: '/knowledge/main'
+    // slug: 'knowledge',
   },
   {
     title: 'Lessons',
-    slug: 'lessons',
     url: '/lessons/main'
+    // slug: 'lessons',
   },
   {
     title: 'Challenges',
-    slug: 'challenges',
     url: '/challenges/main'
+    // slug: 'challenges',
   },
   {
     title: 'Resources',
-    slug: 'resources',
     url: '/resources/main'
+    // slug: 'resources',
   },
   {
     title: 'Tools',
-    slug: 'tools',
     url: '/tools/main'
+    // slug: 'tools',
   },
 ])
 
 const menuItems3 = ref([
   {
     title: 'Marketspace',
-    slug: 'marketspace',
     url: '/marketspace'
+    // slug: 'marketspace',
   }
 ])
 
-const menuItems4 = ref([
+const menuItemsLogout = ref([
   {
     title: 'Login',
-    slug: 'login',
     url: '/maven/login'
+    // slug: 'login',
   },
   {
     title: 'Initiate',
-    slug: 'init',
     url: '/maven/initiation'
+    // slug: 'init',
+  }
+  
+])
+
+const menuItemsLogin = ref([
+  {
+    title: 'My Account',
+    url: '/maven/account'
+    // slug: 'account',
+  },
+  {
+    title: 'Update Account',
+    url: '/maven/account/update'
+    // slug: 'update',
   }
 ])
+
+const menuItemsMember = computed(() => {
+  return maven.value.model ? menuItemsLogin.value : menuItemsLogout.value
+})
 
 onMounted(() => {
 

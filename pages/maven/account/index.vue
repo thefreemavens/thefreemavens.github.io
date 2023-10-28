@@ -1,11 +1,6 @@
 <template>
   <main class="container relative mx-auto">
 
-    <!-- Login / Logout -->
-    <button v-if="maven" class="absolute top-8 right-4 px-2 py-1 text-xs font-bold text-white uppercase bg-black rounded dark:text-black dark:bg-white" type="button" @click="logout">
-      Logout
-    </button>
-
     <!-- IF User-->
     <AppSection v-if="maven" class="md:pb-0 lg:pb-0">
       <template #title>
@@ -16,27 +11,67 @@
         Welcome back
       </template>
 
-      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 md:gap-6 lg:gap:8 xl:gap-9">
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 md:gap-6 lg:gap:8 xl:gap-9">        
+        <div class="lg:col-start-2">
+
+          <!-- <div class="aspect-video bg-black rounded-3xl"> -->
+            
+          <!-- </div> -->
+          <div class="my-4 flex flex-col space-y-4">
+            <div class="w-full flex flex-col">
+              <div class="flex-1">
+                <div class="flex items-center">
+                  <h4 class="text-xl font-bold flex-1">Personal Info</h4>
+                  <NuxtLink to="/maven/account/update" class="uppercase font-bold text-xs rounded px-2 py-1 me-4 bg-black text-white dark:bg-white dark:text-black">Update</NuxtLink>
+                  <button v-if="maven" class="px-2 py-1 text-xs font-bold text-white uppercase bg-black rounded dark:text-black dark:bg-white" type="button" @click="logout">
+                    Logout
+                  </button>
+                </div>
+                <ul class="mt-2 text-gray-700">
+                    <li class="flex border-y py-2">
+                        <span class="font-bold w-32">Full Name:</span>
+                        <span class="">{{ maven.name }}</span>
+                    </li>
+                    <li class="flex border-b py-2">
+                        <span class="font-bold w-32">Username:</span>
+                        <span class="">{{ maven.username }}</span>
+                    </li>
+                    <li class="flex border-b py-2">
+                      <span class="font-bold w-32">Telegram:</span>
+                      <span class="">{{ maven.telegram }}</span>
+                    </li>
+                    <!-- <li class="flex border-b py-2">
+                      <span class="font-bold w-32">X:</span>
+                      <span class="">{{ maven.x }}</span>
+                    </li> -->
+                    <li class="flex border-b py-2">
+                      <span class="font-bold w-32">Email:</span>
+                      <span class="">{{ maven.email }}</span>
+                    </li>
+                    <li class="flex border-b py-2">
+                      <span class="font-bold w-32">Location:</span>
+                      <span class=""></span>
+                    </li>
+                    <li class="flex border-b py-2">
+                        <span class="font-bold w-32">Joined:</span>
+                        <span class="">{{ new Date(maven.created).toDateString() }}</span>
+                    </li>
+                    <li class="flex border-b py-2">
+                        <span class="font-bold w-32">Updated:</span>
+                        <span class="">{{ new Date(maven.updated).toDateString() }}</span>
+                    </li>
+                    <!-- <li class="flex border-b py-2">
+                        <span class="font-bold w-32">Languages:</span>
+                        <span class="">English, Spanish</span>
+                    </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
         <p class="px-4 py-2 font-mono text-xs border lg:col-start-2">
           Your profile page is in development, please come back soon.
         </p>
-        
-        <div class="lg:col-start-2">
-          <NuxtLink to="/maven/account/update" class="my-8 block">Update</NuxtLink>
-          <ul>
-            <li>First Name: {{ maven.name.split(' ')[0] }}</li>
-            <li>Last Name: {{ maven.name.split(' ')[1] }}</li>
-            <hr class="border-none my-4">
-            <li>Email: {{ maven.email }}</li>
-            <hr class="border-none my-4">
-            <li>Telegram @username: NA</li>
-            <li>X @username: NA</li>
-            <hr class="border-none my-4">
-            <li>Country: NA</li>
-            <li>State: NA</li>
-            <li>City: NA</li>
-          </ul>
-        </div>
       </div>
 
       <!-- {{ currentUser }} -->

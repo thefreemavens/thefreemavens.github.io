@@ -38,15 +38,33 @@
                 label="Last Name"
                 validation="required|alpha:latin"
                 v-model="computedLastName"
-              />
-
-              <FormKit
+                />
+                
+              <!-- <FormKit
                 type="text"
                 name="email"
                 id="email"
                 label="Email"
                 validation="required|*email"
                 v-model="email"
+              /> -->
+                
+              <FormKit
+                type="text"
+                name="username"
+                id="username"
+                label="Username"
+                validation="required|alphanumeric"
+                v-model="userName"
+              />
+
+              <FormKit
+                type="text"
+                name="telegram"
+                id="telegram"
+                label="Telegram @name"
+                validation="required|alphanumeric"
+                v-model="telegram"
               />
 
               <!-- <FormKit
@@ -97,12 +115,14 @@
                 All submissions are kept secure and private.
               </span>
     
-              <!-- <NuxtLink
+              <NuxtLink
                 to="/maven/login"
                 class="absolute right-0 -bottom-0.5 pb-0.5 text-xs font-bold text-center uppercase border-b border-transparent hover:border-black dark:hover:border-white"
               >
-                Login
-              </NuxtLink> -->
+                Cancel
+              </NuxtLink>
+
+              <!-- {{ maven.email }} -->
 
               <!-- <h2>Using <code>FormKitIcon</code> you can output any loaded icon anywhere.</h2>
               <FormKitIcon icon="bitcoin" /> -->
@@ -131,22 +151,17 @@
       <!-- {{  $pb.authStore.isValid }} -->
 
     </AppSection>
-
-    <!-- <NuxtLink to="/maven/account/update">Update</NuxtLink> -->
   </main>
 </template>
 
 <script setup>
 const { $pb } = useNuxtApp()
 
-// const currentUser = ref('')
 const maven = useState('maven', () => '')
-
-// const firstName = ref(maven.value.name.split(' ')[0])
-// const lastName = ref(maven.value.name.split(' ')[1])
 
 const firstName = ref('')
 const lastName = ref('')
+const userName = ref('')
 
 const computedFirstName = computed({
   get() {
@@ -166,35 +181,34 @@ const computedLastName = computed({
   }
 })
 
-// const computedFirstName = computed(() => maven.value.name.split(' ')[0])
-// const computedLastName = computed(() => maven.value.name.split(' ')[1])
+const computedUserName = computed({
+  get() {
+    return maven.value.username
+  },
+  set(val) {
+    userName.value = val
+  }
+})
+
 const email = ref(maven.value.email)
+const telegram = ref(maven.value.telegram)
 // const password = ref('')
 
 definePageMeta({
   middleware: 'auth'
 })
 
-// const logout = () => {
-//   $pb.authStore.clear()
-//   maven.value = null
-//   navigateTo('/maven/login')
-// }
-
-// const update = async () => await pb.collection('users').update(maven.value.id, data)
-
 const update = async () => {
   try {
     const data = {
-      // "username": `TFM${self.crypto.randomUUID().split("-")[0]}`,
-      "email": email.value,
-      // "emailVisibility": true,
-      // "password": password.value,
-      // "passwordConfirm": password.value,
-      "name": firstName.value + ' ' + lastName.value
+      "name": firstName.value + ' ' + lastName.value,
+      // "email": email.value,
+      "username": userName.value,
+      "telegram": telegram.value,
     }
 
     const record = await $pb.collection('users').update(maven.value.id, data)
+    navigateTo('/maven/account')
     
 
     // await login();
@@ -207,6 +221,11 @@ onMounted(() => {
   $pb.authStore.onChange(() => {
     maven.value = $pb.authStore.model  
   }, true)
+  firstName.value = computedFirstName.value
+  lastName.value = computedLastName.value
+  userName.value = computedUserName.value
+  telegram.value = maven.value.telegram
+  email.value = maven.value.email
 })
 
 </script>
