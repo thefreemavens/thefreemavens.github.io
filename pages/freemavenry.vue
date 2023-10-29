@@ -20,9 +20,10 @@
             xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 546 546"
             class="
-              w-40 h-40 md:w-64 md:h-64 xl:w-80 xl:h-80 mb-8
+              w-52 h-52 md:w-64 md:h-64 xl:w-80 xl:h-80
               stroke-[10] fill-none
             stroke-black dark:stroke-white
+            mx-auto mb-12 mt-4 lg:ms-0
             ">
             <!-- text-black/100 dark: text-black/100 -->
             <ellipse class="sol-ment oval oval-sm fill-none" rx="128" ry="128" cx="273" cy="273"/>
@@ -134,14 +135,14 @@
       <h4 id="Principles" class="flex flex-col col-span-1 py-0 mb-4 text-5xl font-bold tracking-tighter lg:col-span-3 md:mb-10 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">Principles</h4>
         <p class="mb-8">
           <div class="--lg:border">
-            <AppIcon name="tetrahedron" class="scale-75 aspect-video lg:aspect-square w-full h-full fill-none stroke-current stroke-[10px]" />
+            <AppIcon name="tetrahedron" class="scale-[61.803%] aspect-video lg:aspect-square w-full h-full fill-none stroke-current stroke-[8px]" />
           </div>
           <b class="block pb-4 text-3xl tracking-tight md:pb-6 md:text-4xl">Truth</b> 
           Freemavenry strives for the singular and objective truth and requires high moral standards of all our members and friends. 
         </p>
         <p class="mb-8">
           <div class="--lg:border">
-            <AppIcon name="polyhedron" class="scale-75 aspect-video lg:aspect-square w-full h-full fill-none stroke-current stroke-[10px]" />
+            <AppIcon name="polyhedron" class="scale-[61.803%] aspect-video lg:aspect-square w-full h-full fill-none stroke-current stroke-[8px]" />
           </div>
           <b class="block pb-4 text-3xl tracking-tight md:pb-6 md:text-4xl">Love</b> 
           The Selfless kind. Every member will show tolerance and respect for others and behave 
@@ -149,7 +150,7 @@
         </p>
         <p class="mb-8">
           <div class="--lg:border">
-            <AppIcon name="icosahedron" class="scale-75 aspect-video lg:aspect-square w-full h-full fill-none stroke-current stroke-[10px]" />
+            <AppIcon name="icosahedron" class="scale-[61.803%] aspect-video lg:aspect-square w-full h-full fill-none stroke-current stroke-[8px]" />
           </div>
           <b class="block pb-4 text-3xl tracking-tight md:pb-6 md:text-4xl">Care</b> 
           Freemavens are taught to practice charity, and to care, not only for their own members, but for the community as a whole, 
@@ -161,7 +162,7 @@
       <h4 id="Principles" class="flex flex-col col-span-1 py-0 mb-4 text-5xl font-bold tracking-tighter lg:col-span-3 md:mb-10 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">Definitions</h4>
         <p class="mb-8 lg:col-start-2">
           <div class="--lg:border">
-            <AppIcon name="f" class="w-full h-full scale-50 aspect-video lg:aspect-square fill-none" />
+            <AppIcon name="f" class="w-full h-full scale-[61.803%] aspect-video lg:aspect-square fill-none" />
           </div>
           <b class="block pb-4 text-3xl tracking-tight md:pb-6 md:text-4xl">Free</b> 
             The word Free means not under the control or in the power of another; 
@@ -169,7 +170,7 @@
         </p>
         <p class="mb-8">
           <div class="--lg:border">
-            <AppIcon name="m" class="w-full h-full scale-50 aspect-video lg:aspect-square fill-none" />
+            <AppIcon name="m" class="w-full h-full scale-[61.803%] aspect-video lg:aspect-square fill-none" />
           </div>
           <b class="block pb-4 text-3xl tracking-tight md:pb-6 md:text-4xl">Maven</b> 
             The word Maven derives from the Yiddish word Meyvn, meaning "one who understands." 

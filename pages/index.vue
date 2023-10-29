@@ -13,7 +13,7 @@
     <section class="relative py-12 mx-4 border-t">
       <!-- <img src="/img/market/tfm-hoodie-white-nl-new-black.webp"> -->
       <NuxtLink to="marketspace">
-        <img src="/img/market/tfm-notebook-angle-left-white.webp">
+        <img src="/img/market/tfm-notebook-angle-left-white.webp" class="w-full">
       <!-- <div class="w-full h-screen bg-cover block bg-origin-padding bg-[url('/img/market/tfm-notebook-angle-left-white.webp')]"> -->
       </NuxtLink>
       <!-- </div> -->

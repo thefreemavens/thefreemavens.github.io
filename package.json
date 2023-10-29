@@ -19,9 +19,9 @@
     "install": "^0.13.0",
     "nuxt": "^3.7.4",
     "pocketbase": "^0.18.0",
-    "sitemap": "^7.1.1"
+    "sitemap": "^7.1.1",
+    "lite-youtube-embed": "^0.3.0"
   },
   "dependencies": {
-    "lite-youtube-embed": "^0.3.0"
   }
 }
